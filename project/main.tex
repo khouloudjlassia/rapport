@@ -1,0 +1,141 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage{chngcntr} 
+\usepackage{placeins}
+\usepackage{float}
+\counterwithout{section}{chapter} % décale la numérotation des sections pour qu'elle ne dépende plus du chapitre
+\renewcommand{\thesection}{\arabic{section}} % sections = 1,2,3...
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}} 
+\begin{document}
+\sloppy
+
+\tableofcontents
+\newpage 
+
+\chapter*{Chapitre 1: Présentation du projet}  % Pas de numéro ajouté automatiquement
+\addcontentsline{toc}{chapter}{Chapitre 1: Présentation du    projet}  % Ajoute dans le sommaire
+
+\section{Introduction du chapitre}
+Dans ce chapitre, nous présentons le cadre général de notre stage au sein de HOLMENA Company for Digital Solutions. Nous introduisons l’entreprise d’accueil, ses domaines d’activité ainsi que les services qu’elle propose. Nous décrivons ensuite le projet réalisé et ses objectifs principaux. Enfin, l’étude de l’existant permet de cerner la problématique et de démontrer la valeur ajoutée de la solution développée.
+
+
+\section{Présentation de l’organisme}
+
+HOLMENA Company for Digital Solutions est une entreprise innovante fondée en 2024, spécialisée dans les solutions informatiques et numériques au sein de la région MENA.  
+HOLMENA est une équipe jeune et pleine d'énergie réunie pour satisfaire les besoins de ses clients et les soutenir tout au long de leurs projets.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/image.jpeg}
+    \caption{Logo de HOLMENA Company for Digital Solutions}
+    \label{fig:holm}
+\end{figure}
+
+\FloatBarrier
+\subsection{L’équipe de la société}
+
+C’est une entreprise spécialisée dans les solutions digitales, le web et l’intelligence artificielle, dirigée par une équipe fondatrice dynamique et complémentaire :
+
+\begin{itemize}
+    \item Gérant (Fondateur \& Project Manager) : Mohamed Rashad Rouine
+    \item Direction Générale
+    \item Direction Technique
+    \item Service Opérations Digitales (Co-Founder \& Digital Operations Specialist)
+    \item Direction Stratégique (Co-Founder \& Chief Strategic Officer)
+    \item Service Développement \& Croissance
+    \item Service Design \& Communication (Chief Designer)
+\end{itemize}
+
+\subsection{Services}
+
+\begin{itemize}
+    \item Services digitaux et intégration de solutions numériques innovantes.
+    \item Services de recherche et développement en technologies IT.
+    \item Services de conception Web / mobile et développement d'applications performantes.
+    \item Développement de solutions e-commerce sécurisées et évolutives.
+    \item Services de création de contenu multimédia et gestion de présence digitale.
+\end{itemize}
+
+\section{Présentation du projet}
+
+\subsection{Contexte du projet}
+Dans le cadre de notre projet de fin d'études en vue de l'obtention du Diplôme de Mastère professionnel en intelligence artificielle \& internet des objets, j’ai effectué un stage à l’entreprise HOLMENA Company for Digital Solutions afin de concevoir et développer une plateforme innovante intitulée UFitPal : Assistance intelligente en fitness et nutrition basée sur la nutrigénomique.
+
+\subsection{Description du projet}
+Notre projet consiste à concevoir et développer une plateforme intelligente de fitness et de nutrition, capable d'offrir une expérience personnalisée et innovante aux utilisateurs grâce à l'intelligence artificielle. Elle propose des programmes d’entraînement et des plans nutritionnels personnalisés, qui s'adaptent aux besoins spécifiques de chaque utilisateur.
+
+\subsection{Les objectifs}
+Notre objectif est de créer une plateforme pour le fitness et la nutrition qui répondra aux besoins spécifiques du public MENA. En effet, l'application offre les services suivants :
+
+
+
+\begin{itemize}[label=\ding{51}]
+  \item Mettre en place des programmes d'entraînement complètement personnalisés en fonction du niveau physique, des objectifs et du rythme de vie de l'utilisateur.
+   \item Proposer des recommandations alimentaires personnalisées qui respectent les besoins énergétiques, les objectifs de santé et le mode de vie de chaque utilisateur.
+  \item Offrir des interfaces simples et intuitives pour les différents profils (utilisateur, coach, nutritionniste, administrateur).
+  \item Assurer l'intégrité, la sécurité et la cohérence des données à chaque mise à jour et insertion.
+  \end{itemize}
+\section{Étude de l’existant du projet}
+L'analyse de l'existant se divise principalement en trois parties : la description de l'existant, la critique de l'existant et la solution suggérée.
+\subsection{Description de l’existant du projet}
+L'objectif de cette partie est d'examiner les solutions existantes dans le domaine 
+des applications de fitness et nutrition afin de mieux cerner les besoins spécifiques du projet UFitPal, 
+et de les intégrer de manière intelligente dans sa conception et son développement.
+
+Nous avons donc examiné les applications les plus populaires disponibles à l'échelle mondiale et dans la région MENA.
+
+Nous citons :
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/coach.png}
+    \caption{Interface de l'application Coach}
+    \label{fig:coach}
+\end{figure}
+\FloatBarrier
+
+
+\subsection{Problématique}
+La région MENA est en ce moment en pleine crise de santé publique sans précédent. 
+Elle a l'un des plus forts taux d'obésité, 
+de diabète de type 2 et de maladies cardiovasculaires au monde.
+. Ces maladies, étroitement liées aux modes de vie sédentaires, 
+ont un impact économique important dans des pays comme les Émirats arabes unis,
+ l'Arabie saoudite et la Tunisie.
+ Face à ce constat, trois obstacles majeurs freinent l'efficacité des solutions actuelles :
+\begin{itemize}[label=•]
+  \item  L’Échec des approches génériques
+
+La demande pour des solutions de bien-être numérique explose,
+ mais l'offre reste largement dominée par des modèles standards, 
+ dits « one-size-fits-all ». Ces applications ne tiennent pas compte des
+  spécificités biologiques et culturelles des populations arabes,
+   telles que les variations métaboliques individuelles ou les pratiques alimentaires traditionnelles. 
+Cette uniformité entraîne une faible adhésion des usagers et limite l’impact réel sur la santé publique.
+  \item Le fossé génomique et scientifique
+  
+Un défi structurel majeur provient de l’absence d’une base de données génomique
+ spécifique à la région. Les outils existants s’appuient sur des référentiels 
+ à dominante occidentale dont la transférabilité aux populations de la zone MENA est limitée. 
+ S’il n’y a pas de validation clinique qui tienne compte des réalités génétiques locales,
+  les conseils nutritionnels et préventifs 
+peuvent introduire des biais systématiques et manquer de rigueur scientifique.
+  \item La Fragmentation de l'Expérience Utilisateur
+  
+ L’écosystème de la santé préventive est affecté par un cloisonnement des données. 
+  Le suivi de l’activité physique, la gestion nutritionnelle et le coaching personnalisé sont cloisonnés,
+   ce qui rend impossible une analyse cohérente du comportement de l’utilisateur. 
+  Cette déstructuration nuit à la personnalisation et rend le parcours de soins illisible.
+  \end{itemize}
+\subsection{Critiques de lexistant}
+
+\subsection{Les solutions proposées}
+
+
+\end{document}

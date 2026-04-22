@@ -1,0 +1,15 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Chapitre 1: Présentation du projet}{2}{}%
+\contentsline {section}{\numberline {1}Introduction du chapitre}{2}{}%
+\contentsline {section}{\numberline {2}Présentation de l’organisme}{2}{}%
+\contentsline {subsection}{\numberline {2.1}L’équipe de la société}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Services}{3}{}%
+\contentsline {section}{\numberline {3}Présentation du projet}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Contexte du projet}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Description du projet}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Les objectifs}{4}{}%
+\contentsline {section}{\numberline {4}Étude de l’existant du projet}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Description de l’existant du projet}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Problématique}{5}{}%
+\contentsline {subsection}{\numberline {4.3}Critiques de lexistant}{6}{}%
+\contentsline {subsection}{\numberline {4.4}Les solutions proposées}{6}{}%

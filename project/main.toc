@@ -10,6 +10,6 @@
 \contentsline {subsection}{\numberline {3.3}Les objectifs}{4}{}%
 \contentsline {section}{\numberline {4}Étude de l’existant du projet}{4}{}%
 \contentsline {subsection}{\numberline {4.1}Description de l’existant du projet}{5}{}%
-\contentsline {subsection}{\numberline {4.2}Problématique}{5}{}%
-\contentsline {subsection}{\numberline {4.3}Critiques de lexistant}{6}{}%
-\contentsline {subsection}{\numberline {4.4}Les solutions proposées}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Problématique}{6}{}%
+\contentsline {subsection}{\numberline {4.3}Critique de l'existant}{7}{}%
+\contentsline {subsection}{\numberline {4.4}Les solutions proposées}{7}{}%

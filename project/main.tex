@@ -9,6 +9,7 @@
 \usepackage{chngcntr} 
 \usepackage{placeins}
 \usepackage{float}
+\usepackage{amssymb}
 \counterwithout{section}{chapter} % décale la numérotation des sections pour qu'elle ne dépende plus du chapitre
 \renewcommand{\thesection}{\arabic{section}} % sections = 1,2,3...
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}} 
@@ -72,8 +73,6 @@ Notre projet consiste à concevoir et développer une plateforme intelligente de
 \subsection{Les objectifs}
 Notre objectif est de créer une plateforme pour le fitness et la nutrition qui répondra aux besoins spécifiques du public MENA. En effet, l'application offre les services suivants :
 
-
-
 \begin{itemize}[label=\ding{51}]
   \item Mettre en place des programmes d'entraînement complètement personnalisés en fonction du niveau physique, des objectifs et du rythme de vie de l'utilisateur.
    \item Proposer des recommandations alimentaires personnalisées qui respectent les besoins énergétiques, les objectifs de santé et le mode de vie de chaque utilisateur.
@@ -91,15 +90,40 @@ Nous avons donc examiné les applications les plus populaires disponibles à l'�
 
 Nous citons :
 
+\begin{itemize}
+
+\item \textbf{ArabFit} est une application mobile de fitness arabophone, disponible sur iOS et Android, 
+destinée aux utilisateurs du Maghreb et de la région MENA. Elle est conçue pour aider les utilisateurs 
+à développer leur musculature, perdre du poids et obtenir les meilleurs résultats grâce à des exercices 
+physiques quotidiens.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{images/coach.png}
-    \caption{Interface de l'application Coach}
-    \label{fig:coach}
+    \includegraphics[width=1\textwidth]{images/arbfit.png}
+    \caption{Interface de l'application ArabFit}
+    \label{fig:arbfit}
+    
 \end{figure}
+
 \FloatBarrier
 
+
+\item \textbf{MyFitnessPal} est une application américaine de suivi nutritionnel et sportif, 
+lancée en 2005 et rachetée par Under Armour en 2015. 
+Elle est devenue la référence mondiale en matière de comptage calorique,
+ s'appuyant sur l'une des plus grandes bases de données nutritionnelles au monde, 
+ enrichie par les contributions de ses utilisateurs. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/myfitt.png}
+    \caption{Interface de l'application MyFitnessPal}
+    \label{fig:myfitnesspal}
+    
+\end{figure}
+\vspace{-1cm} 
+\FloatBarrier
+
+\end{itemize}
 
 \subsection{Problématique}
 La région MENA est en ce moment en pleine crise de santé publique sans précédent. 
@@ -133,9 +157,47 @@ peuvent introduire des biais systématiques et manquer de rigueur scientifique.
    ce qui rend impossible une analyse cohérente du comportement de l’utilisateur. 
   Cette déstructuration nuit à la personnalisation et rend le parcours de soins illisible.
   \end{itemize}
-\subsection{Critiques de lexistant}
+\subsection{Critique de l'existant}
+
+L'objectif de cette étape est d'identifier les principales anomalies observées, 
+pour analyser les causes profondes et trouver des solutions adaptées.
+Dans notre étude, nous avons observé les éléments suivants :
+
+\begin{itemize}[label=$\star$]
+
+   
+   \item Personnalisation limitée, reposant sur des paramètres statiques, sans moteur d'IA adaptatif.
+
+\item Aucun suivi nutritionnel n'est autorisé, sauf dans le cas d'une journalisation descriptive, 
+sans analyse intelligente ni recommandations personnalisées.
+   
+   \item Le suivi corporel est fréquemment partiel, se concentrant principalement sur le poids, 
+   sans intégration complète des métriques anthropométriques ni outils avancés pour visualiser la progression.
+
+
+\item Ces solutions ne contiennent aucune dimension scientifique avancée, comme les données biologiques ou génétiques, 
+ce qui limite considérablement leur capacité à évoluer vers une approche de santé de précision.
+    
+    \item Il y a une limite majeure à l'absence de bases de données adaptées à la région MENA.
+     Les recommandations sont principalement basées sur des normes nutritionnelles et physiologiques occidentales,
+     peu représentatives des habitudes alimentaires et des spécificités biologiques locales.
+    \end{itemize}
+  
+
 
 \subsection{Les solutions proposées}
+Face aux défis identifiés dans l'étude de la situation existante,
+ notamment la fragmentation des données et le manque d'adaptation aux spécificités de la région MENA,
+  nous proposons une solution innovante baptisée UFitPal:
 
+\begin{itemize}[label=$\star$]
+\item  Mise en place de programmes sportifs et nutritionnels personnalisés en fonction du profil utilisateur (âge, objectifs, contraintes), 
+grâce à un système d'intelligence artificielle adaptatif.
 
+\item Surveillance en temps réel de l'activité physique, des quantités alimentaires et du développement corporel, avec une base de données locale MENA incluant des plats typiques .
+\item Évaluation des performances et modifications automatisées des programmes ,
+ ouverture future à la santé de précision en intègrent des informations biométriques (poids, fréquence cardiaque) et génétiques.
+ \item Une interface ergonomique, intuitive et multilingue qui regroupe toutes les données pour éviter la dispersion et encourager l'adhésion à long terme.
+\end{itemize}
 \end{document}
+

@@ -76,7 +76,7 @@ Notre objectif est de créer une plateforme pour le fitness et la nutrition qui 
 \begin{itemize}[label=\ding{51}]
   \item Mettre en place des programmes d'entraînement complètement personnalisés en fonction du niveau physique, des objectifs et du rythme de vie de l'utilisateur.
    \item Proposer des recommandations alimentaires personnalisées qui respectent les besoins énergétiques, les objectifs de santé et le mode de vie de chaque utilisateur.
-  \item Offrir des interfaces simples et intuitives pour les différents profils (utilisateur, coach, nutritionniste, administrateur).
+  \item Offrir des interfaces simples et intuitives pour les différents profils (utilisateur, coach, nutritionniste).
   \item Assurer l'intégrité, la sécurité et la cohérence des données à chaque mise à jour et insertion.
   \end{itemize}
 \section{Étude de l’existant du projet}
@@ -110,9 +110,7 @@ physiques quotidiens.
 
 \item \textbf{MyFitnessPal} est une application américaine de suivi nutritionnel et sportif, 
 lancée en 2005 et rachetée par Under Armour en 2015. 
-Elle est devenue la référence mondiale en matière de comptage calorique,
- s'appuyant sur l'une des plus grandes bases de données nutritionnelles au monde, 
- enrichie par les contributions de ses utilisateurs. 
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{images/myfitt.png}
@@ -175,7 +173,7 @@ sans analyse intelligente ni recommandations personnalisées.
    sans intégration complète des métriques anthropométriques ni outils avancés pour visualiser la progression.
 
 
-\item Ces solutions ne contiennent aucune dimension scientifique avancée, comme les données biologiques ou génétiques, 
+\item Ces solutions ne contiennent aucune dimension scientifique avancée, comme les données biologiques, 
 ce qui limite considérablement leur capacité à évoluer vers une approche de santé de précision.
     
     \item Il y a une limite majeure à l'absence de bases de données adaptées à la région MENA.
@@ -194,28 +192,306 @@ Face aux défis identifiés dans l'étude de la situation existante,
 \item  Mise en place de programmes sportifs et nutritionnels personnalisés en fonction du profil utilisateur (âge, objectifs, contraintes), 
 grâce à un système d'intelligence artificielle adaptatif.
 
-\item Surveillance en temps réel de l'activité physique, des quantités alimentaires et du développement corporel, avec une base de données locale MENA incluant des plats typiques .
+\item Surveillance en temps réel de l'activité physique, des quantités alimentaires et du développement corporel .
 \item Évaluation des performances et modifications automatisées des programmes ,
  ouverture future à la santé de précision en intègrent des informations biométriques (poids, fréquence cardiaque) et génétiques.
  \item Une interface ergonomique, intuitive et multilingue qui regroupe toutes les données pour éviter la dispersion et encourager l'adhésion à long terme.
 \end{itemize}
 
 \section{Méthodologie de travail}
+
+\subsection{Choix d'une approche agile}
+Pour le développement de l'application UFitPal, nous avons adopté une méthodologie agile afin de
+ répondre aux exigences évolutives d'un projet numérique innovant. Les approches agiles, contrairement 
+ aux approches traditionnelles en cascade, favorisent des cycles de développement courts et itératifs 
+ qui permettent une adaptation rapide aux retours des utilisateurs et aux contraintes techniques rencontrées tout au long du projet.
+
+\subsection{Méthodologie adoptée : Scrum}
+Parmi les cadres agiles disponibles, nous avons choisi Scrum pour sa structure bien définie et sa capacité à organiser efficacement le travail en équipe.
+ Dans le cadre du projet UFitPal, cette méthodologie nous a permis de livrer des incréments fonctionnels à chaque sprint,
+  tout en conservant une vision globale du produit final.
+
+\subsubsection{Organisation de l'équipe}
+L'équipe projet a été structurée selon les rôles Scrum suivants :
+\begin{itemize}
+    \item \textbf{Product Owner} : chargé de recueillir les besoins des utilisateurs cibles 
+    (sportifs, coachs) et de prioriser les fonctionnalités du backlog en fonction de leur 
+    valeur métier.
+    \item \textbf{Scrum Master} : responsable du respect du cadre Scrum, de la levée des 
+    obstacles et de la fluidité des cérémonies.
+    \item \textbf{Équipe de développement} : constituée de développeurs front-end et back-end, 
+    d'un designer UI/UX et d'un spécialiste en intelligence artificielle, assurant la 
+    réalisation technique des fonctionnalités définies.
+\end{itemize}
+
+\subsubsection{Artefacts utilisés}
+Les artefacts Scrum suivants ont structuré notre gestion du projet :
+\begin{itemize}
+    \item \textbf{Product Backlog} : liste vivante et priorisée de l'ensemble des 
+    fonctionnalités d'UFitPal, alimentée en continu par les retours utilisateurs et les 
+    évolutions des besoins.
+    \item \textbf{Sprint Backlog} : sous-ensemble du Product Backlog sélectionné à chaque 
+    début de sprint, découpé en tâches assignées aux membres de l'équipe.
+    \item \textbf{Incrément} : version fonctionnelle et testable de l'application livrée 
+    à l'issue de chaque sprint, enrichissant progressivement les fonctionnalités de la 
+    plateforme.
+\end{itemize}
+
+\subsubsection{Cérémonies pratiquées}
+Afin d'assurer un suivi régulier et une communication efficace au sein de l'équipe, nous 
+avons mis en place les cérémonies Scrum suivantes :
+\begin{itemize}
+    \item \textbf{Sprint Planning} : tenue en début de chaque sprint pour définir les 
+    objectifs à atteindre et répartir les tâches entre les membres de l'équipe.
+    \item \textbf{Daily Scrum} : point quotidien de quinze minutes permettant à chaque 
+    membre de partager son avancement, ses blocages et ses objectifs du jour.
+    \item \textbf{Sprint Review} : présentation de l'incrément réalisé aux parties 
+    prenantes afin de valider les fonctionnalités développées et d'ajuster les priorités.
+    \item \textbf{Sprint Retrospective} : réunion d'équipe visant à analyser le déroulement 
+    du sprint écoulé, à capitaliser sur les bonnes pratiques et à corriger les 
+    dysfonctionnements identifiés.
+\end{itemize}
+
+\subsection{Organisation en sprints}
+Le projet UFitPal a été découpé en sprints d'une durée de deux semaines chacun. Cette 
+cadence nous a permis de maintenir un rythme de livraison régulier tout en intégrant 
+progressivement les fonctionnalités clés de l'application, depuis la gestion des profils 
+utilisateurs jusqu'à l'intégration du module d'intelligence artificielle. Le détail des 
+sprints réalisés et de leurs livrables est présenté dans la section suivante.
+
+
 \section{Conclusion }
-Ce chapitre a présenté une perspective globale de la société d'accueil et a analysé quelques applications  
-qui ont des fonctionnalités similaires à celles que nous voulons développer.Nous cherchons à tirer parti 
-de leurs avantages pour offrir notre solution.Dans le prochain chapitre, nous commençons à analyser les 
-besoins et à concevoir le système.
+Ce chapitre a présenté une perspective globale de la société d'accueil, analysé des applications 
+existantes aux fonctionnalités similaires à celles que nous voulons développer, et exposé la 
+méthodologie de travail adoptée.Dans le prochain chapitre, nous procédons à la 
+spécification des besoins fonctionnels et non-fonctionnels, à la définition de l'architecture 
+technique de l'application, ainsi qu'à la présentation du Product Backlog global et de 
+l'environnement de travail retenu.
+
 \chapter*{Chapitre 2 : Réalisation de l'Application}
 \addcontentsline{toc}{chapter}{Chapitre 2 : Réalisation de l'Application}
 
 \setcounter{section}{0}
 \section{Introduction du chapitre}
-La phase de réalisation représente une étape pivot dans le cycle de vie de notre projet, 
-puisqu'elle matérialise l'ensemble des travaux préparatoires.
- Pour développer notre application, nous avons analysé divers 
- outils afin de sélectionner ceux qui correspondent le mieux à nos exigences, 
- en privilégiant leur facilité d'intégration. Ce chapitre expose l'environnement matériel et logiciel adopté,
-  les choix techniques retenus, ainsi que les interfaces principales de l'application finale.
+Ce chapitre traite de la spécification des besoins du projet UFitPal, une étape cruciale pour s'assurer 
+que les objectifs de la plateforme correspondent aux attentes des utilisateurs.
+ Il comporte l'analyse des besoins fonctionnels et non fonctionnels, le diagramme global des cas d'utilisation, 
+ l'architecture de l'application, le Product Backlog général et l'environnement de travail adopté. 
+ Ces différents éléments constituent une vision claire et structurée du projet, 
+ et offrent donc une base solide pour sa conception, son développement et son évolution future.
+ \section{ Analyse des besoins}
+
+ \subsection{Identification des acteurs du système}
+
+\begin{itemize}
+    \item \textbf{Visiteur} : Toute personne non authentifiée souhaitant accéder à l'application. 
+    Il peut s'inscrire, se connecter via Google ou réinitialiser son mot de passe. 
+    Il n'a accès à aucune fonctionnalité métier avant authentification.
+
+    \item \textbf{Athlète} :Acteur central du système. Une fois connecté, il bénéficie de l’ensemble des fonctionnalités personnalisées :
+     gestion du profil, onboarding, suivi des activités sportives, de la progression et de la nutrition, 
+     consultation des résultats des modèles IA (churn, poids, objectif et plateau), 
+     consultation des recommandations basées sur des règles métier, consultation du plan repas élaboré par le nutritionniste,
+      interaction avec le chatbot, gestion des invitations, envoi et réception de messages avec les autres acteurs connectés,
+       ainsi que l’ajout de feedbacks.
+
+    \item \textbf{Coach} : Professionnel de l'entraînement sportif. Il gère son profil, 
+    crée et consulte des notes de suivi sur ses Athlètes, communique via la messagerie interne, 
+    propose des rendez-vous et envoie des invitations aux Athlètes qu'il accompagne.
+
+    \item \textbf{Nutritionniste} : Professionnel de la nutrition. Il gère son profil, 
+    élabore des plans repas personnalisés pour ses Athlètes clients, communique via la 
+    messagerie interne, et peut proposer des rendez-vous et envoyer des invitations.
+
+   
+\end{itemize}
+
+\subsection{Spécification des besoins fonctionnels}
+
+Cette partie est consacrée à l'énumération des besoins fonctionnels pris en charge par les 
+acteurs identifiés, afin d'atteindre les fonctionnalités et objectifs du système.
+
+\subsubsection*{Le Visiteur peut :}
+\begin{itemize}
+    \item \textbf{S'inscrire} : Le Visiteur peut créer un compte en fournissant les informations 
+    de base (nom, email, mot de passe) et en choisissant son rôle (Athlète, Coach ou Nutritionniste).
+    \item \textbf{Se connecter via Google} : Le Visiteur peut s'authentifier rapidement en 
+    utilisant son compte Google, sans saisie manuelle de ses identifiants.
+    \item \textbf{Réinitialiser son mot de passe} : Le Visiteur peut réinitialiser son mot de 
+    passe en renseignant son adresse email afin de recevoir un lien de réinitialisation.
+\end{itemize}
+
+\subsubsection*{L'Athlète peut :}
+\begin{itemize}
+    \item \textbf{Gérer son profil} : L'Athlète peut consulter et mettre à jour ses informations 
+    personnelles avec des champs adaptés à son rôle (âge, taille, poids, objectifs sportifs).
+    \item \textbf{Gérer l'onboarding} : L'Athlète remplit un questionnaire initial portant sur 
+    ses objectifs, son niveau sportif et ses préférences, afin de personnaliser son expérience 
+    sur la plateforme.
+    \item \textbf{Envoyer et recevoir des messages} : L'Athlète peut communiquer avec son Coach 
+    et son Nutritionniste via la messagerie interne de l'application.
+    \item \textbf{Ajouter ses activités sportives} : L'Athlète saisit ses séances d'entraînement 
+    en précisant le type d'activité, la durée et l'intensité. Ces données alimentent les modèles 
+    de machine learning.
+    \item \textbf{Ajouter sa progression} : L'Athlète enregistre régulièrement ses données 
+    corporelles (poids, mensurations) et ses performances afin de suivre son évolution dans 
+    le temps.
+    \item \textbf{Ajouter son journal alimentaire} : L'Athlète consigne ses repas quotidiens 
+    dans son journal nutritionnel personnel pour assurer un suivi alimentaire complet.
+    \item \textbf{Consulter le plan repas du Nutritionniste} : L'Athlète peut accéder au plan 
+    repas personnalisé élaboré et assigné par son Nutritionniste.
+    \item \textbf{Voir les résultats des modèles IA} : L'Athlète consulte les prédictions 
+    générées par les quatre modèles de machine learning, à savoir la prédiction du churn, 
+    du poids futur, de l'atteinte de l'objectif et du plateau de progression.
+    \item \textbf{Consulter les recommandations} : L'Athlète accède aux recommandations 
+    générées par les règles métier, basées sur les sorties des modèles ML, afin d'ajuster 
+    son entraînement et sa nutrition.
+    \item \textbf{Interagir avec le chatbot IA} : L'Athlète peut dialoguer avec le chatbot 
+    conversationnel basé sur le machine learning pour obtenir des conseils personnalisés 
+    en temps réel.
+    \item \textbf{Accepter ou refuser un rendez-vous} : L'Athlète répond aux propositions de 
+    créneaux soumises par son Coach ou son Nutritionniste.
+    \item \textbf{Accepter ou refuser une invitation} : L'Athlète peut accepter ou décliner 
+    les invitations reçues de la part de son Coach ou de son Nutritionniste.
+    \item \textbf{Ajouter un feedback} : À l'issue d'un rendez-vous, l'Athlète peut évaluer 
+    la séance d'entraînement ou le plan repas afin de fournir un retour à son encadrant.
+\end{itemize}
+
+\subsubsection*{Le Coach peut :}
+\begin{itemize}
+    \item \textbf{Gérer son profil} : Le Coach peut consulter et mettre à jour ses informations 
+    professionnelles avec des champs adaptés à son rôle (spécialité, expérience, certifications).
+    \item \textbf{Gérer ses notes de suivi} : Le Coach crée, modifie et consulte ses notes 
+    personnelles de suivi pour chaque Athlète dont il assure l'encadrement.
+    \item \textbf{Envoyer et recevoir des messages} : Le Coach peut communiquer avec ses Athlètes 
+    et les Nutritionnistes via la messagerie interne de l'application.
+    \item \textbf{Proposer un rendez-vous} : Le Coach soumet une proposition de créneau à 
+    l'Athlète concerné pour planifier une séance ou un suivi.
+    \item \textbf{Gérer les invitations} : Le Coach peut envoyer des invitations à ses Athlètes 
+    pour les intégrer à son suivi sur la plateforme.
+\end{itemize}
+
+\subsubsection*{Le Nutritionniste peut :}
+\begin{itemize}
+    \item \textbf{Gérer son profil} : Le Nutritionniste peut consulter et mettre à jour ses 
+    informations professionnelles avec des champs adaptés à son rôle (spécialités nutritionnelles, 
+    diplômes).
+    \item \textbf{Envoyer et recevoir des messages} : Le Nutritionniste peut communiquer avec 
+    ses Athlètes clients et les Coachs via la messagerie interne de l'application.
+    \item \textbf{Ajouter un repas personnalisé} : Le Nutritionniste crée et assigne un plan 
+    repas personnalisé à l'Athlète client dont il s'occupe, en tenant compte de ses objectifs 
+    et de ses données nutritionnelles.
+    \item \textbf{Proposer un rendez-vous} : Le Nutritionniste soumet une proposition de créneau 
+    à l'Athlète concerné pour planifier un suivi nutritionnel.
+    \item \textbf{Gérer les invitations} : Le Nutritionniste peut envoyer des invitations à ses 
+    Athlètes clients pour les intégrer à son suivi nutritionnel sur la plateforme.
+\end{itemize}
+
+\subsection{Spécification des besoins non fonctionnels}
+Ces besoins décrivent toutes les contraintes auxquelles est soumis le système pour sa réalisation et son bon fonctionnement:
+
+\begin{itemize}
+    \item \textbf{L'ergonomie des interfaces} : doit être conviviale et facile à utiliser. 
+    Aucune connaissance approfondie n'est requise pour manipuler l'interface.
+    \item \textbf{Sécurité } :Il est crucial de garantir la sécurité de la solution pour protéger les informations des utilisateurs.
+   \item \textbf{Performance } :L'application doit être avant tout performante. Le système doit réagir rapidement, 
+    quelle que soit l'action de l'utilisateur : l'accès, le chargement, et le rafraîchissement des données doit être en temps réel, souple, et rapide. 
+    L'application doit fournir tous les statuts et informations en temps réel et d'une manière optimale. 
+    \item \textbf{Evolution } :Tout évolue, y compris les services. Doit savoir écouter les besoins de ses utilisateurs, prendre en compte leurs demandes,
+     pour améliorer ses services, tout en gardant à l'esprit l'utilité et l'efficacité.
+     \item \textbf{Fiabilité} : Le système doit être disponible et fonctionnel à tout moment pour l'utilisateur et Les informations doivent être mises à jour régulièrement.
+\end{itemize}
+\section{Diagramme général des cas d'utilisation}
+Le modèle global des cas d'utilisation aide à organiser les exigences et les buts associés à un système. La figure  dépeint les scénarios 
+d'utilisation fondamentaux pour obtenir une perspective globale du fonctionnement de l'application.
+
+ \section{Architecture de l'application}
   \section{Environnement de développement}
+\subsection{Environnement logiciel}
+Au cours de cette section, nous allons présenter les divers outils qui forment l'environnement de développement de notre projet.
+Nous définissons ci-dessous les logiciels utilisés pour sa mise en œuvre:
+\begin{itemize}
+    \item \textbf{Visual Studio Code} :Visual Studio Code est un éditeur de code source qui peut être utilisé avec une variété de langages de programmation, notamment Java, JavaScript, Go, Node.js et C++.
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.1\textwidth]{images/photo_vscode.png} % Remplacez par le nom de votre fichier image
+    \caption{Logo Visual Studio Code}
+    \label{fig:vscode}
+\end{figure}
+
+\item \textbf{Postman} : Postman est un outil qui permet aux développeurs de tester et de documenter les API (Application Programming Interface). 
+Il permet de créer des requêtes HTTP (GET, POST, PUT, etc.).
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_postman.png} % Remplacez par le nom de votre fichier image
+    \caption{ Logo Postman}
+    \label{fig:postman}
+\end{figure}
+
+\item \textbf{Draw.io } : est une application de dessin de graphiques écrite en JavaScript .
+ Elle permet de concevoir et d'exporter de nombreux types de diagrammes , 
+ notamment des schémas de circuits , des plans d'étage , des organigrammes , des infographies , des cartes mentales et des diagrammes UML
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_drawio.png}
+    \caption{Logo Draw.io}
+    \label{fig:drawio}
+\end{figure}
+  \item \textbf{Next.js} : est un framework de développement web open source complet créé par la société privée Vercel, fournissant des applications web basées sur React avec rendu côté serveur et rendu statique .
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_nextjs.png}
+    \caption{Logo Next.js}
+    \label{fig:nextjs}
+\end{figure}
+    
+\item \textbf{Nest.js} : est un framework web côté serveur basé sur Node.js ,distribué en tant que logiciel libre et open-source sous une licence MIT .
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_nestjs.png}
+    \caption{Logo Nest.js}
+    \label{fig:nestjs}
+\end{figure}
+\item \textbf{Node.js} : est un environnement d'exécution JavaScript multiplateforme et open source, compatible avec Windows, Linux, Unix, macOS et d'autres systèmes d'exploitation. Il s'appuie sur le moteur V8 et exécute du code JavaScript en dehors d'un navigateur.
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_nodejs.png}
+    \caption{Logo Node.js}
+    \label{fig:nodejs}
+    \end{figure} 
+  \item \textbf{HTML} : est le langage de balisage conçu pour écrire les pages web. Il s'agit d'un format ouvert très utilisé en informatique.
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_html.png}
+    \caption{Logo HTML}
+    \label{fig:html}
+    \end{figure}
+
+\item \textbf{Tailwind CSS} : est un framework CSS open source . Contrairement à d'autres frameworks, comme Bootstrap , il ne fournit pas de classes prédéfinies pour les éléments tels que les boutons ou les tableaux. Il propose plutôt une liste de classes CSS « utilitaires » permettant de styliser chaque élément en les combinant.
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_tailwind.png}
+    \caption{Logo Tailwind CSS}
+    \label{fig:tailwind}
+    \end{figure}
+  
+  \item \textbf{TypeScript} : est un langage de programmation de haut niveau qui ajoute un typage statique avec des annotations de type optionnelles à JavaScript .
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_typescript.png}
+    \caption{Logo TypeScript}
+    \label{fig:typescript}
+    \end{figure}
+  
+  \item \textbf{PostgreSQL} : aussi connu sous le nom de Postgres, est un système de gestion de base de données relationnelle et objet (SGBDRO). C'est un outil libre disponible selon les termes d'une licence de type BSD mettant l’accent sur l’extensibilité et 
+  la conformité avec SQL. 
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_postgresql.png}
+    \caption{Logo PostgreSQL}
+    \label{fig:postgresql}
+    \end{figure}
+    
+    \
+\end{itemize}
 \end{document}

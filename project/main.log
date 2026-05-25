@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.17)  27 APR 2026 12:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.17)  24 MAY 2026 23:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -273,22 +273,83 @@ Package pdftex.def Info: images/arbfit.png  used on input line 102.
 <images/myfitt.png, id=24, 998.22937pt x 453.94594pt>
 File: images/myfitt.png Graphic file (type png)
 <use images/myfitt.png>
-Package pdftex.def Info: images/myfitt.png  used on input line 118.
+Package pdftex.def Info: images/myfitt.png  used on input line 116.
 (pdftex.def)             Requested size: 390.0pt x 177.3499pt.
 
-[5 <./images/arbfit.png>] [6 <./images/myfitt.png>] [7] [8] [9
+[5 <./images/arbfit.png>] [6 <./images/myfitt.png>] [7] [8] [9] [10] [11
 
-] (main.aux)
+]
+[12] [13] [14]
+<images/photo_vscode.png, id=61, 501.875pt x 501.875pt>
+File: images/photo_vscode.png Graphic file (type png)
+<use images/photo_vscode.png>
+Package pdftex.def Info: images/photo_vscode.png  used on input line 413.
+(pdftex.def)             Requested size: 39.00238pt x 39.00212pt.
+<images/photo_postman.png, id=62, 240.9pt x 73.2336pt>
+File: images/photo_postman.png Graphic file (type png)
+<use images/photo_postman.png>
+Package pdftex.def Info: images/photo_postman.png  used on input line 422.
+(pdftex.def)             Requested size: 77.99881pt x 23.71123pt.
+<images/photo_drawio.png, id=63, 501.875pt x 501.875pt>
+File: images/photo_drawio.png Graphic file (type png)
+<use images/photo_drawio.png>
+Package pdftex.def Info: images/photo_drawio.png  used on input line 432.
+(pdftex.def)             Requested size: 77.99881pt x 77.99658pt.
+ [15 <./images/photo_vscode.png> <./images/photo_postman.png>]
+<images/photo_nextjs.png, id=69, 501.875pt x 101.37875pt>
+File: images/photo_nextjs.png Graphic file (type png)
+<use images/photo_nextjs.png>
+Package pdftex.def Info: images/photo_nextjs.png  used on input line 439.
+(pdftex.def)             Requested size: 77.99881pt x 15.7553pt.
+<images/photo_nestjs.png, id=70, 501.875pt x 178.6675pt>
+File: images/photo_nestjs.png Graphic file (type png)
+<use images/photo_nestjs.png>
+Package pdftex.def Info: images/photo_nestjs.png  used on input line 447.
+(pdftex.def)             Requested size: 77.99881pt x 27.76677pt.
+<images/photo_nodejs.png, id=71, 501.875pt x 308.15125pt>
+File: images/photo_nodejs.png Graphic file (type png)
+<use images/photo_nodejs.png>
+Package pdftex.def Info: images/photo_nodejs.png  used on input line 454.
+(pdftex.def)             Requested size: 77.99881pt x 47.8899pt.
+<images/photo_html.png, id=72, 501.875pt x 501.875pt>
+File: images/photo_html.png Graphic file (type png)
+<use images/photo_html.png>
+Package pdftex.def Info: images/photo_html.png  used on input line 461.
+(pdftex.def)             Requested size: 77.99881pt x 77.99658pt.
+
+[16 <./images/photo_drawio.png> <./images/photo_nextjs.png> <./images/photo_nes
+tjs.png> <./images/photo_nodejs.png>]
+<images/photo_tailwind.png, id=80, 501.875pt x 62.2325pt>
+File: images/photo_tailwind.png Graphic file (type png)
+<use images/photo_tailwind.png>
+Package pdftex.def Info: images/photo_tailwind.png  used on input line 469.
+(pdftex.def)             Requested size: 77.99881pt x 9.67157pt.
+<images/photo_typescript.png, id=81, 5018.75pt x 5018.75pt>
+File: images/photo_typescript.png Graphic file (type png)
+<use images/photo_typescript.png>
+Package pdftex.def Info: images/photo_typescript.png  used on input line 477.
+(pdftex.def)             Requested size: 77.99881pt x 77.9583pt.
+<images/photo_postgresql.png, id=82, 501.875pt x 517.935pt>
+File: images/photo_postgresql.png Graphic file (type png)
+<use images/photo_postgresql.png>
+Package pdftex.def Info: images/photo_postgresql.png  used on input line 486.
+(pdftex.def)             Requested size: 77.99881pt x 80.49246pt.
+ [17 <./images/photo_html.png> <./images/photo_tailwind.png> <./images/photo_ty
+pescript.png>] [18 <./images/photo_postgresql.png>] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4843 strings out of 467691
- 79070 string characters out of 5425063
- 498994 words of memory out of 5000000
- 33846 multiletter control sequences out of 15000+600000
+ 4925 strings out of 467691
+ 81394 string characters out of 5425063
+ 501474 words of memory out of 5000000
+ 33928 multiletter control sequences out of 15000+600000
  640242 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,7n,65p,472b,385s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -301,9 +362,9 @@ i600\ecrm1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecbx1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
 /ec/dpi600\ecbx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (9 pages, 1723695 bytes).
+Output written on main.pdf (18 pages, 2043379 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
+ 392 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

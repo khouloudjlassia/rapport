@@ -10,7 +10,38 @@
 \usepackage{placeins}
 \usepackage{float}
 \usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+
+% Core packages
+\usepackage{amsmath,amssymb}
+\usepackage{tikz-cd}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+
+% Paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1\baselineskip}
  % décale la numérotation des sections pour qu'elle ne dépende plus du chapitre
+\definecolor{rowalt}{gray}{0.95}
+\newcommand{\sone}{Sprint 1}
+\newcommand{\stwo}{Sprint 2}
+\newcommand{\sthree}{Sprint 3}
+\newcommand{\phigh}{Haute}
+\newcommand{\pmid}{Moyenne}
+\newcommand{\plow}{Faible}
 \renewcommand{\thesection}{\arabic{section}} % sections = 1,2,3...
 \renewcommand{\thesubsection}{\thesection.\arabic{subsection}} 
 \begin{document}
@@ -396,7 +427,7 @@ Ces besoins décrivent toutes les contraintes auxquelles est soumis le système 
     \item \textbf{Sécurité } :Il est crucial de garantir la sécurité de la solution pour protéger les informations des utilisateurs.
    \item \textbf{Performance } :L'application doit être avant tout performante. Le système doit réagir rapidement, 
     quelle que soit l'action de l'utilisateur : l'accès, le chargement, et le rafraîchissement des données doit être en temps réel, souple, et rapide. 
-    L'application doit fournir tous les statuts et informations en temps réel et d'une manière optimale. 
+   
     \item \textbf{Evolution } :Tout évolue, y compris les services. Doit savoir écouter les besoins de ses utilisateurs, prendre en compte leurs demandes,
      pour améliorer ses services, tout en gardant à l'esprit l'utilité et l'efficacité.
      \item \textbf{Fiabilité} : Le système doit être disponible et fonctionnel à tout moment pour l'utilisateur et Les informations doivent être mises à jour régulièrement.
@@ -406,7 +437,170 @@ Le modèle global des cas d'utilisation aide à organiser les exigences et les b
 d'utilisation fondamentaux pour obtenir une perspective globale du fonctionnement de l'application.
 
  \section{Architecture de l'application}
-  \section{Environnement de développement}
+ \subsection{Le backlog du produit}
+ Le Product Backlog regroupe l’ensemble des besoins du client que l’équipe de développe-
+ment doit satisfaire. Chaque élément est classé selon un ordre de priorité.
+
+% ============================================================
+%  Product Backlog — style tableau classique
+%  Packages requis : longtable, array, ragged2e
+% ============================================================
+
+
+
+% ============================================================
+%  TABLE
+% ============================================================
+
+\begin{longtable}{|
+  >{\RaggedRight\arraybackslash}p{1.5cm}|
+  >{\RaggedRight\arraybackslash}p{3.0cm}|
+  >{\centering\arraybackslash}p{0.9cm}|
+  >{\RaggedRight\arraybackslash}p{6.5cm}|
+  >{\RaggedRight\arraybackslash}p{1.6cm}|
+}
+
+\hline
+\textbf{Sprint} & \textbf{Thème} & \textbf{ID} & \textbf{User Story} & \textbf{Priorité} \\
+\hline
+\endfirsthead
+
+
+\hline
+\textbf{Sprint} & \textbf{Thème} & \textbf{ID} & \textbf{User Story} & \textbf{Priorité} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+% ── SPRINT 1 ────────────────────────────────────────────────
+Sprint 1 & Authentification & 1.1 &
+En tant que Visiteur, je veux me connecter (email ou Google) afin d'accéder à mon espace. &
+Élevée \\
+\cline{2-5}
+
+ & Authentification & 1.2 &
+En tant que Visiteur, je veux créer un compte en choisissant mon rôle afin d'utiliser les fonctionnalités adaptées. &
+Élevée \\
+\cline{2-5}
+
+ & Authentification & 1.3 &
+En tant que Visiteur, je veux recevoir un lien de réinitialisation par email afin de récupérer mon accès. &
+Élevée \\
+\cline{2-5}
+ 
+ & Profil \& Onboarding & 1.4 &
+En tant qu'Athlète, je veux compléter un questionnaire initial afin de personnaliser mon expérience dès la première connexion. &
+Élevée \\
+\cline{2-5}
+
+& Profil \& Onboarding & 1.5 &
+En tant qu'acteur connecté, je veux modifier mes informations de profil afin de tenir mes données à jour. &
+Élevée \\
+\cline{2-5}
+ & Invitations & 1.6 &
+En tant que Coach/Nutritionniste, je veux envoyer une invitation à un Athlète afin de l'intégrer à mon suivi. &
+Élevée \\
+\cline{2-5}
+
+ & Invitations & 1.7&
+En tant qu'Athlète, je veux répondre aux invitations reçues afin d'accepter ou refuser un suivi. &
+Élevée \\
+\cline{2-5}
+
+ 
+
+
+ & Suivi Coach & 1.8 &
+En tant que Coach, je veux créer et gérer des notes sur mes athlètes afin de suivre leur progression. &
+Moyenne \\
+\cline{2-5}
+
+ & Messagerie & 1.9 &
+En tant qu'acteur connecté, je veux envoyer et recevoir des messages afin de communiquer avec les autres membres. &
+Moyenne \\
+\hline
+
+% ── SPRINT 2 ────────────────────────────────────────────────
+Sprint 2 & Suivi Athlète & 2.1 &
+En tant qu'Athlète, je veux saisir mes séances sportives afin d'alimenter mon suivi et les modèles IA. &
+Élevée \\
+\cline{2-5}
+
+ & Suivi Athlète & 2.2 &
+En tant qu'Athlète, je veux enregistrer mon poids et mes performances afin de suivre mon évolution. &
+Élevée \\
+\cline{2-5}
+
+ & Suivi Athlète & 2.3 &
+En tant qu'Athlète, je veux tenir mon journal alimentaire quotidien afin de suivre mes apports nutritionnels. &
+Élevée \\
+\cline{2-5}
+
+ & Nutrition & 2.4 &
+En tant que Nutritionniste, je veux créer un plan repas et l'assigner à mon Athlète client afin de l'accompagner dans sa nutrition. &
+Élevée \\
+\cline{2-5}
+
+ & Nutrition & 2.5 &
+En tant qu'Athlète, je veux consulter le plan repas créé par mon Nutritionniste afin de suivre ses recommandations. &
+Élevée \\
+\cline{2-5}
+
+ & IA \& ML & 2.6 &
+En tant qu'Athlète, je veux voir mon score de risque d'abandon (churn) afin de prendre des mesures préventives. &
+Moyenne \\
+\cline{2-5}
+
+ & IA \& ML & 2.7 &
+En tant qu'Athlète, je veux voir la prédiction d'évolution de mon poids afin de suivre ma trajectoire. &
+Moyenne \\
+\cline{2-5}
+
+ & IA \& ML & 2.8 &
+En tant qu'Athlète, je veux voir la recommandation d'objectif la plus adaptée à mon profil. &
+Moyenne \\
+\cline{2-5}
+
+ & IA \& ML & 2.9 &
+En tant qu'Athlète, je veux détecter un plateau sportif afin d'adapter mon programme d'entraînement. &
+Moyenne \\
+\cline{2-5}
+
+ & IA \& ML & 2.10 &
+En tant qu'Athlète, je veux consulter des recommandations issues d'un système rules-based fondé sur des formules scientifiques (Mifflin-St~Jeor, Harris-Benedict, ratios macronutriments, seuils IMC OMS). &
+Faible \\
+\hline
+
+% ── SPRINT 3 ────────────────────────────────────────────────
+Sprint 3 & Chatbot IA & 3.1 &
+En tant qu'Athlète, je veux poser des questions à un chatbot IA afin d'obtenir des conseils personnalisés sur ma nutrition et mon entraînement. &
+Élevée \\
+\cline{2-5}
+
+ & Rendez-vous & 3.2 &
+En tant que Coach/Nutritionniste, je veux proposer un créneau de rendez-vous à mon Athlète afin d'organiser nos séances. &
+Élevée \\
+\cline{2-5}
+
+ & Rendez-vous & 3.3 &
+En tant qu'Athlète, je veux accepter ou refuser un créneau proposé afin de confirmer mes disponibilités. &
+Élevée \\
+\cline{2-5}
+
+ 
+
+ & Suivi Coach & 3.4 &
+En tant qu'Athlète, je veux consulter les notes laissées par mon Coach afin de suivre ses observations. &
+Faible \\
+
+\end{longtable}
+
+\section{Environnement de développement}
 \subsection{Environnement logiciel}
 Au cours de cette section, nous allons présenter les divers outils qui forment l'environnement de développement de notre projet.
 Nous définissons ci-dessous les logiciels utilisés pour sa mise en œuvre:
@@ -418,7 +612,14 @@ Nous définissons ci-dessous les logiciels utilisés pour sa mise en œuvre:
     \caption{Logo Visual Studio Code}
     \label{fig:vscode}
 \end{figure}
-
+\item \textbf{Jupyter} : est une application web open source permettant de créer et de partager des documents interactifs appelés « notebooks », qui contiennent du code exécutable, des équations, des visualisations et du texte narratif. 
+Il supporte de nombreux langages de programmation, notamment Python, R et Julia.
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/jupyter.png}
+    \caption{Logo Jupyter}
+    \label{fig:jupyter}
+    \end{figure}
 \item \textbf{Postman} : Postman est un outil qui permet aux développeurs de tester et de documenter les API (Application Programming Interface). 
 Il permet de créer des requêtes HTTP (GET, POST, PUT, etc.).
     \begin{figure}[H]
@@ -427,7 +628,13 @@ Il permet de créer des requêtes HTTP (GET, POST, PUT, etc.).
     \caption{ Logo Postman}
     \label{fig:postman}
 \end{figure}
-
+\item \textbf{Docker} :  une plateforme logicielle permettant de faire tourner certaines applications dans des conteneurs. La première mouture de Docker a été publiée en 2013
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/docker.png}
+    \caption{Logo Docker}
+    \label{fig:docker}
+    \end{figure}
 \item \textbf{Draw.io } : est une application de dessin de graphiques écrite en JavaScript .
  Elle permet de concevoir et d'exporter de nombreux types de diagrammes , 
  notamment des schémas de circuits , des plans d'étage , des organigrammes , des infographies , des cartes mentales et des diagrammes UML
@@ -437,6 +644,25 @@ Il permet de créer des requêtes HTTP (GET, POST, PUT, etc.).
     \caption{Logo Draw.io}
     \label{fig:drawio}
 \end{figure}
+\item \textbf{GitHub} : est une plateforme basée sur le cloud pour stocker, partager et collaborer sur du
+code.
+
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/github.png}
+    \caption{Logo GitHub}
+    \label{fig:github}
+    \end{figure}
+\subsection{Technologies et langages utilisées}
+\item \textbf{Python} : est un langage interprété, orienté objet, très utilisé pour le développement
+rapide d’applications web, d’automatisation et de scripts scientifiques.
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/python.png}
+    \caption{Logo Python}
+    \label{fig:python}
+    \end{figure}
+
   \item \textbf{Next.js} : est un framework de développement web open source complet créé par la société privée Vercel, fournissant des applications web basées sur React avec rendu côté serveur et rendu statique .
     \begin{figure}[H]
     \centering
@@ -491,7 +717,118 @@ Il permet de créer des requêtes HTTP (GET, POST, PUT, etc.).
     \caption{Logo PostgreSQL}
     \label{fig:postgresql}
     \end{figure}
-    
-    \
 \end{itemize}
+\section{Conclusion}
+Dans ce chapitre, nous avons identifié les besoins fonctionnels et non fonctionnels du système,
+     en détaillant les acteurs et leurs interactions à l'aide du diagramme général des cas d'utilisation. 
+Nous avons ensuite présentée le product backlog organisé en trois sprints, puis décrit l'environnement logiciel et les technologies utilisées pour le développement d'UFitPal.
+Dans le chapitre à venir, nous allons commencer le processus de développement du Sprint 1. 
+\chapter*{Chapitre 3 : Release 1 : Sprint 1 — Authentification, gestion des profils et communication}
+\addcontentsline{toc}{chapter}{Chapitre 3 : Release 1 : Sprint 1 — Authentification, gestion des profils et communication}
+
+\setcounter{section}{0}
+
+\FloatBarrier
+\section{Introduction} : 
+
+
+\section{Sprint 1 backlog}
+
+Le tableau suivant présente les neuf \textit{user stories} retenues pour le Sprint~1,
+regroupées par thème fonctionnel et accompagnées de leur priorité ainsi que de leurs critères d'acceptation.
+
+\begin{table}[H]
+\centering
+\caption{Backlog du Sprint 1}
+\label{tab:backlog_sprint1}
+\footnotesize
+\renewcommand{\arraystretch}{1.22}
+\setlength{\tabcolsep}{6pt}
+\begin{tabularx}{\textwidth}{|p{3cm}|c|X|c|X|}
+\hline
+\textbf{Thème} & \textbf{ID} & \textbf{User Story} & \textbf{Priorité} & \textbf{Critères d'acceptation} \\
+\hline
+Authentification & 1.1 &
+En tant que visiteur, je veux me connecter (email/MDP ou Google) afin d'accéder à mon espace. &
+Élevée &
+Connexion sécurisée via email/MDP ou OAuth Google, avec redirection vers le dashboard approprié selon le rôle. \\
+\hline
+
+Authentification & 1.2 &
+En tant que visiteur, je veux créer un compte en choisissant mon rôle afin d'utiliser les fonctionnalités adaptées. &
+Élevée &
+Formulaire valide, rôle sélectionné parmi Athlète, Coach ou Nutritionniste, et email de confirmation envoyé. \\
+\hline
+
+Authentification & 1.3 &
+En tant que visiteur, je veux recevoir un lien de réinitialisation par email afin de récupérer mon accès. &
+Élevée &
+Email de réinitialisation envoyé dans la minute, lien sécurisé valable 1~heure, et nouveau mot de passe accepté. \\
+\hline
+
+Profil \& Onboarding & 1.4 &
+En tant qu'athlète, je veux compléter un questionnaire initial afin de personnaliser mon expérience dès la première connexion. &
+Élevée &
+Questionnaire affiché à la 1\textsuperscript{ère} connexion, données sauvegardées, et tableau de bord personnalisé. \\
+\hline
+
+Profil \& Onboarding & 1.5 &
+En tant qu'acteur connecté, je veux modifier mes informations de profil afin de tenir mes données à jour. &
+Élevée &
+Mise à jour enregistrée avec validation des champs obligatoires et confirmation affichée. \\
+\hline
+
+Invitations & 1.6 &
+En tant que Coach/Nutritionniste, je veux envoyer une invitation à un Athlète afin de l'intégrer à mon suivi. &
+Élevée &
+Invitation envoyée, notification reçue par l'Athlète (email et in-app), et statut « En attente » visible. \\
+\hline
+
+Invitations & 1.7 &
+En tant qu'athlète, je veux répondre aux invitations reçues afin d'accepter ou de refuser un suivi. &
+Élevée &
+Boutons Accepter/Refuser fonctionnels, Coach/Nutritionniste notifié de la décision, et relation créée en cas d'acceptation. \\
+\hline
+
+Suivi Coach & 1.8 &
+En tant que Coach, je veux créer et gérer des notes sur mes athlètes afin de suivre leur progression. &
+Moyenne &
+Ajout, modification et suppression de notes opérationnels ; notes affichées par ordre chronologique. \\
+\hline
+
+Messagerie & 1.9 &
+En tant qu'acteur connecté, je veux envoyer et recevoir des messages afin de communiquer avec les autres membres. &
+Moyenne &
+Messages envoyés et reçus en temps réel, historique conservé, et notification à la réception. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\section{Spécifications fonctionnelles}
+
+\subsection{Diagramme de cas d’utilisation du Sprint 1}
+
+\subsection{Description textuelle des cas d’utilisation étendus du Sprint 1}
+
+\section{Conception}
+
+\subsection{Diagrammes de séquence}
+
+\subsection{Diagramme de classes du Sprint 1}
+
+\section{Réalisation}
+
+\subsection{Authentification (Sign in)}
+
+\subsection{Inscription (Sign up)}
+
+\subsection{Gestion des utilisateurs}
+
+\subsection{Gestion des rôles}
+
+\subsection{Gestion des accès}
+
+\subsection{Réinitialisation du mot de passe}
+
+\section{Conclusion}
 \end{document}

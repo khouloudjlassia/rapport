@@ -1,0 +1,191 @@
+*** Begin Patch
+*** Update File: c:\Users\HP\Desktop\Rapport\project\main.tex
+@@
+-\endlastfoot
+-
+-% ── SPRINT 1 ────────────────────────────────────────────────
+-Sprint 1 & Authentification & 1.1 &
+-En tant que Visiteur, je veux créer un compte en choisissant mon rôle afin d'utiliser les fonctionnalités adaptées. &
+-Élevée \\
+-\cline{2-5}
+-
+- & Authentification & 1.2 &
+-En tant que Visiteur, je veux me connecter (email ou Google) afin d'accéder à mon espace. &
+-Élevée \\
+-\cline{2-5}
+-
+- & Authentification & 1.3 &
+-En tant que Visiteur, je veux recevoir un lien de réinitialisation par email afin de récupérer mon accès. &
+-Élevée \\
+-\cline{2-5}
+- 
+- & Profil \& Onboarding & 1.4 &
+-En tant que Athlète, je veux compléter un questionnaire initial afin de personnaliser mon expérience dès la première connexion. &
+-Élevée \\
+-\cline{2-5}
+-
+-& Profil \& Onboarding & 1.5 &
+-En tant que acteur connecté, je veux modifier mes informations de profil afin de tenir mes données à jour. &
+-Élevée \\
+-\cline{2-5}
+- & Invitations & 1.6 & En tant que Coach/Nutritionniste, je veux envoyer une invitation à un Athlète afin de l'intégrer à mon suivi. &
+-Élevée \\
+-\cline{2-5}
+-
+- & Invitations & 1.7&
+-En tant que Athlète, je veux répondre aux invitations reçues afin d'accepter ou refuser un suivi. &
+-Élevée \\
+-\cline{2-5}
+-
+- 
+-
+- 
+- & Suivi Coach & 1.8 &
+-En tant que Coach, je veux créer et gérer des notes sur mes athlètes afin de suivre leur progression. &
+-Moyenne \\
+-\cline{2-5}
+-
+- & Messagerie & 1.9 &
+-En tant que acteur connecté, je veux envoyer et recevoir des messages afin de communiquer avec les autres membres. &
+-Moyenne \\
+-\cline{2-5}
+-
+- & Rendez-vous & 1.10 &
+-En tant que Coach/Nutritionniste, je veux proposer un créneau de rendez-vous à mon Athlète afin d'organiser nos séances. &
+-Élevée \\
+-\cline{2-5}
+-
+- & Rendez-vous & 1.11 &
+-En tant que Athlète, je veux accepter ou refuser un créneau proposé afin de confirmer mes disponibilités. &
+-Élevée \\
+-\cline{2-5}
+-
+- & Suivi Coach & 1.12 &
+-En tant que Athlète, je veux consulter les notes laissées par mon Coach afin de suivre ses observations. &
+-Faible \\
+-\hline
+-
+-% ── SPRINT 2 ────────────────────────────────────────────────
+-Sprint 2 & Suivi Athlète & 2.1 &
+-En tant que Athlète, je veux saisir mes séances sportives afin d'alimenter mon suivi . &
+-Élevée \\
+-\cline{2-5}
+-
+- & Suivi Athlète & 2.2 &
+-En tant que Athlète, je veux enregistrer mon poids et mes performances afin de suivre mon évolution. &
+-Élevée \\
+-\cline{2-5}
+-
+- & Suivi Athlète & 2.3 &
+-En tant que Athlète, je veux tenir mon journal alimentaire quotidien afin de suivre mes apports nutritionnels. &
+-Élevée \\
+-\cline{2-5}
+-
+- & Nutrition & 2.4 &
+-En tant que Nutritionniste, je veux créer un plan repas et l'assigner à mon Athlète client afin de l'accompagner dans sa nutrition. &
+-Élevée \\
+-\cline{2-5}
+-
+- & Nutrition & 2.5 &
+-En tant que Athlète, je veux consulter le plan repas créé par mon Nutritionniste afin de suivre ses recommandations. &
+-Élevée \\
+-\cline{2-5}
+-
+- & IA \& ML & 2.6 &
+-En tant que Athlète, je veux voir mon score de risque d'abandon (churn) afin de prendre des mesures préventives. &
+-Moyenne \\
+-\cline{2-5}
+-
+- & IA \& ML & 2.7 &
+-En tant que Athlète, je veux voir la prédiction d'évolution de mon poids afin de suivre ma trajectoire. &
+-Moyenne \\
+-\cline{2-5}
+-
+- & IA \& ML & 2.8 &
+-En tant que Athlète, je veux voir la probabilité d'atteindre mon objectif fitness basée sur mon profil . &
+-Moyenne \\
+-\cline{2-5}
+-
+- & IA \& ML & 2.9 &
+-En tant que Athlète, je veux détecter un plateau sportif afin d'adapter mon programme d'entraînement. &
+-Moyenne \\
+-\cline{2-5}
+-
+- & IA \& ML & 2.10 &
+-En tant que Athlète, je veux consulter des recommandations issues d'un système rules-based fondé sur des formules scientifiques (Mifflin-St~Jeor, Harris-Benedict, ratios macronutriments, seuils IMC OMS). &
+-Faible \\
+-\cline{2-5}
+-
+- & Chatbot IA & 2.11 &
+-En tant que Athlète, je veux poser des questions à un chatbot IA afin d'obtenir des conseils personnalisés sur ma nutrition et mon entraînement. &
+-Élevée \\
+-\hline
+-
+-\end{longtable}
+-}
++\endlastfoot
++
++% ── SPRINT 1 ────────────────────────────────────────────────
++Sprint 1 & Authentification & 1.1 &
++En tant que Visiteur, je veux créer un compte en choisissant mon rôle afin d'utiliser les fonctionnalités adaptées. &
++Élevée \\
++\cline{2-5}
++
++ & Authentification & 1.2 &
++En tant que Visiteur, je veux me connecter (email ou Google) afin d'accéder à mon espace. &
++Élevée \\
++\cline{2-5}
++
++ & Authentification & 1.3 &
++En tant que Visiteur, je veux recevoir un lien de réinitialisation par email afin de récupérer mon accès. &
++Élevée \\
++\cline{2-5}
++ 
++ & Profil \& Onboarding & 1.4 &
++En tant que Athlète, je veux compléter un questionnaire initial afin de personnaliser mon expérience dès la première connexion. &
++Élevée \\
++\cline{2-5}
++
++ & Profil \& Onboarding & 1.5 &
++En tant que acteur connecté, je veux modifier mes informations de profil afin de tenir mes données à jour. &
++Élevée \\
++\cline{2-5}
++
++ & Invitations & 1.6 &
++En tant que Coach/Nutritionniste, je veux envoyer une invitation à un Athlète afin de l'intégrer à mon suivi. &
++Élevée \\
++\cline{2-5}
++
++ & Invitations & 1.7 &
++En tant que Athlète, je veux répondre aux invitations reçues afin d'accepter ou refuser un suivi. &
++Élevée \\
++\cline{2-5}
++
++ & Suivi Coach & 1.8 &
++En tant que Coach, je veux créer et gérer des notes sur mes athlètes afin de suivre leur progression. &
++Moyenne \\
++\cline{2-5}
++
++ & Messagerie & 1.9 &
++En tant que acteur connecté, je veux envoyer et recevoir des messages afin de communiquer avec les autres membres. &
++Moyenne \\
++\cline{2-5}
++
++ & Rendez-vous & 1.10 &
++En tant que Coach/Nutritionniste, je veux proposer un créneau de rendez-vous à mon Athlète afin d'organiser nos séances. &
++Élevée \\
++\cline{2-5}
++
++ & Rendez-vous & 1.11 &
++En tant que Athlète, je veux accepter ou refuser un créneau proposé afin de confirmer mes disponibilités. &
++Élevée \\
++\cline{2-5}
++
++ & Suivi Coach & 1.12 &
++En tant que Athlète, je veux consulter les notes laissées par mon Coach afin de suivre ses observations. &
++Faible \\
++\hline
++
++\end{longtable}
++}
+*** End Patch

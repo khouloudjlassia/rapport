@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.17)  28 MAY 2026 01:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.17)  1 JUN 2026 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -803,11 +803,11 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -818,223 +818,604 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [3]
-<images/image.jpeg, id=17, 1606.0pt x 1606.0pt>
-File: images/image.jpeg Graphic file (type jpg)
-<use images/image.jpeg>
-Package pdftex.def Info: images/image.jpeg  used on input line 66.
-(pdftex.def)             Requested size: 226.48395pt x 226.48035pt.
+ [3] (main.lot)
+\tf@lot=\write5
+\openout5 = `main.lot'.
+
  [4
 
- <./images/image.jpeg>]
-[5]
-<images/arbfit.png, id=27, 1017.8025pt x 446.41782pt>
+] (main.lof
+[5
+
+])
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ [6]
+<images/image.jpeg, id=26, 1606.0pt x 1606.0pt>
+File: images/image.jpeg Graphic file (type jpg)
+<use images/image.jpeg>
+Package pdftex.def Info: images/image.jpeg  used on input line 74.
+(pdftex.def)             Requested size: 226.48395pt x 226.48035pt.
+ [7
+
+ <./images/image.jpeg>] [8]
+<images/arbfit.png, id=37, 1017.8025pt x 446.41782pt>
 File: images/arbfit.png Graphic file (type png)
 <use images/arbfit.png>
-Package pdftex.def Info: images/arbfit.png  used on input line 133.
+Package pdftex.def Info: images/arbfit.png  used on input line 141.
 (pdftex.def)             Requested size: 452.9679pt x 198.67914pt.
- [6]
-<images/myfitt.png, id=33, 998.22937pt x 453.94594pt>
+ [9]
+<images/myfitt.png, id=43, 998.22937pt x 453.94594pt>
 File: images/myfitt.png Graphic file (type png)
 <use images/myfitt.png>
-Package pdftex.def Info: images/myfitt.png  used on input line 147.
+Package pdftex.def Info: images/myfitt.png  used on input line 155.
 (pdftex.def)             Requested size: 452.9679pt x 205.98466pt.
- [7 <./images/arbfit.png> <./images/myfitt.png>] [8] [9] [10] [11]
-[12
+ [10 <./images/arbfit.png> <./images/myfitt.png>] [11] [12] [13] [14
 
-] [13] [14]
-ignored: Infinite glue shrinkage found in box being split [15]
-ignored: Infinite glue s
-hrinkage found in box being split [16]
-<images/photo_vscode.png, id=70, 501.875pt x 501.875pt>
+] [15] [16]
+Overfull \hbox (7.77061pt too wide) in alignment at lines 437--442
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.77061pt too wide) in alignment at lines 442--448
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.77061pt too wide) in alignment at lines 448--451
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.77061pt too wide) in alignment at lines 451--454
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (7.77061pt too wide) in alignment at lines 454--574
+ [] [] [] [] [] 
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [17]
+ignored: Infinite glue shrinkage fo
+und in box being split [18]
+<images/photo_vscode.png, id=77, 501.875pt x 501.875pt>
 File: images/photo_vscode.png Graphic file (type png)
 <use images/photo_vscode.png>
-Package pdftex.def Info: images/photo_vscode.png  used on input line 611.
+Package pdftex.def Info: images/photo_vscode.png  used on input line 585.
 (pdftex.def)             Requested size: 45.29955pt x 45.29698pt.
- [17]
-<images/jupyter.png, id=74, 602.25pt x 602.25pt>
+<images/jupyter.png, id=78, 602.25pt x 602.25pt>
 File: images/jupyter.png Graphic file (type png)
 <use images/jupyter.png>
-Package pdftex.def Info: images/jupyter.png  used on input line 619.
+Package pdftex.def Info: images/jupyter.png  used on input line 593.
 (pdftex.def)             Requested size: 90.5922pt x 90.5909pt.
-<images/photo_postman.png, id=75, 240.9pt x 73.2336pt>
+<images/photo_postman.png, id=79, 240.9pt x 73.2336pt>
 File: images/photo_postman.png Graphic file (type png)
 <use images/photo_postman.png>
-Package pdftex.def Info: images/photo_postman.png  used on input line 627.
+Package pdftex.def Info: images/photo_postman.png  used on input line 601.
 (pdftex.def)             Requested size: 90.5922pt x 27.53963pt.
-<images/docker.png, id=76, 250.9375pt x 143.53625pt>
+<images/docker.png, id=80, 250.9375pt x 143.53625pt>
 File: images/docker.png Graphic file (type png)
 <use images/docker.png>
-Package pdftex.def Info: images/docker.png  used on input line 634.
+Package pdftex.def Info: images/docker.png  used on input line 608.
 (pdftex.def)             Requested size: 90.5922pt x 51.81975pt.
-<images/photo_drawio.png, id=77, 501.875pt x 501.875pt>
+ [19 <./images/photo_vscode.png> <./images/jupyter.png> <./images/photo_postman
+.png>]
+<images/photo_drawio.png, id=88, 501.875pt x 501.875pt>
 File: images/photo_drawio.png Graphic file (type png)
 <use images/photo_drawio.png>
-Package pdftex.def Info: images/photo_drawio.png  used on input line 643.
+Package pdftex.def Info: images/photo_drawio.png  used on input line 617.
 (pdftex.def)             Requested size: 90.5922pt x 90.5863pt.
- [18 <./images/photo_vscode.png> <./images/jupyter.png> <./images/photo_postman
-.png> <./images/docker.png>]
-<images/github.png, id=85, 963.6pt x 963.6pt>
+<images/github.png, id=89, 963.6pt x 963.6pt>
 File: images/github.png Graphic file (type png)
 <use images/github.png>
-Package pdftex.def Info: images/github.png  used on input line 652.
+Package pdftex.def Info: images/github.png  used on input line 626.
 (pdftex.def)             Requested size: 90.5922pt x 90.58723pt.
-<images/python.png, id=86, 1876.00874pt x 2055.68pt>
+<images/python.png, id=90, 1876.00874pt x 2055.68pt>
 File: images/python.png Graphic file (type png)
 <use images/python.png>
-Package pdftex.def Info: images/python.png  used on input line 661.
+Package pdftex.def Info: images/python.png  used on input line 635.
 (pdftex.def)             Requested size: 90.5922pt x 99.24553pt.
-<images/photo_nextjs.png, id=87, 501.875pt x 101.37875pt>
+ [20 <./images/docker.png> <./images/photo_drawio.png> <./images/github.png>]
+<images/photo_nextjs.png, id=97, 501.875pt x 101.37875pt>
 File: images/photo_nextjs.png Graphic file (type png)
 <use images/photo_nextjs.png>
-Package pdftex.def Info: images/photo_nextjs.png  used on input line 669.
+Package pdftex.def Info: images/photo_nextjs.png  used on input line 643.
 (pdftex.def)             Requested size: 90.5922pt x 18.29843pt.
-<images/photo_nestjs.png, id=88, 501.875pt x 178.6675pt>
+<images/photo_nestjs.png, id=98, 501.875pt x 178.6675pt>
 File: images/photo_nestjs.png Graphic file (type png)
 <use images/photo_nestjs.png>
-Package pdftex.def Info: images/photo_nestjs.png  used on input line 677.
+Package pdftex.def Info: images/photo_nestjs.png  used on input line 651.
 (pdftex.def)             Requested size: 90.5922pt x 32.24872pt.
- [19 <./images/photo_drawio.png> <./images/github.png> <./images/python.png> <.
-/images/photo_nextjs.png>]
-<images/photo_nodejs.png, id=97, 501.875pt x 308.15125pt>
+<images/photo_nodejs.png, id=99, 501.875pt x 308.15125pt>
 File: images/photo_nodejs.png Graphic file (type png)
 <use images/photo_nodejs.png>
-Package pdftex.def Info: images/photo_nodejs.png  used on input line 684.
+Package pdftex.def Info: images/photo_nodejs.png  used on input line 658.
 (pdftex.def)             Requested size: 90.5922pt x 55.62pt.
-<images/photo_html.png, id=98, 501.875pt x 501.875pt>
+<images/photo_html.png, id=100, 501.875pt x 501.875pt>
 File: images/photo_html.png Graphic file (type png)
 <use images/photo_html.png>
-Package pdftex.def Info: images/photo_html.png  used on input line 691.
+Package pdftex.def Info: images/photo_html.png  used on input line 665.
 (pdftex.def)             Requested size: 90.5922pt x 90.5863pt.
-<images/photo_tailwind.png, id=99, 501.875pt x 62.2325pt>
+<images/photo_tailwind.png, id=101, 501.875pt x 62.2325pt>
 File: images/photo_tailwind.png Graphic file (type png)
 <use images/photo_tailwind.png>
-Package pdftex.def Info: images/photo_tailwind.png  used on input line 699.
+Package pdftex.def Info: images/photo_tailwind.png  used on input line 673.
 (pdftex.def)             Requested size: 90.5922pt x 11.2327pt.
-<images/photo_typescript.png, id=100, 5018.75pt x 5018.75pt>
+ [21 <./images/python.png> <./images/photo_nextjs.png> <./images/photo_nestjs.p
+ng> <./images/photo_nodejs.png> <./images/photo_html.png>]
+<images/photo_typescript.png, id=110, 5018.75pt x 5018.75pt>
 File: images/photo_typescript.png Graphic file (type png)
 <use images/photo_typescript.png>
-Package pdftex.def Info: images/photo_typescript.png  used on input line 707.
+Package pdftex.def Info: images/photo_typescript.png  used on input line 681.
 (pdftex.def)             Requested size: 90.5922pt x 90.5174pt.
-<images/photo_postgresql.png, id=101, 501.875pt x 517.935pt>
+<images/photo_postgresql.png, id=111, 501.875pt x 517.935pt>
 File: images/photo_postgresql.png Graphic file (type png)
 <use images/photo_postgresql.png>
-Package pdftex.def Info: images/photo_postgresql.png  used on input line 716.
+Package pdftex.def Info: images/photo_postgresql.png  used on input line 690.
 (pdftex.def)             Requested size: 90.5922pt x 93.48506pt.
- [20 <./images/photo_nestjs.png> <./images/photo_nodejs.png> <./images/photo_ht
-ml.png> <./images/photo_tailwind.png> <./images/photo_typescript.png>]
-[21 <./images/photo_postgresql.png>]
-Underfull \hbox (badness 2285) in paragraph at lines 804--804
-\T1/cmr/m/n/10 me connec-ter (email/MDP
+
+[22 <./images/photo_tailwind.png> <./images/photo_typescript.png> <./images/pho
+to_postgresql.png>]
+Overfull \hbox (7.77061pt too wide) in alignment at lines 728--733
+ [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--804
-[]|\T1/cmr/m/n/10 Connexion sé-cu-ri-sée via
+Overfull \hbox (7.77061pt too wide) in alignment at lines 733--739
+ [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--804
-\T1/cmr/m/n/10 email/MDP ou OAuth
+Overfull \hbox (7.77061pt too wide) in alignment at lines 739--742
+ [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 804--804
-[]|\T1/cmr/m/n/10 Profil & On-boar-
+Overfull \hbox (7.77061pt too wide) in alignment at lines 742--745
+ [] [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 804--804
-\T1/cmr/m/n/10 com-plé-ter un ques-tion-naire
+Overfull \hbox (7.77061pt too wide) in alignment at lines 745--811
+ [] [] [] [] [] 
+ []
+
+[23
+
+]
+<images/usecase_sprint1.png, id=122, 1024.0659pt x 722.7pt>
+File: images/usecase_sprint1.png Graphic file (type png)
+<use images/usecase_sprint1.png>
+Package pdftex.def Info: images/usecase_sprint1.png  used on input line 822.
+(pdftex.def)             Requested size: 407.66833pt x 287.69644pt.
+ [24]
+<images/digrammeauthentification.png, id=126, 528.2937pt x 188.6247pt>
+File: images/digrammeauthentification.png Graphic file (type png)
+<use images/digrammeauthentification.png>
+Package pdftex.def Info: images/digrammeauthentification.png  used on input lin
+e 833.
+(pdftex.def)             Requested size: 339.72592pt x 121.2979pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 903--903
+[]\T1/cmr/m/n/10.95 Le vi-si-teur ac-cède à la page de connexion de l'ap-pli-ca
+-tion UFit-
  []
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 804--804
-[]|\T1/cmr/m/n/10 Questionnaire af-fi-ché à la
+Underfull \hbox (badness 10000) in paragraph at lines 903--903
+[]\T1/cmr/m/n/10.95 Le vi-si-teur est au-then-ti-fié et re-di-rigé vers son ta-
+bleau de bord
  []
 
 
-Underfull \hbox (badness 3333) in paragraph at lines 804--804
-[]|\T1/cmr/m/n/10 Profil & On-boar-
+Underfull \hbox (badness 10000) in paragraph at lines 903--903
+[]\T1/cmr/m/n/10.95 Le vi-si-teur sai-sit son adresse email et son mot de passe
+. (\T1/cmr/m/it/10.95 In-clude \T1/cmr/m/n/10.95 :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--804
-[]|\T1/cmr/m/n/10 En tant que
+Underfull \hbox (badness 10000) in paragraph at lines 903--903
+[]\T1/cmr/m/n/10.95 Après va-li-da-tion par Google, le sys-tème crée ou ré-cu-p
+ère le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--804
-\T1/cmr/m/n/10 Coach/Nutritionniste, je
+Underfull \hbox (badness 10000) in paragraph at lines 903--903
+[]\T1/cmr/bx/n/10.95 Identifiants in-cor-rects \T1/cmr/m/n/10.95 : si l'email n
+'existe pas ou si le mot de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--804
-[]|\T1/cmr/m/n/10 Invitation en-voyée, no-ti-fi-
+Underfull \hbox (badness 10000) in paragraph at lines 903--903
+\T1/cmr/m/n/10.95 passe est er-roné, le sys-tème af-fiche ^^S Email ou mot de p
+asse in-cor-
+ []
+
+[25 <./images/usecase_sprint1.png> <./images/digrammeauthentification.png>]
+<images/digrammeinscription.png, id=133, 536.2434pt x 260.8947pt>
+File: images/digrammeinscription.png Graphic file (type png)
+<use images/digrammeinscription.png>
+Package pdftex.def Info: images/digrammeinscription.png  used on input line 910
+.
+(pdftex.def)             Requested size: 339.72592pt x 165.28809pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+[]\T1/cmr/m/n/10.95 Athlète : le vi-si-teur est re-di-rigé vers la page d'on-bo
+ar-ding pour
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 804--804
-\T1/cmr/m/n/10 ca-tion re-çue par l'Ath-lète
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+[]\T1/cmr/m/n/10.95 Coach ou Nu-tri-tion-niste : le vi-si-teur est re-di-rigé d
+i-rec-te-ment vers
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--804
-[]|\T1/cmr/m/n/10 Boutons Ac-cep-
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+[]\T1/cmr/m/n/10.95 Le vi-si-teur sai-sit ses in-for-ma-tions per-son-nelles : 
+pré-nom, nom,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--804
-\T1/cmr/m/n/10 ter/Refuser fonc-tion-nels,
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+[]\T1/cmr/m/n/10.95 Le sys-tème crée le compte et connecte au-to-ma-ti-que-ment
+ le vi-si-
  []
 
 
-Underfull \hbox (badness 1472) in paragraph at lines 804--804
-\T1/cmr/m/n/10 de la dé-ci-sion, et re-la-tion
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+[]\T1/cmr/bx/n/10.95 Coach ou Nu-tri-tion-niste \T1/cmr/m/n/10.95 : le sys-tème
+ re-di-rige vers le ta-bleau
  []
 
 
-Underfull \hbox (badness 4429) in paragraph at lines 804--804
-\T1/cmr/m/n/10 je veux en-voyer et re-ce-
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+[]\T1/cmr/m/n/10.95 Après va-li-da-tion, le sys-tème re-di-rige se-lon le rôle 
+: Coach
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 804--804
-\T1/cmr/m/n/10 voir des mes-sages afin de
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+\T1/cmr/m/n/10.95 vers \T1/cmtt/m/n/10.95 /coach\T1/cmr/m/n/10.95 , Nu-tri-tion
+-niste vers \T1/cmtt/m/n/10.95 /nutritionist\T1/cmr/m/n/10.95 , Ath-lète vers
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 804--804
-[]|\T1/cmr/m/n/10 Messages en-voyés et re-çus
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+[]\T1/cmr/bx/n/10.95 Mots de passe non iden-tiques \T1/cmr/m/n/10.95 : le sys-t
+ème af-fiche ^^S Les mots
  []
 
 
-Underfull \hbox (badness 5288) in paragraph at lines 804--804
-\T1/cmr/m/n/10 en temps réel, his-to-rique
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+[]\T1/cmr/bx/n/10.95 Mot de passe trop court \T1/cmr/m/n/10.95 : si le mot de p
+asse contient moins de
  []
 
-[22
 
-] [23] [24] (main.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 988--988
+[]\T1/cmr/bx/n/10.95 Email déjà uti-lisé \T1/cmr/m/n/10.95 : le sys-tème af-fic
+he un mes-sage d'er-reur et
+ []
+
+[26 <./images/digrammeinscription.png>]
+<images/digrammeresetpassword.png, id=139, 527.9725pt x 133.49875pt>
+File: images/digrammeresetpassword.png Graphic file (type png)
+<use images/digrammeresetpassword.png>
+Package pdftex.def Info: images/digrammeresetpassword.png  used on input line 9
+94.
+(pdftex.def)             Requested size: 339.72592pt x 85.89925pt.
+ [27]
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]\T1/cmr/m/n/10.95 Le vi-si-teur clique sur le lien ^^S Mot de passe ou-blié ?
+ ^^T sur la page
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]\T1/cmr/m/n/10.95 Le vi-si-teur sai-sit son adresse email (\T1/cmr/m/it/10.95
+ In-clude \T1/cmr/m/n/10.95 : en-trer email) et va-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]\T1/cmr/m/n/10.95 Le sys-tème vé-ri-fie que l'email existe et gé-nère un lien
+ sé-cu-risé
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]\T1/cmr/m/n/10.95 Le sys-tème en-voie un email conte-nant ce lien de ré-ini-t
+ia-li-sa-tion et
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]\T1/cmr/m/n/10.95 Le vi-si-teur sai-sit son nou-veau mot de passe, le confirm
+e (\T1/cmr/m/it/10.95 In-clude \T1/cmr/m/n/10.95 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]\T1/cmr/m/n/10.95 Le sys-tème en-re-gistre le nou-veau mot de passe et af-fic
+he un mes-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]\T1/cmr/bx/n/10.95 Email non re-connu \T1/cmr/m/n/10.95 : le sys-tème af-fich
+e un mes-sage d'er-reur ou
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]\T1/cmr/bx/n/10.95 Lien ex-piré ou in-va-lide \T1/cmr/m/n/10.95 : le sys-tème
+ in-dique que le lien n'est
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+[]\T1/cmr/bx/n/10.95 Mot de passe in-cor-rect \T1/cmr/m/n/10.95 : si le mot de 
+passe est faible ou que
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1056
+\T1/cmr/m/n/10.95 les champs ne cor-res-pondent pas, le sys-tème af-fiche un me
+s-sage
+ []
+
+<images/digrammeonbording.png, id=144, 427.8384pt x 116.3547pt>
+File: images/digrammeonbording.png Graphic file (type png)
+<use images/digrammeonbording.png>
+Package pdftex.def Info: images/digrammeonbording.png  used on input line 1062.
+
+(pdftex.def)             Requested size: 339.72592pt x 92.39679pt.
+[28 <./images/digrammeresetpassword.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/m/n/10.95 L'athlète a créé un compte et est ac-tuel-le-ment connecté 
+à l'ap-pli-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/m/n/10.95 Les in-for-ma-tions phy-siques, les ob-jec-tifs spor-tifs e
+t les don-nées
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/m/n/10.95 L'athlète ac-cède à la ru-brique dé-diée à son pro-fil ou y
+ est re-di-rigé
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/m/n/10.95 Le sys-tème ré-cu-père les don-nées exis-tantes de l'ath-lè
+te et vé-ri-fie si
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/bx/n/10.95 Première confi-gu-ra-tion \T1/cmr/m/n/10.95 : le sys-tème 
+af-fiche un ques-tion-naire
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+\T1/cmr/m/n/10.95 vide. L'ath-lète rem-plit ses in-for-ma-tions obli-ga-toires 
+(âge, taille,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+\T1/cmr/m/n/10.95 poids, ob-jec-tif prin-ci-pal, etc.). (\T1/cmr/m/it/10.95 Ex-
+tend \T1/cmr/m/n/10.95 : com-plé-ter son on-boar-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/bx/n/10.95 Mise à jour \T1/cmr/m/n/10.95 : le sys-tème af-fiche le fo
+r-mu-laire pré-rempli avec
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+\T1/cmr/m/n/10.95 les an-ciennes don-nées. L'ath-lète mo-di-fie uni-que-ment le
+s in-for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/m/n/10.95 L'athlète clique sur le bou-ton de va-li-da-tion pour sou-m
+ettre ses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/m/n/10.95 Le sys-tème cal-cule au-to-ma-ti-que-ment l'In-dice de Mass
+e Cor-po-relle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/m/n/10.95 Le sys-tème met à jour la base de don-nées et marque of-fi-
+ciel-le-ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/m/n/10.95 Le sys-tème af-fiche un mes-sage de confir-ma-tion va-li-da
+nt la réus-site
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/bx/n/10.95 Champs obli-ga-toires man-quants \T1/cmr/m/n/10.95 : si un
+ champ obli-ga-toire
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+\T1/cmr/m/n/10.95 (comme le poids, la taille ou l'ob-jec-tif) est laissé vide, 
+le sys-tème
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+\T1/cmr/m/n/10.95 ne va-lide pas les mo-di-fi-ca-tions et sou-ligne les champs 
+man-quants
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+[]\T1/cmr/bx/n/10.95 Annulation ou sor-tie de page \T1/cmr/m/n/10.95 : si l'ath
+-lète quitte la page ou
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1130
+\T1/cmr/m/n/10.95 an-nule avant va-li-da-tion, le sys-tème an-nule l'opé-ra-tio
+n et conserve
+ []
+
+[29 <./images/digrammeonbording.png>]
+<images/digrammeinvitation.png, id=153, 613.29124pt x 241.90375pt>
+File: images/digrammeinvitation.png Graphic file (type png)
+<use images/digrammeinvitation.png>
+Package pdftex.def Info: images/digrammeinvitation.png  used on input line 1136
+.
+(pdftex.def)             Requested size: 339.72592pt x 133.99979pt.
+ [30]
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/m/n/10.95 Le pro-fes-sion-nel (Coach ou Nu-tri-tion-niste) est au-the
+n-ti-fié et
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/m/n/10.95 Le pro-fes-sion-nel ac-cède à son in-ter-face de ges-tion d
+es clients /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/m/n/10.95 L'état des in-vi-ta-tions est mis à jour dans le sys-tème :
+ une nou-velle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+\T1/cmr/m/n/10.95 in-vi-ta-tion est créée et mise en at-tente, ou une in-vi-ta-
+tion exis-tante
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/m/n/10.95 Le sys-tème af-fiche la liste des clients ac-tuels ainsi qu
+e la liste des
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/bx/n/10.95 Ajouter un nou-vel ath-lète \T1/cmr/m/n/10.95 : cli-quer s
+ur le bou-ton per-met-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/bx/n/10.95 Annuler une de-mande \T1/cmr/m/n/10.95 : sé-lec-tion-ner u
+ne in-vi-ta-tion en at-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+\T1/cmr/m/n/10.95 tente (ou un lien exis-tant) et cli-quer sur l'icône de sup-p
+res-sion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/bx/n/10.95 Envoyer \T1/cmr/m/n/10.95 : le pro-fes-sion-nel rem-plit l
+e for-mu-laire (ex. : adresse
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/bx/n/10.95 Supprimer \T1/cmr/m/n/10.95 : le pro-fes-sion-nel confirme
+ la sup-pres-sion via une
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/m/n/10.95 Le sys-tème traite la de-mande et met à jour la base de don
+-nées en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/m/n/10.95 Le sys-tème af-fiche un mes-sage de confir-ma-tion (suc-cès
+ de l'en-voi
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/bx/n/10.95 Email in-va-lide ou uti-li-sa-teur in-exis-tant \T1/cmr/m/
+n/10.95 : si le pro-fes-sion-nel
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+\T1/cmr/m/n/10.95 tente d'en-voyer une in-vi-ta-tion à une adresse email in-va-
+lide ou à
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+\T1/cmr/m/n/10.95 un uti-li-sa-teur qui n'existe pas, le sys-tème af-fiche un m
+es-sage d'er-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]\T1/cmr/bx/n/10.95 Suppression an-nu-lée \T1/cmr/m/n/10.95 : si le pro-fes-si
+on-nel an-nule la confir-ma-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+\T1/cmr/m/n/10.95 de sup-pres-sion dans la boîte de dia-logue, le sys-tème igno
+re l'ac-
+ []
+
+[31 <./images/digrammeinvitation.png>] [32] [33] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 18218 strings out of 467691
- 362535 string characters out of 5425063
- 799830 words of memory out of 5000000
- 46930 multiletter control sequences out of 15000+600000
- 644932 words of font info for 82 fonts, out of 8000000 for 9000
+ 18291 strings out of 467691
+ 364844 string characters out of 5425063
+ 799860 words of memory out of 5000000
+ 46999 multiletter control sequences out of 15000+600000
+ 644692 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,15n,108p,472b,385s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm070
-0.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
-1000.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-cbx1000.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecti1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
-i600\tcrm1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+ 102i,14n,108p,472b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt109
+5.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
+1095.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
+cti1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm1095.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
+i600\ecbx1095.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
 /dpi600\ecbx1440.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
 /ec/dpi600\eccc1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
 pen/ec/dpi600\ecbx1728.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
@@ -1043,9 +1424,9 @@ nappen/ec/dpi600\ecrm1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour
 our/jknappen/ec/dpi600\ecbx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/zapfding/uzdr.p
 fb>
-Output written on main.pdf (24 pages, 2289032 bytes).
+Output written on main.pdf (33 pages, 2564092 bytes).
 PDF statistics:
- 569 PDF objects out of 1000 (max. 8388607)
+ 661 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 98 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

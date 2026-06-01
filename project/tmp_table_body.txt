@@ -1,0 +1,63 @@
+% ── SPRINT 1 ────────────────────────────────────────────────
+Sprint 1 & Authentification & 1.1 &
+En tant que Visiteur, je veux créer un compte en choisissant mon rôle afin d'utiliser les fonctionnalités adaptées. &
+Élevée \\
+\cline{2-5}
+
+ & Authentification & 1.2 &
+En tant que Visiteur, je veux me connecter (email ou Google) afin d'accéder à mon espace. &
+Élevée \\
+\cline{2-5}
+
+ & Authentification & 1.3 &
+En tant que Visiteur, je veux recevoir un lien de réinitialisation par email afin de récupérer mon accès. &
+Élevée \\
+\cline{2-5}
+ 
+ & Profil \\& Onboarding & 1.4 &
+En tant que Athlète, je veux compléter un questionnaire initial afin de personnaliser mon expérience dès la première connexion. &
+Élevée \\
+\cline{2-5}
+
+ & Profil \\& Onboarding & 1.5 &
+En tant que acteur connecté, je veux modifier mes informations de profil afin de tenir mes données à jour. &
+Élevée \\
+\cline{2-5}
+
+ & Invitations & 1.6 &
+En tant que Coach/Nutritionniste, je veux envoyer une invitation à un Athlète afin de l'intégrer à mon suivi. &
+Élevée \\
+\cline{2-5}
+
+ & Invitations & 1.7 &
+En tant que Athlète, je veux répondre aux invitations reçues afin d'accepter ou refuser un suivi. &
+Élevée \\
+\cline{2-5}
+
+ & Suivi Coach & 1.8 &
+En tant que Coach, je veux créer et gérer des notes sur mes athlètes afin de suivre leur progression. &
+Moyenne \\
+\cline{2-5}
+
+ & Messagerie & 1.9 &
+En tant que acteur connecté, je veux envoyer et recevoir des messages afin de communiquer avec les autres membres. &
+Moyenne \\
+\cline{2-5}
+
+ & Rendez-vous & 1.10 &
+En tant que Coach/Nutritionniste, je veux proposer un créneau de rendez-vous à mon Athlète afin d'organiser nos séances. &
+Élevée \\
+\cline{2-5}
+
+ & Rendez-vous & 1.11 &
+En tant que Athlète, je veux accepter ou refuser un créneau proposé afin de confirmer mes disponibilités. &
+Élevée \\
+\cline{2-5}
+
+ & Suivi Coach & 1.12 &
+En tant que Athlète, je veux consulter les notes laissées par mon Coach afin de suivre ses observations. &
+Faible \\
+\hline
+
+\end{longtable}
+}

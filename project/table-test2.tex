@@ -1,0 +1,64 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\begin{document}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation : prédiction d'évolution du poids}
+\label{tab:cas_prediction_evolution_poids}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Prédiction d'évolution du poids \\
+\hline
+\textbf{Acteur principal} & Athlète \\
+
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est connecté à son espace personnel.
+    \item Des mesures de poids ont été enregistrées régulièrement sur plusieurs semaines.
+    \item Des données nutritionnelles et d'entraînement sont disponibles.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postconditions} &
+Une courbe de prédiction d'évolution du poids est affichée, accompagnée d'une fourchette de confiance et de l'historique réel. \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète consulte la section « Suivi du poids ».
+    \item Le système analyse l'historique de poids et les données associées, notamment les calories et l'activité physique.
+    \item Le modèle IA prédit l'évolution du poids sur les prochaines semaines.
+    \item La prédiction est affichée sous forme de courbe avec l'historique réel et une zone de confiance.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénarios alternatifs} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\end{document}

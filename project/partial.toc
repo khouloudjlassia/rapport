@@ -1,0 +1,29 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Liste des tableaux}{}{}%
+\contentsline {chapter}{Liste des figures}{}{}%
+\contentsline {chapter}{Introduction générale}{1}{}%
+\contentsline {chapter}{Chapitre 1: Présentation du projet}{3}{}%
+\contentsline {section}{\numberline {1}Introduction du chapitre}{3}{}%
+\contentsline {section}{\numberline {2}Présentation de l’organisme}{3}{}%
+\contentsline {subsection}{\numberline {2.1}L’équipe de la société}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Services}{4}{}%
+\contentsline {section}{\numberline {3}Présentation du projet}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Contexte du projet}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Description du projet}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Les objectifs}{5}{}%
+\contentsline {section}{\numberline {4}Étude de l’existant du projet}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Description de l’existant du projet}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Problématique}{6}{}%
+\contentsline {subsection}{\numberline {4.3}Critique de l'existant}{7}{}%
+\contentsline {subsection}{\numberline {4.4}Les solutions proposées}{7}{}%
+\contentsline {section}{\numberline {5}Méthodologie de travail}{8}{}%
+\contentsline {subsection}{\numberline {5.1}Choix d'une approche agile}{8}{}%
+\contentsline {subsection}{\numberline {5.2}Méthodologie adoptée : Scrum}{8}{}%
+\contentsline {subsubsection}{Organisation de l'équipe}{8}{}%
+\contentsline {subsubsection}{Artefacts utilisés}{8}{}%
+\contentsline {subsubsection}{Cérémonies pratiquées}{9}{}%
+\contentsline {subsection}{\numberline {5.3}Organisation en sprints}{9}{}%
+\contentsline {section}{\numberline {6}Conclusion }{9}{}%
+\contentsline {chapter}{Chapitre 2 : Réalisation de l'Application}{10}{}%
+\contentsline {section}{\numberline {1}Introduction du chapitre}{10}{}%
+\contentsline {section}{\numberline {2} Analyse des besoins}{10}{}%

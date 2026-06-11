@@ -1,0 +1,57 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage{chngcntr}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+
+% Core packages
+\usepackage{amsmath,amssymb}
+\usepackage{tikz-cd}
+\usetikzlibrary{calc}
+\usepackage{tikzpagenodes}
+\usepackage{eso-pic}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1\baselineskip}
+\definecolor{rowalt}{gray}{0.95}
+\newcommand{\sone}{Sprint 1}
+\newcommand{\stwo}{Sprint 2}
+\newcommand{\sthree}{Sprint 3}
+\newcommand{\phigh}{Haute}
+\newcommand{\pmid}{Moyenne}
+\newcommand{\plow}{Faible}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+
+\AddToShipoutPictureBG*{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[gray!10] ($(current page.north west)+(1cm,-0.8cm)$) rectangle ($(current page.north east)+(-1cm,-1.5cm)$);
+    \draw[line width=0.5pt] ($(current page.north west)+(1cm,-0.8cm)$) rectangle ($(current page.north east)+(-1cm,-1.5cm)$);
+  \end{tikzpicture}%
+}
+
+\begin{document}
+Hello
+\end{document}

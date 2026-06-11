@@ -1,24 +1,41 @@
 \babel@toc {french}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Logo de HOLMENA Company for Digital Solutions}}{7}{}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Interface de l'application ArabFit}}{10}{}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Interface de l'application MyFitnessPal}}{10}{}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Logo Visual Studio Code}}{19}{}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Logo Jupyter}}{19}{}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Logo Postman}}{19}{}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Logo Docker}}{20}{}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Logo Draw.io}}{20}{}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Logo GitHub}}{20}{}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Logo Python}}{21}{}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Logo Next.js}}{21}{}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Logo Nest.js}}{21}{}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Logo Node.js}}{21}{}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Logo HTML}}{21}{}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Logo Tailwind CSS}}{22}{}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Logo TypeScript}}{22}{}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Logo PostgreSQL}}{22}{}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Diagramme de cas d'utilisation du Sprint 1}}{25}{}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Diagramme du cas d'utilisation : s'authentifier}}{25}{}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Diagramme du cas d'utilisation : s'inscrire}}{26}{}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Interface de réinitialisation du mot de passe}}{28}{}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Diagramme du cas d'utilisation : gérer onboarding}}{29}{}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Diagramme du cas d'utilisation : gérer les invitations}}{31}{}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Logo de HOLMENA Company for Digital Solutions}}{3}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Interface de l'application ArabFit}}{6}{}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Interface de l'application MyFitnessPal}}{6}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Architecture physique de l'application}}{14}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Logo Visual Studio Code}}{16}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Logo Jupyter}}{16}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Logo Postman}}{16}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Logo Docker}}{17}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Logo Draw.io}}{17}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Logo GitHub}}{17}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Logo Python}}{17}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Logo Next.js}}{18}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Logo Nest.js}}{18}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Logo Node.js}}{18}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Logo HTML}}{18}{}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Logo Tailwind CSS}}{18}{}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Logo TypeScript}}{19}{}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Logo PostgreSQL}}{19}{}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Diagramme de cas d'utilisation du Sprint 1}}{22}{}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Diagramme de séquence de l'inscription}}{35}{}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Diagramme de séquence de la connexion}}{36}{}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Diagramme de séquence de la configuration de l'onboarding}}{37}{}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Diagramme de séquence de l'invitation d'un client}}{38}{}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Diagramme de classes du Sprint 1}}{39}{}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Interface de connexion}}{40}{}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Interface d'inscription}}{40}{}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Saisie de l'adresse email}}{41}{}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Saisie du code de vérification}}{41}{}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Mise à jour du mot de passe}}{42}{}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Envoi d'une invitation à un client}}{43}{}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Liste des clients du coach}}{43}{}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Notifications reçues par le coach}}{44}{}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Diagramme de cas d'utilisation du Sprint 2}}{47}{}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Diagramme de séquence de l'enregistrement nutritionnel}}{60}{}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Diagramme de séquence de la consultation des recommandations}}{61}{}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Diagramme de classes du Sprint 2}}{62}{}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Interface de création d'un plan nutritionnel}}{63}{}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Historique des plans nutritionnels}}{64}{}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Interface d'enregistrement d'une activité sportive}}{65}{}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Suivi des activités récentes de l'athlète}}{66}{}%

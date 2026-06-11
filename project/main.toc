@@ -1,55 +1,71 @@
 \babel@toc {french}{}\relax 
-\contentsline {chapter}{Liste des tableaux}{4}{}%
-\contentsline {chapter}{Liste des figures}{6}{}%
-\contentsline {chapter}{Chapitre 1: Présentation du projet}{7}{}%
-\contentsline {section}{\numberline {1}Introduction du chapitre}{7}{}%
-\contentsline {section}{\numberline {2}Présentation de l’organisme}{7}{}%
-\contentsline {subsection}{\numberline {2.1}L’équipe de la société}{8}{}%
-\contentsline {subsection}{\numberline {2.2}Services}{8}{}%
-\contentsline {section}{\numberline {3}Présentation du projet}{8}{}%
-\contentsline {subsection}{\numberline {3.1}Contexte du projet}{8}{}%
-\contentsline {subsection}{\numberline {3.2}Description du projet}{8}{}%
-\contentsline {subsection}{\numberline {3.3}Les objectifs}{9}{}%
-\contentsline {section}{\numberline {4}Étude de l’existant du projet}{9}{}%
-\contentsline {subsection}{\numberline {4.1}Description de l’existant du projet}{9}{}%
-\contentsline {subsection}{\numberline {4.2}Problématique}{10}{}%
-\contentsline {subsection}{\numberline {4.3}Critique de l'existant}{11}{}%
-\contentsline {subsection}{\numberline {4.4}Les solutions proposées}{11}{}%
-\contentsline {section}{\numberline {5}Méthodologie de travail}{12}{}%
-\contentsline {subsection}{\numberline {5.1}Choix d'une approche agile}{12}{}%
-\contentsline {subsection}{\numberline {5.2}Méthodologie adoptée : Scrum}{12}{}%
-\contentsline {subsubsection}{Organisation de l'équipe}{12}{}%
-\contentsline {subsubsection}{Artefacts utilisés}{12}{}%
-\contentsline {subsubsection}{Cérémonies pratiquées}{13}{}%
-\contentsline {subsection}{\numberline {5.3}Organisation en sprints}{13}{}%
-\contentsline {section}{\numberline {6}Conclusion }{13}{}%
-\contentsline {chapter}{Chapitre 2 : Réalisation de l'Application}{14}{}%
-\contentsline {section}{\numberline {1}Introduction du chapitre}{14}{}%
-\contentsline {section}{\numberline {2} Analyse des besoins}{14}{}%
-\contentsline {subsection}{\numberline {2.1}Identification des acteurs du système}{14}{}%
-\contentsline {subsection}{\numberline {2.2}Spécification des besoins fonctionnels}{15}{}%
-\contentsline {subsection}{\numberline {2.3}Spécification des besoins non fonctionnels}{16}{}%
-\contentsline {section}{\numberline {3}Diagramme général des cas d'utilisation}{17}{}%
-\contentsline {section}{\numberline {4}Architecture de l'application}{17}{}%
-\contentsline {subsection}{\numberline {4.1}Le backlog du produit}{17}{}%
-\contentsline {section}{\numberline {5}Environnement de développement}{19}{}%
-\contentsline {subsection}{\numberline {5.1}Environnement logiciel}{19}{}%
-\contentsline {subsection}{\numberline {5.2}Technologies et langages utilisées}{20}{}%
-\contentsline {section}{\numberline {6}Conclusion}{22}{}%
-\contentsline {chapter}{Chapitre 3 : Release 1 : Sprint 1 — Authentification, gestion des profils et communication}{23}{}%
-\contentsline {section}{\numberline {1}Introduction}{23}{}%
-\contentsline {section}{\numberline {2}Sprint 1 backlog}{23}{}%
-\contentsline {section}{\numberline {3}Spécifications fonctionnelles}{25}{}%
-\contentsline {subsection}{\numberline {3.1}Diagramme de cas d’utilisation du Sprint 1}{25}{}%
-\contentsline {subsection}{\numberline {3.2}Description textuelle des cas d’utilisation étendus du Sprint,1}{25}{}%
-\contentsline {section}{\numberline {4}Conception}{33}{}%
-\contentsline {subsection}{\numberline {4.1}Diagrammes de séquence}{33}{}%
-\contentsline {subsection}{\numberline {4.2}Diagramme de classes du Sprint 1}{33}{}%
-\contentsline {section}{\numberline {5}Réalisation}{33}{}%
-\contentsline {subsection}{\numberline {5.1}Authentification (Sign in)}{33}{}%
-\contentsline {subsection}{\numberline {5.2}Inscription (Sign up)}{33}{}%
-\contentsline {subsection}{\numberline {5.3}Gestion des utilisateurs}{33}{}%
-\contentsline {subsection}{\numberline {5.4}Gestion des rôles}{33}{}%
-\contentsline {subsection}{\numberline {5.5}Gestion des accès}{33}{}%
-\contentsline {subsection}{\numberline {5.6}Réinitialisation du mot de passe}{33}{}%
-\contentsline {section}{\numberline {6}Conclusion}{33}{}%
+\contentsline {chapter}{Liste des tableaux}{}{}%
+\contentsline {chapter}{Liste des figures}{}{}%
+\contentsline {chapter}{Introduction générale}{1}{}%
+\contentsline {chapter}{Chapitre 1: Présentation du projet}{3}{}%
+\contentsline {section}{\numberline {1}Introduction du chapitre}{3}{}%
+\contentsline {section}{\numberline {2}Présentation de l’organisme}{3}{}%
+\contentsline {subsection}{\numberline {2.1}L’équipe de la société}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Services}{4}{}%
+\contentsline {section}{\numberline {3}Présentation du projet}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Contexte du projet}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Description du projet}{4}{}%
+\contentsline {subsection}{\numberline {3.3}Les objectifs}{5}{}%
+\contentsline {section}{\numberline {4}Étude de l’existant du projet}{5}{}%
+\contentsline {subsection}{\numberline {4.1}Description de l’existant du projet}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Problématique}{6}{}%
+\contentsline {subsection}{\numberline {4.3}Critique de l'existant}{7}{}%
+\contentsline {subsection}{\numberline {4.4}Les solutions proposées}{7}{}%
+\contentsline {section}{\numberline {5}Méthodologie de travail}{8}{}%
+\contentsline {subsection}{\numberline {5.1}Choix d'une approche agile}{8}{}%
+\contentsline {subsection}{\numberline {5.2}Méthodologie adoptée : Scrum}{8}{}%
+\contentsline {subsubsection}{Organisation de l'équipe}{8}{}%
+\contentsline {subsubsection}{Artefacts utilisés}{8}{}%
+\contentsline {subsubsection}{Cérémonies pratiquées}{9}{}%
+\contentsline {subsection}{\numberline {5.3}Organisation en sprints}{9}{}%
+\contentsline {section}{\numberline {6}Conclusion }{9}{}%
+\contentsline {chapter}{Chapitre 2 : Réalisation de l'Application}{10}{}%
+\contentsline {section}{\numberline {1}Introduction du chapitre}{10}{}%
+\contentsline {section}{\numberline {2} Analyse des besoins}{10}{}%
+\contentsline {subsection}{\numberline {2.1}Identification des acteurs du système}{10}{}%
+\contentsline {subsection}{\numberline {2.2}Spécification des besoins fonctionnels}{11}{}%
+\contentsline {subsection}{\numberline {2.3}Spécification des besoins non fonctionnels}{12}{}%
+\contentsline {section}{\numberline {3}Diagramme général des cas d'utilisation}{13}{}%
+\contentsline {section}{\numberline {4}Architecture de l'application}{13}{}%
+\contentsline {subsection}{\numberline {4.1}Architecture physique}{13}{}%
+\contentsline {subsection}{\numberline {4.2}Le backlog du produit}{14}{}%
+\contentsline {section}{\numberline {5}Environnement de développement}{16}{}%
+\contentsline {subsection}{\numberline {5.1}Environnement logiciel}{16}{}%
+\contentsline {subsection}{\numberline {5.2}Technologies et langages utilisées}{17}{}%
+\contentsline {section}{\numberline {6}Conclusion}{19}{}%
+\contentsline {chapter}{Chapitre 3 : Release 1 : Sprint 1 — Authentification, gestion des profils et communication}{20}{}%
+\contentsline {section}{\numberline {1}Introduction}{20}{}%
+\contentsline {section}{\numberline {2}Sprint 1 backlog}{20}{}%
+\contentsline {section}{\numberline {3}Spécifications fonctionnelles}{22}{}%
+\contentsline {subsection}{\numberline {3.1}Diagramme de cas d’utilisation du Sprint 1}{22}{}%
+\contentsline {subsection}{\numberline {3.2}Description textuelle des cas d’utilisation étendus du Sprint,1}{22}{}%
+\contentsline {section}{\numberline {4}Conception}{34}{}%
+\contentsline {subsection}{\numberline {4.1}Diagrammes de séquence}{34}{}%
+\contentsline {subsection}{\numberline {4.2}Diagramme de classes du Sprint 1}{38}{}%
+\contentsline {section}{\numberline {5}Réalisation}{39}{}%
+\contentsline {subsection}{\numberline {5.1}Authentification (Sign in)}{39}{}%
+\contentsline {subsection}{\numberline {5.2}Inscription (Sign up)}{40}{}%
+\contentsline {subsection}{\numberline {5.3}Réinitialisation du mot de passe}{40}{}%
+\contentsline {subsection}{\numberline {5.4}Gestion des invitations}{42}{}%
+\contentsline {section}{\numberline {6}Conclusion}{44}{}%
+\contentsline {chapter}{Chapitre 4 : Release 2 : Sprint 2 — Suivi sportif, nutrition et intelligence artificielle}{45}{}%
+\contentsline {section}{\numberline {1}Introduction}{45}{}%
+\contentsline {section}{\numberline {2}Sprint 2 backlog}{45}{}%
+\contentsline {section}{\numberline {3}Spécifications fonctionnelles}{47}{}%
+\contentsline {subsection}{\numberline {3.1}Diagramme de cas d'utilisation du Sprint 2}{47}{}%
+\contentsline {subsection}{\numberline {3.2}Description textuelle des cas d'utilisation du Sprint 2}{47}{}%
+\contentsline {section}{\numberline {4}Conception}{59}{}%
+\contentsline {subsection}{\numberline {4.1}Diagrammes de séquence}{59}{}%
+\contentsline {subsection}{\numberline {4.2}Diagramme de classes du Sprint 2}{62}{}%
+\contentsline {section}{\numberline {5}Réalisation}{62}{}%
+\contentsline {subsection}{\numberline {5.1}Réalisation du suivi de l’athlète et de la gestion des plans de repas}{62}{}%
+\contentsline {subsection}{\numberline {5.2}Modèles d’intelligence artificielle}{66}{}%
+\contentsline {subsection}{\numberline {5.3}Système de recommandations basé sur des règles (Rules-Based)}{66}{}%
+\contentsline {subsection}{\numberline {5.4}Chatbot IA}{66}{}%
+\contentsline {section}{\numberline {6}Conclusion}{66}{}%
+\contentsline {chapter}{Conclusion générale}{67}{}%

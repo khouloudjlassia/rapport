@@ -1,6 +1,25 @@
 \babel@toc {french}{}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces Description du cas d'utilisation : s'authentifier}}{26}{}%
-\contentsline {table}{\numberline {4}{\ignorespaces Description du cas d'utilisation : s'inscrire}}{27}{}%
-\contentsline {table}{\numberline {5}{\ignorespaces Description du cas d'utilisation : réinitialiser le mot de passe}}{28}{}%
-\contentsline {table}{\numberline {6}{\ignorespaces Description du cas d'utilisation : gérer onboarding}}{30}{}%
-\contentsline {table}{\numberline {7}{\ignorespaces Description du cas d'utilisation : gérer les invitations}}{32}{}%
+\contentsline {table}{\numberline {3}{\ignorespaces Description du cas d'utilisation : s'authentifier}}{23}{}%
+\contentsline {table}{\numberline {4}{\ignorespaces Description du cas d'utilisation : s'inscrire}}{24}{}%
+\contentsline {table}{\numberline {5}{\ignorespaces Description du cas d'utilisation : réinitialiser le mot de passe}}{25}{}%
+\contentsline {table}{\numberline {6}{\ignorespaces Description du cas d'utilisation : gérer onboarding}}{26}{}%
+\contentsline {table}{\numberline {7}{\ignorespaces Description du cas d'utilisation : gérer les invitations}}{27}{}%
+\contentsline {table}{\numberline {8}{\ignorespaces Description du cas d'utilisation : répondre aux invitations de suivi}}{28}{}%
+\contentsline {table}{\numberline {9}{\ignorespaces Cas d'utilisation : Gérer les notes de session}}{29}{}%
+\contentsline {table}{\numberline {10}{\ignorespaces Description du cas d'utilisation : gérer la messagerie}}{30}{}%
+\contentsline {table}{\numberline {11}{\ignorespaces Description du cas d'utilisation : proposer un rendez-vous}}{31}{}%
+\contentsline {table}{\numberline {12}{\ignorespaces Description du cas d'utilisation : répondre à une proposition de rendez-vous}}{32}{}%
+\contentsline {table}{\numberline {13}{\ignorespaces Description du cas d'utilisation : consulter les notes de suivi}}{33}{}%
+\contentsline {table}{\numberline {14}{\ignorespaces Cas d'utilisation : Recevoir des notifications en temps réel}}{34}{}%
+\contentsline {table}{\numberline {16}{\ignorespaces Description du cas d'utilisation : enregistrer son activité}}{48}{}%
+\contentsline {table}{\numberline {17}{\ignorespaces Description du cas d'utilisation : enregistrer sa nutrition}}{49}{}%
+\contentsline {table}{\numberline {18}{\ignorespaces Description du cas d'utilisation : enregistrer sa progression}}{50}{}%
+\contentsline {table}{\numberline {19}{\ignorespaces Description du cas d'utilisation : consulter sa recommandation personnalisée}}{51}{}%
+\contentsline {table}{\numberline {20}{\ignorespaces Description du cas d'utilisation : consulter son historique}}{52}{}%
+\contentsline {table}{\numberline {21}{\ignorespaces Description du cas d'utilisation : créer et assigner un plan repas}}{53}{}%
+\contentsline {table}{\numberline {22}{\ignorespaces Description du cas d'utilisation : consulter le plan repas}}{54}{}%
+\contentsline {table}{\numberline {23}{\ignorespaces Description du cas d'utilisation : détection d'un plateau sportif}}{55}{}%
+\contentsline {table}{\numberline {24}{\ignorespaces Description du cas d'utilisation : évaluation du risque d'abandon et remotivation automatique}}{56}{}%
+\contentsline {table}{\numberline {25}{\ignorespaces Description du cas d'utilisation : prédiction d'évolution du poids}}{57}{}%
+\contentsline {table}{\numberline {26}{\ignorespaces Description du cas d'utilisation : probabilité d'atteindre son objectif fitness}}{58}{}%
+\contentsline {table}{\numberline {27}{\ignorespaces Description du cas d'utilisation : assistant intelligent d'accompagnement}}{59}{}%

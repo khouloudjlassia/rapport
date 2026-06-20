@@ -1,0 +1,60 @@
+\babel@toc {french}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Logo de HOLMENA Company for Digital Solutions}}{4}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Interface de l'application ArabFit}}{6}{}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Interface de l'application MyFitnessPal}}{7}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces les vues du langage UML }}{10}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagramme général des cas d'utilisation}}{16}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Architecture physique de l'application}}{20}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Logo Visual Studio Code}}{20}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Logo Jupyter}}{21}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Logo Postman}}{21}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Logo Docker}}{21}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Logo Draw.io}}{21}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Logo GitHub}}{22}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Logo Python}}{22}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Logo Next.js}}{22}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Logo Nest.js}}{22}{}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Logo React.js}}{23}{}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Logo Node.js}}{23}{}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Logo HTML}}{23}{}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Logo Tailwind CSS}}{23}{}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Logo TypeScript}}{24}{}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Logo PostgreSQL}}{24}{}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Diagramme de cas d'utilisation du Sprint 1}}{28}{}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Diagramme de séquence de l'inscription}}{40}{}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Diagramme de séquence de la connexion}}{41}{}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Diagramme de séquence de la modification de l'onboarding}}{42}{}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Diagramme de séquence de l'invitation d'un client}}{43}{}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Diagramme de classes du Sprint 1}}{44}{}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Interface S’authentifier}}{44}{}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Interface d’inscrire}}{45}{}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Saisie de l'adresse email}}{46}{}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Interface de Saisie du code de vérification}}{46}{}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Mise à jour du mot de passe}}{47}{}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Envoi d'une invitation à un client}}{48}{}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Liste des clients du coach}}{48}{}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Notifications reçues par le coach}}{48}{}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Diagramme de cas d'utilisation du Sprint 2}}{52}{}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Diagramme de séquence de l'enregistrement nutritionnel}}{65}{}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Diagramme de séquence de la consultation du plan repas créé par le nutritionniste}}{66}{}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Diagramme de séquence de la consultation des recommandations}}{67}{}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Diagramme de séquence de la détection automatique du risque d'abandon}}{68}{}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Diagramme de séquence de la consultation du risque d'abandon}}{69}{}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Diagramme de classes du Sprint 2}}{70}{}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Interface du tableau de bord de l'athlète}}{71}{}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Interface de création d'un plan nutritionnel}}{72}{}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Interface d'enregistrement d'une activité sportive}}{73}{}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Interface de l'historique des activités de l'athlète}}{74}{}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Interface de prédiction de l'évolution du poids}}{76}{}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Structure du jeu de données pour l'évaluation du risque d'abandon}}{76}{}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Matrice de confusion du modèle XGBoost pour la prédiction du churn}}{77}{}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Rapport de classification du modèle XGBoost pour la prédiction du churn}}{78}{}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Interface d'évaluation du risque d'abandon}}{78}{}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Exemple d'e-mail d'encouragement envoyé automatiquement à l'athlète en cas de risque d'abandon élevé}}{79}{}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Structure du jeu de données pour l'évaluation du niveau de condition physique}}{79}{}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Métriques d'évaluation du modèle LightGBM pour l'estimation du niveau de condition physique}}{80}{}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Interface d'évaluation du niveau de condition physique}}{81}{}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Interface des conseils de mode de vie}}{83}{}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Interface des suppléments}}{83}{}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Interface des Macronutriments et des cibles énergétiques quotidiennes}}{84}{}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Interface du chatbot IA}}{85}{}%

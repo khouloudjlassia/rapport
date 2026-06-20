@@ -1,0 +1,81 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Introduction générale}{1}{}%
+\contentsline {chapter}{Chapitre 1: Présentation du projet}{3}{}%
+\contentsline {section}{\numberline {1}Introduction}{4}{}%
+\contentsline {section}{\numberline {2}Présentation de l’organisme}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Equipe de la société}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Services}{5}{}%
+\contentsline {section}{\numberline {3}Présentation du projet}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Contexte du projet}{5}{}%
+\contentsline {subsection}{\numberline {3.2}Les objectifs}{5}{}%
+\contentsline {section}{\numberline {4}Étude de l’existant}{6}{}%
+\contentsline {subsection}{\numberline {4.1}Description de l’existant}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Critique de l'existant }{7}{}%
+\contentsline {subsection}{\numberline {4.3}Problématique}{8}{}%
+\contentsline {subsection}{\numberline {4.4}Les solutions proposées}{8}{}%
+\contentsline {section}{\numberline {5}Méthodologie de travail}{8}{}%
+\contentsline {subsection}{\numberline {5.1}Choix d'une approche agile}{8}{}%
+\contentsline {subsection}{\numberline {5.2}Méthodologie adoptée : Scrum}{9}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}Organisation de l'équipe}{9}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}Artefacts utilisés}{9}{}%
+\contentsline {subsubsection}{\numberline {5.2.3}Cérémonies pratiquées}{9}{}%
+\contentsline {subsection}{\numberline {5.3}Organisation en sprints}{10}{}%
+\contentsline {section}{\numberline {6}Langage de modélisation « UML »}{10}{}%
+\contentsline {section}{\numberline {7}Conclusion }{10}{}%
+\contentsline {chapter}{Chapitre 2 : Spécification des besoins}{11}{}%
+\contentsline {section}{\numberline {1}Introduction }{12}{}%
+\contentsline {section}{\numberline {2} Analyse des besoins}{12}{}%
+\contentsline {subsection}{\numberline {2.1}Identification des acteurs du système}{12}{}%
+\contentsline {subsection}{\numberline {2.2}Spécification des besoins fonctionnels}{13}{}%
+\contentsline {subsection}{\numberline {2.3}Spécification des besoins non fonctionnels}{15}{}%
+\contentsline {subsection}{\numberline {2.4}Diagramme général des cas d'utilisation}{15}{}%
+\contentsline {section}{\numberline {3}Le backlog du produit}{16}{}%
+\contentsline {section}{\numberline {4}Architecture de l'application UFitPal}{18}{}%
+\contentsline {section}{\numberline {5}Environnement de développement}{20}{}%
+\contentsline {subsection}{\numberline {5.1}Environnement logiciel}{20}{}%
+\contentsline {subsection}{\numberline {5.2}Technologies et langages utilisées}{22}{}%
+\contentsline {section}{\numberline {6}Conclusion}{24}{}%
+\contentsline {chapter}{Chapitre 3 : Release 1 : Sprint 1 — Authentification, gestion des profils et communication}{25}{}%
+\contentsline {section}{\numberline {1}Introduction}{26}{}%
+\contentsline {section}{\numberline {2}Sprint 1 backlog}{26}{}%
+\contentsline {section}{\numberline {3}Spécifications fonctionnelles}{28}{}%
+\contentsline {subsection}{\numberline {3.1}Diagramme de cas d’utilisation du Sprint 1}{28}{}%
+\contentsline {subsection}{\numberline {3.2}Description textuelle des cas d’utilisation étendus du Sprint 1}{28}{}%
+\contentsline {section}{\numberline {4}Conception}{39}{}%
+\contentsline {subsection}{\numberline {4.1}Diagrammes de séquence}{39}{}%
+\contentsline {subsection}{\numberline {4.2}Diagramme de classes du Sprint 1}{43}{}%
+\contentsline {section}{\numberline {5}Réalisation}{44}{}%
+\contentsline {subsection}{\numberline {5.1}Authentification (Sign in)}{44}{}%
+\contentsline {subsection}{\numberline {5.2}Inscription (Sign up)}{44}{}%
+\contentsline {subsection}{\numberline {5.3}Réinitialisation du mot de passe}{45}{}%
+\contentsline {subsection}{\numberline {5.4}Gestion des invitations}{47}{}%
+\contentsline {section}{\numberline {6}Conclusion}{49}{}%
+\contentsline {chapter}{Chapitre 4 : Release 2 : Sprint 2 — Suivi sportif, nutrition et intelligence artificielle}{50}{}%
+\contentsline {section}{\numberline {1}Introduction}{51}{}%
+\contentsline {section}{\numberline {2}Sprint 2 backlog}{51}{}%
+\contentsline {section}{\numberline {3}Spécifications fonctionnelles}{52}{}%
+\contentsline {subsection}{\numberline {3.1}Diagramme de cas d'utilisation du Sprint 2}{52}{}%
+\contentsline {subsection}{\numberline {3.2}Description textuelle des cas d'utilisation du Sprint 2}{53}{}%
+\contentsline {section}{\numberline {4}Conception}{64}{}%
+\contentsline {subsection}{\numberline {4.1}Diagrammes de séquence}{64}{}%
+\contentsline {subsection}{\numberline {4.2}Diagrammes de classes}{69}{}%
+\contentsline {section}{\numberline {5}Réalisation}{70}{}%
+\contentsline {subsection}{\numberline {5.1}Réalisation du suivi de l’athlète et de la gestion des plans de repas}{70}{}%
+\contentsline {subsection}{\numberline {5.2}Modèles d'intelligence artificielle}{74}{}%
+\contentsline {subsubsection}{\numberline {5.2.1}Prédiction de l'évolution du poids}{74}{}%
+\contentsline {paragraph}{Analyse du jeu de données}{75}{}%
+\contentsline {paragraph}{Métriques d’évaluation et modèle retenu}{75}{}%
+\contentsline {paragraph}{ Validation}{75}{}%
+\contentsline {subsubsection}{\numberline {5.2.2}Évaluation du risque d'abandon}{76}{}%
+\contentsline {paragraph}{Analyse du jeu de données}{76}{}%
+\contentsline {paragraph}{Métriques d’évaluation et modèle retenu}{77}{}%
+\contentsline {paragraph}{ Validation}{78}{}%
+\contentsline {subsubsection}{\numberline {5.2.3}Évaluation du niveau de condition physique}{79}{}%
+\contentsline {paragraph}{Analyse du jeu de données}{79}{}%
+\contentsline {paragraph}{Métriques d’évaluation et modèle retenu}{80}{}%
+\contentsline {paragraph}{ Validation}{81}{}%
+\contentsline {subsection}{\numberline {5.3}Système de recommandations basé sur des règles:}{81}{}%
+\contentsline {subsection}{\numberline {5.4}Chatbot IA}{84}{}%
+\contentsline {section}{\numberline {6}Conclusion}{86}{}%
+\contentsline {chapter}{Conclusion générale}{87}{}%
+\contentsline {chapter}{Webographie}{89}{}%

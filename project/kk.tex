@@ -1,0 +1,3345 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{enumitem}
+\usepackage{pifont}
+\usepackage{graphicx}
+\usepackage{chngcntr}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{etoolbox}
+\usepackage{xurl}
+% Core packages
+\usepackage{amsmath,amssymb}
+\usepackage{multicol}
+\usepackage{tabularx}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+% Paragraphs
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1\baselineskip}
+
+% Décale la numérotation des sections pour qu'elle ne dépende plus du chapitre
+
+% Bordure noire uniforme des tableaux
+\arrayrulecolor{black}
+\setlength{\arrayrulewidth}{0.4pt}
+\AtBeginEnvironment{table}{\arrayrulecolor{black}}
+\AtBeginEnvironment{longtable}{\arrayrulecolor{black}}
+\AtBeginEnvironment{tabular}{\arrayrulecolor{black}}
+\AtBeginEnvironment{tabularx}{\arrayrulecolor{black}}
+
+\newcommand{\sone}{Sprint 1}
+\newcommand{\stwo}{Sprint 2}
+\newcommand{\sthree}{Sprint 3}
+\newcommand{\phigh}{Haute}
+\newcommand{\pmid}{Moyenne}
+\newcommand{\plow}{Faible}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}
+
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\titleformat{\paragraph}[block]{\normalfont\normalsize\bfseries}{}{0pt}{}
+\titlespacing*{\paragraph}{0pt}{1.5ex plus 1ex minus .2ex}{1ex}
+
+
+
+% En-têtes et pieds de page
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\small\nouppercase{\leftmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\setlength{\headheight}{15pt}
+
+\fancypagestyle{plain}{%
+    \fancyhf{}%
+    \fancyhead[C]{\small\nouppercase{\leftmark}}%
+    \fancyfoot[C]{\thepage}%
+    \renewcommand{\headrulewidth}{0.4pt}%
+    \renewcommand{\footrulewidth}{0.4pt}%
+}
+
+\newcommand{\chaptertitlepage}[2]{%
+    \clearpage
+    \markboth{#2}{#2}
+    \thispagestyle{empty}
+    \vspace*{\fill}
+    \begin{center}
+        {\Huge\bfseries #1\par}
+    \end{center}
+    \vspace*{\fill}
+    \addcontentsline{toc}{chapter}{#2}
+    \clearpage
+}
+
+\begin{document}
+\sloppy
+
+% Pages préliminaires avec affichage des listes, sans en-tête ni lignes
+\pagenumbering{roman}
+\pagestyle{empty}
+\fancypagestyle{plain}{%
+    \fancyhf{}%
+    \renewcommand{\headrulewidth}{0pt}%
+    \renewcommand{\footrulewidth}{0pt}%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\tableofcontents
+\vspace{0.5cm}
+\begingroup
+\small
+\makeatletter
+\@starttoc{toc}
+\makeatother
+\endgroup
+\thispagestyle{empty}
+\clearpage
+
+\listoftables
+\thispagestyle{empty}
+\clearpage
+
+\listoffigures
+\thispagestyle{empty}
+\clearpage
+
+% Début de la numérotation principale
+\pagestyle{fancy}
+\fancypagestyle{plain}{%
+    \fancyhf{}%
+    \fancyhead[C]{\small\nouppercase{\leftmark}}%
+    \fancyfoot[C]{\thepage}%
+    \renewcommand{\headrulewidth}{0.4pt}%
+    \renewcommand{\footrulewidth}{0.4pt}%
+}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\chaptertitlepage{Introduction générale}{Introduction générale}
+
+Actuellement, l'obésité et les maladies causées par une mauvaise hygiène de vie sont considérées comme l'un des principaux défis de santé publique à l'échelle mondiale. Face au phénomène croissant de l'obésité et aux habitudes alimentaires déséquuilibrées, de nombreuses personnes sont à la recherche de solutions efficaces pour reprendre le contrôle de leur santé, améliorer leur condition physique et adopter un mode de vie plus sain. C'est dans ce contexte que les plateformes numériques spécialisées dans le fitness et la nutrition se sont imposées comme des outils cruciaux, permettant aux utilisateurs de recevoir un accompagnement personnalisé et abordable pour suivre leurs activités physiques, gérer leur alimentation et atteindre leurs objectifs de bien-être.
+
+Notre projet de fin d'études en vue de l'obtention du Diplôme de Mastère professionnel en Intelligence Artificielle (AI) et Internet des Objets, s'inscrit dans cette perspective. Notre objectif est de créer UFitPal, une plateforme intelligente de fitness et de nutrition. Ce projet vise à développer une application web à base de l'IA permettant d'offrir un suivi intelligent personnalisé aux athlètes, de faciliter la collaboration avec des coachs sportifs et des nutritionnistes, et d'intégrer l'automatisation pour optimiser les recommandations et
+modéliser les comportements intelligent  des utilisateurs.
+
+Pour la réalisation de ce projet nous avons adopté la méthode SCRUM qui est basé sur un dévelopement incrémental de projet à base des sprints. 
+Le reste de ce rapport est divisé à  des sprints qui  comprend les différentes étapes et tâches que nous avons accomplies tout au long de ce projet. Il comporte quatre chapitres :
+
+\begin{itemize}[leftmargin=*, itemsep=4pt]
+    \item Dans le premier chapitre, nous abordons le cadre général du projet en présentant l'organisme d'accueil, la description et les objectifs d'UFitPal, ainsi qu'une étude de l'existant et la méthodologie de travail adoptée.
+    \item Le deuxième chapitre expose les acteurs du système, ainsi que les exigences fonctionnelles et non fonctionnelles de l'application, l'architecture technique retenue, le Product Backlog global et l'environnement de développement utilisé.
+    \item Le troisième chapitre vise à présenter le Sprint 1, comprenant la conception et le développement des fonctionnalités d'authentification, de gestion des profils et de communication entre les différents acteurs de la plateforme.
+    \item Le quatrième chapitre est consacré au Sprint 2,  un suivi sportif et nutritionnel de l'athlète, à la gestion des plans repas par le nutritionniste. Il comprend ainsi la présentation des modules AI qui ont offert un suivi intelligent de comportement des utilisateurs et la prédiction de poids et le risque d'abandon, incluant aussi un espace de chatbot IA.
+\end{itemize}
+
+Enfin, nous cloturons ce rapport par une conclusion générale qui résume le travail accompli et illustre les améliorations et extensions envisageables pour la plateforme proposée.
+
+\newpage
+
+\chaptertitlepage{Chapitre 1: Présentation du cadre de projet}{Chapitre 1: Présentation du projet}
+
+\section{Introduction}
+Dans ce chapitre, nous présentons le cadre général de notre stage au sein de HOLMENA Company for Digital Solutions. Nous introduisons l’entreprise d’accueil, ses domaines d’activité ainsi que les services qu’elle propose. Nous décrivons ensuite le projet réalisé et ses objectifs principaux. Enfin, l’étude de l’existant permet de cerner la problématique et de démontrer la valeur ajoutée de la solution développée.
+
+\section{Présentation de l’organisme}
+
+HOLMENA Company for Digital Solutions est une entreprise innovante fondée en 2024, spécialisée dans les solutions informatiques et numériques au sein de la région MENA.  
+HOLMENA est une équipe jeune et pleine d'énergie réunie pour satisfaire les besoins de ses clients et les soutenir tout au long de leurs projets.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/image.jpeg}
+    \caption{Logo de HOLMENA Company for Digital Solutions}
+    \label{fig:holm}
+\end{figure}
+
+\FloatBarrier
+\subsection{Equipe de la société}
+
+C’est une entreprise spécialisée dans les solutions digitales, le web et l’intelligence artificielle, dirigée par une équipe fondatrice dynamique et complémentaire :
+
+\begin{itemize}
+    \item Gérant (Fondateur \& Project Manager) : Mohamed Rachad Rouine
+    \item Direction Générale
+    \item Direction Technique
+    \item Service Opérations Digitales (Co-Founder \& Digital Operations Specialist)
+    \item Direction Stratégique (Co-Founder \& Chief Strategic Officer)
+    \item Service Développement \& Croissance
+    \item Service Design \& Communication (Chief Designer)
+\end{itemize}
+
+\subsection{Services}
+
+\begin{itemize}
+    \item Services digitaux et intégration de solutions numériques innovantes.
+    \item Services de recherche et développement en technologies IT.
+    \item Services de conception Web / mobile et développement d'applications performantes.
+    \item Développement de solutions e-commerce sécurisées et évolutives.
+    \item Services de création de contenu multimédia et gestion de présence digitale.
+\end{itemize}
+
+\section{Présentation du projet}
+
+\subsection{Contexte du projet}
+Dans le cadre de ce projet de fin d'études, nous avons conçu et développer une plateforme innovante intitulée UFitPal: Assistance intelligente en fitness et nutrition. \\
+Notre projet consiste à concevoir et développer une plateforme intelligente de fitness et de nutrition, capable d'offrir une expérience personnalisée et innovante aux utilisateurs grâce à l'intelligence artificielle. Elle propose des programmes d’entraînement et des plans nutritionnels personnalisés, qui s'adaptent aux besoins spécifiques de chaque utilisateur.Cette application offre aussi des recommandations autonomes pour le suivi du niveau de fitness. et la prédiction des résultats d'évolution de poids. Elle permet aussi d'envoyer des notifications et des recommendations au utilisateurs et de communiquer avec les utilisateurs à travers un chatbot.
+
+\subsection{Les objectifs}
+Notre objectif est de créer une plateforme pour le fitness et la nutrition qui répondra aux besoins spécifiques du public MENA. En effet, l'application offre les services suivants :
+
+\begin{itemize}
+  \item Mettre en place des programmes d'entraînement complètement personnalisés en fonction du niveau physique, des objectifs et du rythme de vie de l'utilisateur.
+   \item Proposer des recommandations alimentaires personnalisées qui respectent les besoins énergétiques, les objectifs de santé et le mode de vie de chaque utilisateur.
+  \item Offrir des interfaces simples et intuitives pour les différents profils (athlète, coach, nutritionniste).
+  \item Offrir des modules intelligents pour le suivi de comportement des utilistaeurs en prédictant le poids et le niveau de fitness. 
+  \item Assurer une communication entre l'utilisateur et le système à travers un chatbot.
+  \item Assurer l'intégrité, la sécurité et la cohérence des données à chaque mise à jour et insertion.
+  \end{itemize}
+  
+\section{Étude de l’existant}
+L'analyse de l'existant se divise principalement en quatre parties : la description de l'existant, la critique de l'existant, la problématique et la solution suggérée.
+\subsection{Description de l’existant}
+L'objectif de cette partie est d'examiner les solutions existantes dans le domaine 
+des applications de fitness et nutrition afin de mieux cerner les besoins spécifiques du projet UFitPal, 
+et de les intégrer de manière intelligente dans sa conception et son développement. Nous avons donc examiné les applications les plus populaires disponibles à l'échelle mondiale et dans la région MENA. Nous citons:
+
+\begin{itemize}
+
+\item   La Figure ~\ref{fig:arbfit}présente l’interface principale de l’application  \textbf{ArabFit}. Cette application mobile de fitness arabophone, disponible sur les plateformes iOS et Android, s’adresse principalement aux utilisateurs du Maghreb et de la région MENA. Elle a été conçue pour accompagner les utilisateurs dans l’atteinte de leurs objectifs sportifs, notamment le développement musculaire, la perte de poids et l’amélioration de leur condition physique, grâce à des programmes d’exercices quotidiens adaptés à leurs besoins.[0]
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/arbfit.png}
+    \caption{Interface de l'application ArabFit}
+    \label{fig:arbfit}
+    
+\end{figure}
+
+\FloatBarrier
+
+
+\item La Figure~\ref{fig:myfitnesspal}  illustre l’interface principale de l’application \textbf{MyFitnessPal}, une application américaine de suivi nutritionnel et sportif, 
+lancée en 2005 et rachetée par Under Armour en 2015.[1] 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/myfitt.png}
+    \caption{Interface de l'application MyFitnessPal}
+    \label{fig:myfitnesspal}
+    
+\end{figure}
+\vspace{-1cm} 
+\FloatBarrier
+
+\end{itemize}
+
+\subsection{Critique de l'existant }
+En réponse au défis détectés dans les solutions précédement présentés, nous avons constaté qu'il ya un besoin de  concevoir et d'implémenter une plateforme intelligente qui unifie l'accompagnement humain (coachs et nutritionnistes) pour l'analyse 
+et la prédiction des recommendations personnalisées pour le suivi de comportement des utilisateurs, la communication entre le système et les utilisateurs ainsi que la proposition des plan nutritionels.
+
+Les principales anomalies observées sont detaillés dans  les points suivants:
+
+\begin{itemize}
+ \item  Personnalisation limitée, reposant sur des paramètres statiques (âge, poids, objectif calorique),
+ sans moteur d'IA adaptatif capable d'évoluer en fonction des progrès de l'utilisateur.
+ \item Aucun suivi nutritionnel n'est autorisé, sauf dans le cas d'une journalisation descriptive, 
+ sans analyse intelligente ni recommandations personnalisées.
+ \item Aucune dimension de relation professionnelle n'est intégrée : pas d'espace dédié à la relation athlète-coach ou athlète-nutritionniste, 
+ ni de messagerie structurée, ni de module de planification de rendez-vous.
+ \item Ces solutions ne contiennent aucune fonctionnalité d'intelligence artificielle avancée, telle que la prédiction d'évolution et  un assistant de conseils personnalisés.
+ \item Le suivi corporel est partiel, centré principalement sur le poids et les calories, sans intégration des métriques
+ anthropométriques ni outils de visualisation de la progression.
+ \end{itemize}
+  
+
+ 
+
+ 
+
+\subsection{Problématique}
+Comment concevoir et implémenter une plateforme numérique de santé préventive et intelligente qui unifie l'accompagnement humain (coachs et nutritionnistes), l'analyse métabolique et l'intelligence artificielle prédictive, afin d'offrir des recommandations personnalisées, de prédire l'évolution du poids des utilisateurs, de détecter de manière proactive les risques de décrochage et d'assurer une communication avec un chatbot ?
+\subsection{Les solutions proposées}
+En réponse aux problèmes repérés dans l'analyse de la situation actuelle, notamment en matière de dispersion des données et d'incompatibilité avec les caractéristiques spécifiques de la région MENA, nous suggérons une approche novatrice que nous appelons UFitPal, qui dispose des fonctionnalités ci-après :
+
+\begin{itemize}
+\item  Mise en place de programmes sportifs et nutritionnels personnalisés en fonction du profil utilisateur ,grâce à un système de rules-based.
+
+\item  Un espace professionnel dédié permettant au coach et au nutritionniste d'envoyer des invitations, de gérer leurs athlètes, 
+de rédiger des notes de suivi, de créer des plans repas personnalisés et de planifier des rendez-vous .
+\itemÉvaluation prédictive des performances basée sur l'IA qui permet de prédire le score de risque d'abandon, ainsi que l'évolution du poids et du niveau de fitness. 
+\item Un assistant chatbot IA disponible pour l'athlète afin d'obtenir des conseils personnalisés sur la nutrition et l'entraînement.
+ \item Une interface ergonomique, intuitive et multilingue qui regroupe tous les modules pour éviter la dispersion et encourager l'adhésion à long terme.
+\end{itemize}
+
+\section{Méthodologie de travail}
+
+\subsection{Choix d'une approche agile}
+Pour le développement de l'application UFitPal, nous avons adopté une méthodologie agile afin de répondre aux exigences évolutives d'un projet numérique innovant. Les approches agiles, contrairement 
+ aux approches traditionnelles en cascade, favorisent des cycles de développement courts et itératifs 
+ qui permettent une adaptation rapide aux retours des utilisateurs et aux contraintes techniques rencontrées tout au long du projet.
+
+\subsection{Méthodologie adoptée : Scrum}
+Parmi les cadres agiles disponibles, nous avons choisi Scrum pour sa structure bien définie et sa capacité à organiser efficacement le travail en équipe.
+ Dans le cadre du projet UFitPal, cette méthodologie nous a permis de livrer des incréments fonctionnels à chaque sprint,
+  tout en conservant une vision globale du produit final.
+
+\subsubsection{Organisation de l'équipe}
+L'équipe projet a été structurée selon les rôles Scrum suivants :
+\begin{itemize}
+    \item \textbf{Product Owner} : chargé de recueillir les besoins des utilisateurs cibles 
+    (sportifs, coachs) et de prioriser les fonctionnalités du backlog en fonction de leur 
+    valeur métier.
+    \item \textbf{Scrum Master} : responsable du respect du cadre Scrum, de la levée des 
+    obstacles et de la fluidité des cérémonies.
+    \item \textbf{Équipe de développement} : constituée de développeurs front-end et back-end, 
+    d'un designer UI/UX et d'un spécialiste en intelligence artificielle, assurant la 
+    réalisation technique des fonctionnalités définies.
+\end{itemize}
+
+\subsubsection{Artefacts utilisés}
+Les artefacts Scrum suivants ont structuré notre gestion du projet :
+\begin{itemize}
+    \item \textbf{Product Backlog} : liste vivante et priorisée de l'ensemble des 
+    fonctionnalités d'UFitPal, alimentée en continu par les retours utilisateurs et les 
+    évolutions des besoins.
+    \item \textbf{Sprint Backlog} : sous-ensemble du Product Backlog sélectionné à chaque 
+    début de sprint, découpé en tâches assignées aux membres de l'équipe.
+    \item \textbf{Incrément} : version fonctionnelle et testable de l'application livrée 
+    à l'issue de chaque sprint, enrichissant progressivement les fonctionnalités de la 
+    plateforme.
+\end{itemize}
+
+\subsubsection{Cérémonies pratiquées}
+Afin d'assurer un suivi régulier et une communication efficace au sein de l'équipe, nous 
+avons mis en place les cérémonies Scrum suivantes :
+\begin{itemize}
+    \item \textbf{Sprint Planning} : tenue en début de chaque sprint pour définir les 
+    objectifs à atteindre et répartir les tâches entre les membres de l'équipe.
+    \item \textbf{Daily Scrum} : point quotidien de quinze minutes permettant à chaque 
+    membre de partager son avancement, ses blocages et ses objectifs du jour.
+    \item \textbf{Sprint Review} : présentation de l'incrément réalisé aux parties 
+    prenantes afin de valider les fonctionnalités développées et d'ajuster les priorités.
+    \item \textbf{Sprint Retrospective} : réunion d'équipe visant à analyser le déroulement 
+    du sprint écoulé, à capitaliser sur les bonnes pratiques et à corriger les 
+    dysfonctionnements identifiés.
+\end{itemize}
+
+\subsection{Organisation en sprints}
+Le projet UFitPal a été découpé en sprints d'une durée de deux mois chacun. Cette 
+cadence nous a permis de maintenir un rythme de livraison régulier tout en intégrant 
+progressivement les fonctionnalités clés de l'application, depuis la gestion des profils 
+utilisateurs jusqu'à l'intégration du module d'intelligence artificielle. Le détail des 
+sprints réalisés et de leurs livrables est présenté dans la section suivante.
+
+\section{Langage de modélisation « UML »}
+
+Afin d'accomplir notre projet de façon efficace, il est primordial d'adopter une approche de travail organisée. Dans cette perspective, nous suggérons d'opter pour l'utilisation de l'UML (Unified Modeling Language) comme langage de modélisation classique pour la conception et le développement de notre application logicielle axée sur l'objet.
+
+En adoptant l'UML comme norme de modélisation, nous posons les bases d'un développement logiciel structuré, efficace et de qualité.
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/imageuml1.png}{%
+        \includegraphics[width=0.55\textwidth]{images/imageuml1.png}%
+    }{%
+        \fbox{\parbox[c][5cm][c]{0.55\textwidth}{\centering Ajouter l'image : \texttt{images/imageuml1.png}}}%
+    }
+    \caption{les vues du langage UML }
+    \label{fig:imageuml}
+\end{figure}
+\section{Conclusion }
+Ce chapitre a présenté une perspective globale de la société d'accueil, un analyse des applications 
+existantes aux fonctionnalités similaires à celles que nous voulons développer, et la 
+méthodologie de travail adoptée. 
+Dans le prochain chapitre, nous procédons à la 
+spécification des besoins fonctionnels et non-fonctionnels, à la définition de l'architecture 
+globale de l'application, ainsi qu'à la présentation du Product Backlog global et de 
+l'environnement de travail retenu.
+
+\chaptertitlepage{Chapitre 2: Spécification des besoins}{Chapitre 2 : Spécification des besoins}
+
+\setcounter{section}{0}
+
+
+
+\section{Introduction }
+Ce chapitre traite de la spécification des besoins du projet UFitPal, une étape cruciale pour s'assurer 
+que les objectifs de la plateforme correspondent aux attentes des utilisateurs.
+ Il comporte l'analyse des besoins fonctionnels et non fonctionnels, le diagramme global des cas d'utilisation, 
+ l'architecture de l'application, le Product Backlog général et l'environnement de travail adopté. 
+ Ces différents éléments constituent une vision claire et structurée du projet, 
+ et offrent donc une base solide pour sa conception, son développement et son évolution future.
+ 
+ \section{ Analyse des besoins}
+
+\subsection{Identification des acteurs du système}
+
+\begin{itemize}
+    \item \textbf{Utilisateur} \\
+      Toute personne non authentifiée souhaitant accéder à l'application. 
+    Il peut s'inscrire, se connecter via Google ou réinitialiser son mot de passe. 
+    Il n'a accès à aucune fonctionnalité métier avant authentification.
+
+    \item \textbf{Athlète}  \\
+     Acteur central du système. Une fois connecté, il bénéficie de l’ensemble des fonctionnalités personnalisées :
+     gestion du profil, onboarding, suivi des activités sportives, de la progression et de la nutrition,  consultation des prédictions de poids via un modèle IA (qui évalue l'évolution du poids à 30 jours) ,  réception des alertes de risque d'abandon qui détectent automatiquement une baisse de son engagement pour lui envoyer des encouragements ou ajuster son programme , 
+     consulter son niveau de fitness, 
+     consultation des recommandations basées sur des règles métier (rules-based), consultation du plan repas élaboré par le nutritionniste,
+      interaction avec le chatbot, gestion des invitations, envoi et réception de messages avec les autres acteurs connectés et consultation des notifications.
+
+    \item \textbf{Coach} \\
+    Professionnel de l'entraînement sportif. Il gère son profil, 
+    crée et consulte des notes de suivi sur ses athlètes, communique via la messagerie interne, 
+    propose des rendez-vous et envoie des invitations aux athlètes qu'il accompagne.
+
+    \item \textbf{Nutritionniste} \\
+    Professionnel de la nutrition. Il gère son profil, 
+    élabore des plans repas personnalisés pour ses athlètes clients, communique via la 
+    messagerie interne, et peut proposer des rendez-vous et envoyer des invitations.
+    \item \textbf{Agent IA} \\
+Système intelligent d'analyse prédictive fonctionnant en arrière-plan. Il traite en continu les données de vie et d'entraînement de l'athlète pour alimenter les modèles de machine learning et réaliser trois missions clés :
+estimer un score précis (de 0 à 10) et définir la catégorie de l'athlète (débutant, intermédiaire ou avancé), prédit la probabilité et le niveau de risque qu'un utilisateur abandonne son programme, prédit l’évolution du poids de l’athlète au cours des 30 prochains jours.
+   
+\end{itemize}
+
+\subsection{Spécification des besoins fonctionnels}
+
+Cette partie est consacrée à l'énumération des besoins fonctionnels pris en charge par les 
+acteurs identifiés, afin d'atteindre les fonctionnalités et les objectifs du système.
+
+\subsubsection*{L'utilisateur peut :}
+\begin{itemize}
+    \item \textbf{S'inscrire} \\
+    L'utilisateur peut créer un compte en fournissant les informations 
+    de base (nom, email, mot de passe) et en choisissant son rôle (Athlète, Coach ou Nutritionniste).
+    \item \textbf{Se connecter via Google} \\
+    L'utilisateur  peut s'authentifier rapidement en 
+    utilisant son compte Google, sans saisie manuelle de ses identifiants.
+    \item \textbf{Réinitialiser son mot de passe} \\
+    L'utilisateur peut réinitialiser son mot de 
+    passe en renseignant son adresse email afin de recevoir un lien de réinitialisation.
+     \item \textbf{Gérer son profil} \\
+     L'utilisateur peut consulter et mettre à jour ses informations 
+    personnelles avec des champs adaptés à son rôle.
+    \item \textbf{Envoyer et recevoir des messages} \\
+    L'utilisateur peut communiquer avec son coach 
+    et son nutritionniste via la messagerie interne de l'application.
+\end{itemize}
+
+\subsubsection*{L'athlète peut :}
+\begin{itemize}
+    
+    \item \textbf{Gérer l'onboarding} \\
+    L'athlète remplit un questionnaire (onboarding) initial portant sur 
+    ses objectifs, son niveau sportif et ses préférences, afin de personnaliser son expérience 
+    sur la plateforme.
+    
+    \item \textbf{Ajouter ses activités sportives} \\
+    L'athlète saisit ses séances d'entraînement 
+    en précisant le type d'activité, la durée et l'intensité. 
+   
+    \item \textbf{Ajouter sa progression} \\
+    L'athlète enregistre régulièrement ses données 
+    corporelles (poids, mensurations) et ses performances afin de suivre son évolution dans 
+    le temps.
+    \item \textbf{Ajouter son journal alimentaire} \\
+    L'athlète consigne ses repas quotidiens 
+    dans son journal nutritionnel personnel pour assurer un suivi alimentaire complet.
+    \item \textbf{Consulter le plan repas du nutritionniste} \\
+    L'athlète peut accéder au plan 
+    repas personnalisé élaboré et assigné par son nutritionniste.
+ \item \textbf{Consulter le niveau de fitness} \\
+    L’athlète peut visualiser son score de forme physique estimé (de 0 à 10), sa catégorie de niveau (débutant, intermédiaire ou avancé).
+
+    \item \textbf{Consulter l’évolution du poids} \\
+    L’athlète peut consulter la prédiction de son poids futur à la fin de sa période cible, calculée par le modèle d'IA à partir de son profil corporel et de son historique nutritionnel.
+
+    \item \textbf{Recevoir une alerte de risque d’abandon} \\
+    L’athlète reçoit des notifications préventives et des messages de soutien ciblés dès que l'IA détecte une baisse de son activité ou un risque de désengagement (churn).
+
+
+    \item \textbf{Consulter les recommandations} \\
+    l'athlète consulte ses recommandations personnalisées de nutrition (calories, macronutriments cibles) et d'entraînement (planning hebdomadaire), calculées selon ses données physiologiques, 
+    afin d'optimiser sa progression en toute sécurité.
+    \item \textbf{Interagir avec le chatbot IA} \\
+    L'athlète peut dialoguer avec le chatbot 
+    conversationnel  pour obtenir des conseils personnalisés 
+    en temps réel.
+    \item \textbf{Accepter ou refuser un rendez-vous} \\
+    L'athlète répond aux propositions de 
+    créneaux soumises par son coach ou son nutritionniste.
+    \item \textbf{Accepter ou refuser une invitation} \\
+    L'athlète peut accepter ou décliner 
+    les invitations reçues de la part de son coach ou de son nutritionniste.
+\item \textbf{Consulter les notifications} \\ 
+L'athlète peut consulter les notifications reçues lorsqu'un coach ou un nutritionniste lui envoie un message, partage un plan de repas, ajoute une note, propose un rendez-vous ou effectue toute autre mise à jour concernant son suivi.
+\end{itemize}
+
+\subsubsection*{Le Coach peut :}
+\begin{itemize}
+    
+    \item \textbf{Gérer ses notes de suivi} \\
+    Le Coach crée, modifie et consulte ses notes 
+    personnelles de suivi pour chaque athlète dont il assure l'encadrement.
+   
+    \item \textbf{Proposer un rendez-vous} \\
+    Le coach soumet une proposition de créneau à 
+    l'athlète concerné pour planifier une séance ou un suivi.
+    \item \textbf{Gérer les invitations} \\
+    Le coach peut envoyer des invitations à ses athlètes 
+    pour les intégrer à son suivi sur la plateforme.
+    \item \textbf{Consulter les notifications} \\
+    Le coach reçoit des notifications lorsqu'un athlète lui envoie un message, accepte ou refuse une invitation, accepte ou refuse une demande de rendez-vous.
+\end{itemize}
+
+\subsubsection*{Le Nutritionniste peut :}
+\begin{itemize}
+   
+    \item \textbf{Ajouter un repas personnalisé} \\
+    Le nutritionniste crée et assigne un plan 
+    repas personnalisé à l'athlète client.
+    \item \textbf{Proposer un rendez-vous} \\
+    Le nutritionniste soumet une proposition de créneau 
+    à l'athlète concerné pour planifier un suivi nutritionnel.
+    \item \textbf{Gérer les invitations} 
+    Le nutritionniste peut envoyer des invitations à ses 
+    Athlètes clients pour les intégrer à son suivi nutritionnel sur la plateforme.
+    \item \textbf{Consulter les notifications} \\
+    Le nutritionniste reçoit des notifications lorsqu'un athlète lui envoie un message, accepte ou refuse une invitation, accepte ou refuse une demande de rendez-vous.
+\end{itemize}
+
+Les différents fonctionnalités sont bien illustrées dans le diagramme de cas d'utilisation de la Figure \ref{usecase}.
+\subsection{Spécification des besoins non fonctionnels}
+Ces besoins décrivent toutes les contraintes auxquelles est soumis le système pour sa réalisation et son bon fonctionnement:
+
+\begin{itemize}
+    \item \textbf{L'ergonomie des interfaces} : Doit être conviviale et facile à utiliser. 
+    Aucune connaissance approfondie n'est requise pour manipuler l'interface.
+    \item \textbf{Sécurité }: Il est crucial de garantir la sécurité de la solution pour protéger les informations des utilisateurs.
+   \item \textbf{Performance } : L'application doit être avant tout performante. Le système doit réagir rapidement, 
+    quelle que soit l'action de l'utilisateur : l'accès, le chargement, et le rafraîchissement des données doit être en temps réel, souple, et rapide. 
+   
+    \item \textbf{Evolution } :Tout évolue, y compris les services. Doit savoir écouter les besoins de ses utilisateurs, prendre en compte leurs demandes,
+     pour améliorer ses services, tout en gardant à l'esprit l'utilité et l'efficacité.
+     \item \textbf{Fiabilité} : Le système doit être disponible et fonctionnel à tout moment pour l'utilisateur et Les informations doivent être mises à jour régulièrement.
+\end{itemize}
+
+
+\subsection {Diagramme général des cas d'utilisation}
+
+L'utilisation du modèle global des cas d'utilisation est essentielle pour organiser les exigences et les buts associés à un système. Les scénarios d'utilisation fondamentaux sont présentés dans la Figure~\ref{usecase} pour avoir une vision d'ensemble du fonctionnement de l'application.
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/usecasefinal.jpg}{%
+        \includegraphics[width=0.9\textwidth]{images/usecasefinal.jpg}%
+    }{%
+        \fbox{\parbox[c][7cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/diagramme\_general\_cas\_utilisation.png}}}%
+    }
+    \caption{Diagramme général des cas d'utilisation}
+    \label{usecase}
+\end{figure}
+
+ 
+\section {Le backlog du produit}
+ Le Product Backlog regroupe l’ensemble des besoins du client que l’équipe de développe-
+ment doit satisfaire. Chaque élément est classé selon un ordre de priorité.
+
+
+{\small
+\begin{longtable}{|
+  >{\RaggedRight\arraybackslash}p{1.3cm}|
+  >{\RaggedRight\arraybackslash}p{2.5cm}|
+  >{\centering\arraybackslash}p{0.9cm}|
+  >{\RaggedRight\arraybackslash}p{6.7cm}|
+  >{\RaggedRight\arraybackslash}p{1.3cm}|
+}
+
+\caption{Backlog du produit}\label{tab:product_backlog}\\
+\hline
+\textbf{Sprint} & \textbf{Thème} & \textbf{ID} & \textbf{User Story} & \textbf{Priorité} \\
+\hline
+\endfirsthead
+
+
+\hline
+\textbf{Sprint} & \textbf{Thème} & \textbf{ID} & \textbf{User Story} & \textbf{Priorité} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+Sprint 1 & Inscription & 1.1 &
+En tant qu'utilisateur, je veux créer un compte (avec choix du rôle) ou me connecter via email ou Google afin d'accéder à mon espace personnel et aux fonctionnalités adaptées à mon profil. &
+Élevée \\
+\cline{2-5}
+ & Authentification & 1.2 &
+En tant qu’utilisateur, je veux me connecter avec mon adresse e-mail ou mon compte Google afin d’accéder à mon compte. &
+Élevée \\
+\cline{2-5}
+& Authentification & 1.3 &
+En tant que visiteur, je veux recevoir un lien de réinitialisation par e-mail afin de récupérer mon accès. &
+Élevée \\
+
+
+\cline{2-5}
+ & Déconnexion & 1.4 &
+En tant qu'utilisateur, je veux me déconnecter de manière sécurisée afin de protéger mon compte. &
+Faible \\
+\cline{2-5}
+ & Profil \& Onboarding & 1.5 &
+En tant qu'athlète, je veux compléter un questionnaire initial et modifier mes informations de profil afin de personnaliser mon expérience et tenir mes données à jour. &
+Élevée \\
+\cline{2-5}
+
+& Invitations & 1.6 &
+En tant que coach/nutritionniste, je veux envoyer ou supprimer une invitation à un athlète afin de l'intégrer à mon suivi. &
+ Moyenne\\
+\cline{2-5}
+& Invitations & 1.7&
+En tant qu'athlète, je veux répondre aux invitations reçues afin d'accepter ou refuser un suivi. &
+ Moyenne\\
+\cline{2-5}
+& Suivi Coach & 1.8 &
+En tant que coach, je veux créer et gérer des notes sur mes athlètes afin de suivre leur progression. &
+Élevée \\
+\cline{2-5}
+ & Messagerie & 1.9 &
+En tant qu'acteur connecté, je veux envoyer et recevoir des messages afin de communiquer avec les autres membres. &
+Moyenne \\
+\cline{2-5}
+
+ & Rendez-vous & 1.10 &
+En tant que coach/nutritionniste, je veux proposer un créneau de rendez-vous à mon athlète afin d'organiser nos séances. &
+Élevée \\
+\cline{2-5}
+
+ & Rendez-vous & 1.11 &
+En tant qu'athlète, je veux accepter ou refuser un créneau proposé afin de confirmer mes disponibilités. &
+ Moyenne\\
+\cline{2-5}
+
+
+&  Notifications & 1.12 &
+En tant qu' utilisateur connecté,je veux recevoir des notifications en temps réel lors d'événements. &
+ Moyenne\\
+\hline
+
+% ── SPRINT 2 ────────────────────────────────────────────────
+Sprint 2 & Suivi Athlète & 2.1 &
+En tant qu'athlète, je veux saisir mes séances sportives afin d'alimenter mon suivi . &
+Élevée \\
+\cline{2-5}
+
+ & Suivi Athlète & 2.2 &
+En tant qu'athlète, je veux enregistrer mon poids et mes performances afin de suivre mon évolution. &
+Élevée \\
+\cline{2-5}
+
+ & Suivi Athlète & 2.3 &
+En tant qu'athlète, je veux tenir mon journal alimentaire quotidien afin de suivre mes apports nutritionnels. &
+Élevée \\
+\cline{2-5}
+
+ & Nutrition & 2.4 &
+En tant que nutritionniste, je veux créer un plan repas et l'assigner à mon athlète client afin de l'accompagner dans sa nutrition. &
+Élevée \\
+\cline{2-5}
+
+ & Nutrition & 2.5 &
+En tant qu'athlète, je veux consulter le plan repas créé par mon nutritionniste afin de suivre ses recommandations. &
+Moyenne \\
+\cline{2-5}
+
+
+
+ & Risque d'abandon & 2.6 &
+En tant qu'athlète, je veux voir mon score de risque d'abandon (churn) afin de prendre des mesures préventives et recevoir des alertes par e-mail . &
+Moyenne \\
+\cline{2-5}
+
+ & Prédiction de poids & 2.7 &
+En tant qu'athlète, je veux voir la prédiction d'évolution de mon poids afin de suivre ma trajectoire. &
+Moyenne \\
+\cline{2-5}
+
+& Consulter mon niveau de fitness & 2.8 &
+En tant qu'athlète, je veux visualiser mon niveau de fitness en fonction de mes activités réalisées et de ma progression afin de mesurer l'amélioration de ma condition physique &
+Moyenne \\
+\cline{2-5}
+
+
+
+ & Recommandations Rules-based & 2.9 &
+En tant qu'athlète, je veux consulter des recommandations issues d'un système rules-based fondé sur des formules scientifiques (Mifflin-St~Jeor, Harris-Benedict, ratios macronutriments). &
+ Élevée\\
+\cline{2-5}
+ & Suivi Coach & 1.10 &
+En tant qu'athlète, je veux consulter les notes laissées par mon coach afin de suivre ses observations. &
+Faible \\
+\cline{2-5}
+ & Chatbot IA & 2.11 &
+En tant qu'athlète, je veux poser des questions à un chatbot IA afin d'obtenir des conseils personnalisés sur ma nutrition et mon entraînement. &
+Moyenne \\
+
+\hline
+
+\end{longtable}
+}
+
+\section{Architecture de l'application UFitPal}
+La Figure~\ref{fig:architecturedeprojet} présente l'architecture de l'application UFitPal, qui repose sur une \textbf{architecture MVC distribuée} (découplée) enrichie par des services d'intelligence artificielle. Contrairement à une architecture MVC monolithique où les couches Model, View et Controller coexistent dans une même application, UFitPal répartit ces composants dans des services indépendants communiquant via des API REST. Cette organisation permet de séparer les responsabilités entre l'interface utilisateur, la logique métier, la gestion des données et les services d'intelligence artificielle.
+
+Les principaux composants de l'architecture sont décrits comme suit :
+
+\begin{itemize}[leftmargin=*, itemsep=4pt]
+    \item Le modèle MVC distribué est composé de trois parties : le \textbf{Modèle}, la \textbf{Vue} et le \textbf{Contrôleur}.
+    \item La \textbf{View} est implémentée à travers l'application web \textbf{UFitPal-Web}, développée avec Next.js. Elle fournit l'interface utilisateur permettant aux membres de consulter leurs informations, suivre leur progression, définir des objectifs, accéder aux recommandations personnalisées et interagir avec le chatbot intelligent.
+    \item Le \textbf{Contrôleur} est assuré par l'application \textbf{UFitPal-Backend}, développée avec NestJS. Il reçoit les requêtes provenant des utilisateurs, applique les mécanismes de validation et de sécurité, puis orchestre les traitements nécessaires en communiquant avec les services métier, la base de données et les services d'intelligence artificielle.
+    \item Le \textbf{Modèle} regroupe les services métier ainsi que les entités de données. Il gère les règles fonctionnelles de l'application, notamment le suivi nutritionnel, la gestion des objectifs, l'analyse de progression et le stockage des informations des utilisateurs dans une base de données PostgreSQL.
+    \item Les \textbf{services d'intelligence artificielle}, développés en Python/FastAPI, sont hébergés dans un microservice indépendant. Ils regroupent plusieurs modèles spécialisés :
+    \begin{itemize}[leftmargin=*, itemsep=2pt]
+        \item un modèle de prédiction de niveau de fitness.
+        \item un modèle de prédiction de poids.
+        \item un modèle d'évaluation du risque d'abandon (churn).
+        \item un chatbot intelligent basé sur \textbf{Llama}, capable de répondre aux questions des utilisateurs et de fournir des conseils personnalisés.
+    \end{itemize}
+    \item Les services d'intelligence artificielle communiquent exclusivement avec le backend via des appels HTTP/REST. Cette approche garantit une meilleure sécurité en évitant toute communication directe entre l'interface utilisateur et les modèles d'intelligence artificielle.
+   
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/architecturedeprojet.png}{%
+        \includegraphics[width=0.85\textwidth]{images/architecturedeprojet.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{\centering Ajouter l'image : \texttt{images/architecture\_physique.png}}}%
+    }
+    \caption{Architecture physique de l'application}
+    \label{fig:architecturedeprojet}
+\end{figure}
+\section{Environnement de développement}
+\subsection{Environnement logiciel}
+Au cours de cette section, nous allons présenter les divers outils qui forment l'environnement de développement de notre projet.
+Nous définissons ci-dessous les logiciels utilisés pour sa mise en œuvre.
+\begin{itemize}
+    \item \textbf{Visual Studio Code} :Visual Studio Code est un éditeur de code source qui peut être utilisé avec une variété de langages de programmation, notamment Java, JavaScript, Go, Node.js et C++.[2]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.1\textwidth]{images/photo_vscode.png} % Remplacez par le nom de votre fichier image
+    \caption{Logo Visual Studio Code}
+    \label{fig:vscode}
+\end{figure}
+\item \textbf{Jupyter} : est une application web open source permettant de créer et de partager des documents interactifs appelés « notebooks », qui contiennent du code exécutable, des équations, des visualisations et du texte narratif. 
+Il supporte de nombreux langages de programmation, notamment Python, R et Julia.[3]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/jupyter.png}
+    \caption{Logo Jupyter}
+    \label{fig:jupyter}
+    \end{figure}
+\item \textbf{Postman} : Postman est un outil qui permet aux développeurs de tester et de documenter les API (Application Programming Interface). 
+Il permet de créer des requêtes HTTP (GET, POST, PUT, etc.).[4]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_postman.png} % Remplacez par le nom de votre fichier image
+    \caption{ Logo Postman}
+    \label{fig:postman}
+\end{figure}
+\item \textbf{Docker} :  une plateforme logicielle permettant de faire tourner certaines applications dans des conteneurs. 
+La première mouture de Docker a été publiée en 2013.|[5]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/docker.png}
+    \caption{Logo Docker}
+    \label{fig:docker}
+    \end{figure}
+\item \textbf{Draw.io } : est une application de dessin de graphiques écrite en JavaScript .
+ Elle permet de concevoir et d'exporter de nombreux types de diagrammes , 
+ notamment des schémas de circuits , des plans d'étage , des organigrammes ,
+  des infographies , des cartes mentales et des diagrammes UML.[6]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_drawio.png}
+    \caption{Logo Draw.io}
+    \label{fig:drawio}
+\end{figure}
+\item \textbf{GitHub} : est une plateforme basée sur le cloud pour stocker, partager et collaborer sur du
+code.[7]
+
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/github.png}
+    \caption{Logo GitHub}
+    \label{fig:github}
+    \end{figure}
+\subsection{Technologies et langages utilisées}
+\item \textbf{Python} : est un langage interprété, orienté objet, très utilisé pour le développement
+rapide d’applications web, d’automatisation et de scripts scientifiques.[8]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/python.png}
+    \caption{Logo Python}
+    \label{fig:python}
+    \end{figure}
+
+  \item \textbf{Next.js} : est un framework de développement web open source 
+  complet créé par la société privée Vercel, fournissant des applications web 
+  basées sur React avec rendu côté serveur et rendu statique.[9]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_nextjs.png}
+    \caption{Logo Next.js}
+    \label{fig:nextjs}
+\end{figure}
+    
+\item \textbf{Nest.js} : est un framework web côté serveur basé sur Node.js 
+,distribué en tant que logiciel libre et open-source sous une licence MIT.[10]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_nestjs.png}
+    \caption{Logo Nest.js}
+    \label{fig:nestjs}
+\end{figure}
+\item \textbf{React.js} : est une bibliothèque JavaScript front-end libre et open source qui vise à simplifier la 
+ d'interfaces utilisateur basées sur des composants.[11]
+    \begin{figure}[H]
+    \centering
+    \IfFileExists{images/reactlogo.png}{%
+        \includegraphics[width=0.2\textwidth]{images/reactlogo.png}%
+    }{%
+        \fbox{\parbox[c][3cm][c]{0.2\textwidth}{\centering Ajouter l'image : \texttt{images/photo\_react.png}}}%
+    }
+    \caption{Logo React.js}
+    \label{fig:reactjs}
+    \end{figure}
+\item \textbf{Node.js} : est un environnement d'exécution JavaScript multiplateforme et open source, compatible avec Windows, Linux, Unix, macOS et d'autres systèmes d'exploitation. Il s'appuie sur le moteur V8 et exécute du code JavaScript en dehors d'un navigateur.[12]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_nodejs.png}
+    \caption{Logo Node.js}
+    \label{fig:nodejs}
+    \end{figure} 
+  \item \textbf{HTML} : est le langage de balisage conçu pour écrire les pages web. Il s'agit d'un format ouvert très utilisé en informatique.[13]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_html.png}
+    \caption{Logo HTML}
+    \label{fig:html}
+    \end{figure}
+
+\item \textbf{Tailwind CSS} : est un framework CSS open source. Contrairement à d'autres frameworks, comme Bootstrap , il ne fournit pas de classes prédéfinies pour les éléments tels que les boutons ou les tableaux. Il propose plutôt une liste de classes CSS « utilitaires » permettant de styliser chaque élément en les combinant.[14]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_tailwind.png}
+    \caption{Logo Tailwind CSS}
+    \label{fig:tailwind}
+    \end{figure}
+  
+  \item \textbf{TypeScript} : est un langage de programmation de haut niveau qui ajoute un typage statique avec des annotations de type optionnelles à JavaScript.[15]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_typescript.png}
+    \caption{Logo TypeScript}
+    \label{fig:typescript}
+    \end{figure}
+  
+  \item \textbf{PostgreSQL} : aussi connu sous le nom de Postgres, est un système de gestion de base de données relationnelle et objet (SGBDRO). C'est un outil libre disponible selon les termes d'une licence de type BSD mettant l’accent sur l’extensibilité et 
+  la conformité avec SQL.[16]
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.2\textwidth]{images/photo_postgresql.png}
+    \caption{Logo PostgreSQL}
+    \label{fig:postgresql}
+    \end{figure}
+\end{itemize}
+\section{Conclusion}
+Dans ce chapitre, nous avons identifié les besoins fonctionnels et non fonctionnels du système,
+     en détaillant les acteurs et leurs interactions à l'aide du diagramme général des cas d'utilisation. 
+Nous avons ensuite présentée le product backlog organisé en deux sprints, puis décrit l'environnement logiciel et les technologies utilisées pour le développement d'UFitPal.
+Dans le chapitre à venir, nous allons présenter le  développement du Sprint 1. 
+
+\chaptertitlepage{Chapitre 3 : Release 1 : Sprint 1 — Authentification, gestion des profils et communication}{Chapitre 3 : Release 1 : Sprint 1 — Authentification, gestion des profils et communication}
+
+\setcounter{section}{0}
+
+\FloatBarrier
+\section{Introduction}
+\vspace{-1em}
+Ce chapitre présente le premier sprint de développement de l’application UFitPal, consacré à la mise en place des fonctionnalités fondamentales de la plateforme. Les principales fonctionnalités développées incluent l’authentification des utilisateurs (inscription, connexion et réinitialisation du mot de passe), la configuration du profil de l’athlète, la gestion des invitations entre sportifs et professionnels (coachs et nutritionnistes), ainsi que les notifications en temps réel.
+
+Ce chapitre est structuré en trois parties principales : les spécifications fonctionnelles, les diagrammes de cas d’utilisation et la description détaillée des scénarios associés. Nous présentons ensuite la conception du système à travers les diagrammes de séquence et le diagramme de classes. On conclut par la validation des différents scénarios de ce sprint par la présentation des captures d’écran d’exécution.
+\\
+
+\section{Sprint 1 backlog}
+
+
+Le tableau suivant présente les treize \textit{user stories}  retenues pour le Sprint 1, regroupées
+par thème fonctionnel et accompagnées de leur priorité.
+{\small
+\begin{longtable}{|
+  >{\RaggedRight\arraybackslash}p{1.3cm}|
+  >{\RaggedRight\arraybackslash}p{2.5cm}|
+  >{\centering\arraybackslash}p{0.9cm}|
+  >{\RaggedRight\arraybackslash}p{6.7cm}|
+  >{\RaggedRight\arraybackslash}p{1.3cm}|
+}
+
+\caption{Backlog du Sprint 1}\label{tab:sprint1_backlog}\\
+\hline
+\textbf{Sprint} & \textbf{Thème} & \textbf{ID} & \textbf{User Story} & \textbf{Priorité} \\
+\hline
+\endfirsthead
+
+
+\hline
+\textbf{Sprint} & \textbf{Thème} & \textbf{ID} & \textbf{User Story} & \textbf{Priorité} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+% ── SPRINT 1 ────────────────────────────────────────────────
+Sprint 1 & Inscription & 1.1 &
+En tant qu'utilisateur, je veux créer un compte (avec choix du rôle) ou me connecter via email ou Google afin d'accéder à mon espace personnel et aux fonctionnalités adaptées à mon profil. &
+Élevée \\
+\cline{2-5}
+ & Authentification & 1.2 &
+En tant qu’utilisateur, je veux me connecter avec mon adresse e-mail ou mon compte Google afin d’accéder à mon compte. &
+Élevée \\
+\cline{2-5}
+ & Authentification & 1.3 &
+En tant qu'utilisateur, je veux recevoir un lien de réinitialisation par email afin de récupérer mon accès. &
+Élevée \\
+\cline{2-5}
+ 
+
+
+ & Profil \& Onboarding & 1.4 &
+En tant qu'athlète, je veux compléter un questionnaire initial et modifier mes informations de profil afin de personnaliser mon expérience et tenir mes données à jour. &
+Élevée \\
+\cline{2-5}
+
+ & Déconnexion & 1.5 &
+En tant qu'utilisateur, je veux me déconnecter de manière sécurisée afin de protéger mon compte. &
+Faible \\
+\cline{2-5}
+
+ & Invitations & 1.6& En tant que coach/nutritionniste, je veux envoyer une invitation à un athlète afin de l'intégrer à mon suivi. &
+ Moyenne\\
+\cline{2-5}
+
+ & Invitations & 1.7&
+En tant qu'athlète, je veux répondre aux invitations reçues afin d'accepter ou refuser un suivi. &
+ Moyenne\\
+\cline{2-5}
+
+ 
+
+
+ & Suivi Coach & 1.8 &
+En tant que coach, je veux créer et gérer des notes sur mes athlètes afin de suivre leur progression. &
+ Élevée\\
+\cline{2-5}
+
+ & Messagerie & 1.9 &
+En tant qu'acteur connecté, je veux envoyer et recevoir des messages afin de communiquer avec les autres membres. &
+Moyenne \\
+\cline{2-5}
+
+ & Rendez-vous & 1.10 &
+En tant que coach/nutritionniste, je veux proposer un créneau de rendez-vous à mon athlète afin d'organiser nos séances. &
+Élevée \\
+\cline{2-5}
+& Rendez-vous & 1.11 &
+En tant qu'athlète, je veux accepter ou refuser un créneau proposé afin de confirmer mes disponibilités. &
+Moyenne \\
+\cline{2-5}
+Sprint 1 & Notifications & 1.12 &
+En tant qu'acteur connecté, je veux recevoir des notifications en temps réel.  &
+Moyenne \\
+\hline
+
+\hline
+
+\end{longtable}
+}
+
+\section{Spécifications fonctionnelles}
+
+\subsection{Diagramme de cas d’utilisation du Sprint 1}
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/sprintcopie01.jpg}{%
+        \includegraphics[width=0.9\textwidth]{images/sprintcopie01.jpg}%
+    }{%
+        \fbox{\parbox[c][7cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/sprintcopie01.jpg}}}%
+    }
+    \caption{Diagramme de cas d'utilisation du Sprint 1}
+    \label{fig:cas_utilisation_sprint1}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Description textuelle des cas d’utilisation étendus du Sprint 1}
+
+Chaque cas d’utilisation est décrit sous forme de tableau normalisé précisant l’acteur, l’objectif, les pré-conditions, le scénario nominal et les scénarios alternatifs.
+\subsubsection*{CU1 : S’inscrire}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « S'inscrire »}
+\label{tab:cas_inscrire}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & S'inscrire \\
+\hline
+\textbf{Acteur} & Utilisateur \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L' utilisateur n'a pas encore de compte dans le système.
+    \item L'utilisateur accède à la page d'inscription de l'application UFitPal.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Un nouveau compte est créé avec le rôle choisi.
+    \item Athlète : l'utilisateur est redirigé vers la page d'onboarding pour compléter son profil.
+    \item Coach ou Nutritionniste : l'utilisateur est redirigé directement vers son tableau de bord.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'utilisateur ouvre la page d'inscription.
+    \item Le système affiche le formulaire d'inscription.
+    \item L'utilisateur choisit son rôle : Athlète, Coach ou Nutritionniste. 
+    \item L'utilisateur saisit ses informations personnelles : prénom, nom, email, mot de passe et confirmation. 
+    \item L'utilisateur clique sur « S'inscrire ».
+    \item Le système crée le compte et connecte automatiquement le visiteur.
+    \item Selon le rôle choisi :
+    \begin{itemize}[leftmargin=*, topsep=1pt, itemsep=1pt]
+        \item \textbf{Athlète} : le système redirige vers la page d'onboarding.
+        \item \textbf{Coach ou Nutritionniste} : le système redirige vers le tableau de bord.
+    \end{itemize}
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item \textbf{Inscription via Google OAuth} :
+    \begin{itemize}[leftmargin=*, topsep=1pt, itemsep=1pt]
+        \item L'utilisateur choisit son rôle 
+puis clique sur « Continuer avec Google ».
+        \item Le système redirige vers la page d'authentification Google.
+        \item Après validation, le système redirige selon le rôle .
+    \end{itemize}
+    \item  Si le  mot de passe et sa confirmation ne correspondent pas, le système affiche « Les mots de passe ne correspondent pas » et bloque la soumission.
+    \item Si le mot de passe contient moins de 8 caractères, le système affiche un message d'erreur.
+    \item  Si l'e-mail est déjà utilisé, le système affiche un message d'erreur et invite l'utilisateur à se connecter.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+
+\subsubsection*{CU2 : S’authentifier}
+
+
+\begin{table}[H]
+\centering
+\caption{Description du cas d'utilisation « S'authentifier »}
+\label{tab:cas_authentifier}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & S'authentifier \\
+\hline
+\textbf{Acteur} & Utilisateur \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'utilisateur dispose d'un compte enregistré dans le système.
+    \item L'utilisateur accède à la page de connexion de l'application UFitPal.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'utilisateur est authentifié et redirigé vers son tableau de bord selon son rôle (Athlète, Coach ou Nutritionniste).
+   
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'utilisateur ouvre la page de connexion.
+    \item Le système affiche le formulaire de connexion.
+    \item L'utilisateur saisit son adresse email et son mot de passe. 
+    \item L'utilisateur clique sur le bouton « Se connecter ».
+    \item Le système vérifie les identifiants.
+    \item Le système redirige le visiteur vers son tableau de bord.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item \textbf{Connexion via Google OAuth} :
+    \begin{itemize}[leftmargin=*, topsep=1pt, itemsep=1pt]
+        \item L'utilisateur clique sur « Connexion avec Google ».
+        \item Le système redirige vers la page d'authentification Google.
+        \item Après validation par Google, le système crée ou récupère le compte.
+        \item L'utilisateur est redirigé vers son tableau de bord.
+    \end{itemize}
+    \item  Si l'email n'existe pas ou si le mot de passe est erroné, le système affiche « Email ou mot de passe incorrect » et la connexion échoue. L'utilisateur peut réessayer.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\end{table}
+
+
+
+% Figure removed: digrammeinscription.png image file not found
+ 
+
+\subsubsection*{CU3 : Réinitialiser le mot de passe}
+
+
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Réinitialiser le mot de passe »}
+\label{tab:cas_reinitialiser_mdp}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Réinitialiser le mot de passe \\
+\hline
+\textbf{Acteur} & Utilisateur \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'acteur possède un compte actif sur la plateforme.
+    \item L'acteur a oublié son mot de passe et ne peut pas se connecter.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+Le mot de passe de l'utilisateur est modifié avec succès dans le système. L'utilisateur peut désormais se connecter avec son nouveau mot de passe. \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'utilisateur clique sur le lien « Mot de passe oublié ? » sur la page de connexion.
+    \item Le système affiche un champ demandant l'adresse e-mail.
+    \item L'utilisateur saisit son adresse email et valide.
+    \item Le système vérifie que l'email existe, génère un code de vérification à 6 chiffres et l'envoie par email.
+    \item Le système affiche un message de confirmation d'envoi indiquant que le code a été envoyé.
+    \item L'utilisateur ouvre l'email, récupère le code de 6 chiffres et le saisit dans le formulaire prévu à cet effet.
+    \item Le système vérifie le code de vérification.
+    \item Si le code est valide, le système affiche la page de définition du nouveau mot de passe.
+    \item L'utilisateur saisit son nouveau mot de passe, le confirme, puis clique sur \textit{Update password}.
+    \item Le système met à jour le mot de passe et affiche un message de succès.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item si l'email n'est pas reconnu, le système affiche un message d'erreur ou un message neutre indiquant qu'un lien a été envoyé.
+    \item si le lien n'est plus valide, le système indique que le lien n'est plus valide et propose de recommencer la procédure.
+    \item si le mot de passe est faible ou que les champs ne correspondent pas, le système affiche un message d'erreur et demande une nouvelle saisie.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+
+\subsubsection*{CU4 : Gérer l’onboarding}
+
+
+\begin{table}[H]
+\centering
+\caption{Description du cas d'utilisation « Gérer l'onboarding »}
+\label{tab:cas_gerer_onboarding}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Gérer onboarding \\
+\hline
+\textbf{Acteur} & Athlète \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète a créé un compte et est actuellement connecté à l'application.
+    \item L'athlète accède à l'espace lié à son profil personnel.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Les informations physiques, les objectifs sportifs et les données personnelles de l'athlète sont enregistrés et à jour dans le système.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète accède à la rubrique dédiée à son profil ou y est redirigé automatiquement s'il s'agit de sa première connexion.
+    \item Le système récupère les données existantes de l'athlète et vérifie si le profil a déjà été configuré par le passé.
+    \item Selon l'état du profil, l'une des actions suivantes est déclenchée :
+    \begin{itemize}[leftmargin=*, topsep=1pt, itemsep=1pt]
+        \item \textbf{Première configuration} : le système affiche un questionnaire vide. L'athlète remplit ses informations obligatoires (âge, taille, poids, objectif principal, etc.). 
+        \item \textbf{Mise à jour} : le système affiche le formulaire pré-rempli avec les anciennes données. L'athlète modifie uniquement les informations souhaitées. 
+    \end{itemize}
+    \item L'athlète clique sur le bouton de validation pour soumettre ses informations.
+    \item Le système calcule automatiquement l'Indice de Masse Corporelle (IMC) en arrière-plan à partir du poids et de la taille fournis.
+    \item Le système met à jour la base de données et marque officiellement le profil comme étant « complété ».
+    \item Le système affiche un message de confirmation validant la réussite de l'enregistrement.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Si un champ obligatoire (comme le poids, la taille ou l'objectif) est laissé vide, le système ne valide pas les modifications et souligne les champs manquants en rouge.
+    \item  Si l'athlète quitte la page ou annule avant validation, le système annule l'opération et conserve les anciennes informations ou le statut non complété.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsubsection*{CU5 : Gérer les invitations}
+
+\begingroup
+\setlength{\emergencystretch}{3em}
+
+
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Gérer les invitations »}
+\label{tab:cas_gerer_invitations}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Gérer les invitations \\
+\hline
+\textbf{Acteur} & Coach, Nutritionniste \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Le professionnel (Coach ou Nutritionniste) est authentifié et connecté.
+    \item Le professionnel accède à son interface de gestion des clients / athlètes.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'état des invitations est mis à jour dans le système : une nouvelle invitation est créée et mise en attente, ou une invitation existante est annulée/supprimée.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Le professionnel ouvre l'interface de gestion de ses clients.
+    \item Le système affiche la liste des clients actuels ainsi que la liste des invitations en attente.
+    \item Le professionnel sélectionne une action à effectuer :
+    \begin{itemize}[leftmargin=*, topsep=1pt, itemsep=1pt]
+        \item \textbf{Ajouter un nouvel athlète} : cliquer sur le bouton permettant d'inviter un client. 
+        \item \textbf{Annuler une demande} : sélectionner une invitation en attente (ou un lien existant) et cliquer sur l'icône de suppression. 
+    \end{itemize}
+    \item Selon l'action choisie :
+    \begin{itemize}[leftmargin=*, topsep=1pt, itemsep=1pt]
+        \item \textbf{Envoyer} : le professionnel remplit le formulaire (ex. : adresse email de l'athlète), puis valide l'envoi.
+        \item \textbf{Supprimer} : le professionnel confirme la suppression via une boîte de dialogue de sécurité.
+    \end{itemize}
+    \item Le système traite la demande et met à jour la base de données en conséquence.
+    \item Le système affiche un message de confirmation (succès de l'envoi ou de la suppression) et rafraîchit la liste affichée.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  Si le professionnel tente d'envoyer une invitation à une adresse email invalide ou à un utilisateur qui n'existe pas, le système affiche un message d'erreur et l'invitation n'est pas créée.
+    \item  Si le professionnel annule la confirmation de suppression dans la boîte de dialogue, le système ignore l'action et la liste reste inchangée.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+
+\end{table}
+\endgroup
+
+\begingroup
+\setlength{\emergencystretch}{3em}
+\subsubsection*{CU6 : Répondre aux invitations}
+
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Répondre aux invitations »}
+\label{tab:cas_repondre_invitations}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Répondre aux invitations \\
+\hline
+\textbf{Acteur} & Athlète \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète a créé un compte et est actuellement connecté à l'application.
+    \item Un coach ou un nutritionniste a préalablement envoyé une invitation à l'athlète.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Le statut de l'invitation est mis à jour dans le système : il passe à « acceptée » ou « refusée ».
+    \item Une notification est automatiquement envoyée au coach/nutritionniste l'informant de la réponse de l'athlète.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète accède à son tableau de bord personnel.
+    \item Le système récupère automatiquement la liste des invitations en attente adressées à l'athlète.
+    \item Le système affiche la section « Invitations en attente » contenant, pour chaque invitation : le nom et le prénom de l'expéditeur, le type de suivi proposé (Coach ou Nutritionniste) ainsi que deux boutons d'action : Accepter et Refuser.
+    \item L'athlète clique sur le bouton « Accepter » pour une invitation donnée.
+    \item Le système vérifie que l'invitation existe, qu'elle appartient bien à l'athlète connecté et que son statut est toujours « en attente ».
+    \item Le système enregistre l'acceptation et active le lien de suivi entre l'athlète et le coach/nutritionniste.
+    \item Le système envoie une notification au coach/nutritionniste avec le message : « \{Nom de l'athlète\} a accepté votre invitation de suivi. »
+    \item Le système actualise l'affichage et présente un message de confirmation validant la réussite de l'opération.
+    \item L'invitation disparaît de la section « Invitations en attente » et le coach/nutritionniste apparaît désormais dans la carte « Mon Coach » ou « Mon Nutritionniste » du tableau de bord.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  Si l'athlète clique sur le bouton « Refuser », le système enregistre le refus et envoie une notification au coach/nutritionniste : « \{Nom de l'athlète\} a refusé votre invitation de suivi. » L'invitation disparaît de la liste.
+  
+    \item  Si l'athlète n'a reçu aucune invitation, la section « Invitations en attente » ne s'affiche pas sur le tableau de bord.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\endgroup
+\subsubsection*{CU7 : Gérer les notes de session}
+
+
+\begin{table}[H]
+\centering
+\caption{Description du cas d'utilisation « Gérer les notes de session »}
+\label{tab:cas_gerer_notes_session}
+\begin{tabular}{|p{4cm}|p{10cm}|}
+\hline
+\textbf{Cas d'utilisation} & Gérer les notes de session \\
+\hline
+\textbf{Acteur} & Coach \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Le coach est authentifié et accède à son tableau de bord.
+    \item Le coach dispose d'au moins un athlète dans sa liste de clients.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} & La note de session est enregistrée, modifiée ou supprimée et la liste est mise à jour en conséquence. \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Le coach accède à la section \textit{Session Notes} depuis le menu de navigation.
+    \item Le système affiche la liste des notes existantes regroupées par athlète.
+    \item Le coach ajoute, modifie ou supprime une note selon son besoin.
+    \item Le système enregistre les modifications et met à jour la liste.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Si le coach annule la saisie, le système ferme le formulaire sans enregistrer.
+    \item Si aucun client n'est sélectionné, le système empêche l'enregistrement de la note.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabular}
+\end{table}
+
+\begingroup
+\setlength{\emergencystretch}{3em}
+\subsubsection*{CU8 : Gérer la messagerie}
+
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Gérer la messagerie »}
+\label{tab:cas_gerer_messagerie}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Gérer la messagerie \\
+\hline
+\textbf{Acteur} & Acteur connecté (Athlète, Coach ou Nutritionniste) \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'utilisateur est connecté.
+    \item Un lien de suivi est actif entre l'expéditeur et le destinataire.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Le message est transmis et le destinataire reçoit une notification de nouveau message.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'utilisateur accède à la messagerie et sélectionne son correspondant.
+    \item Le système affiche l'historique de leur conversation.
+    \item L'utilisateur saisit son message et clique sur Envoyer.
+    \item Le système valide l'envoi, affiche le message et notifie le destinataire.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Si aucun lien de suivi n'existe entre les deux utilisateurs, l'envoi du message est bloqué.
+    \item  Les messages reçus passent automatiquement au statut « lu » lorsque l'utilisateur ouvre la conversation.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\endgroup
+
+
+\begingroup
+\setlength{\emergencystretch}{3em}
+\subsubsection*{CU9 : Proposer un rendez-vous}
+
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Proposer un rendez-vous »}
+\label{tab:cas_proposer_rendez_vous}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Proposer un rendez-vous \\
+\hline
+\textbf{Acteur} & Coach ou Nutritionniste \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'utilisateur est connecté.
+    \item Un lien de suivi actif existe avec l'athlète sélectionné.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item La proposition de rendez-vous est créée avec le statut « planifié » et est visible par l'athlète.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Le professionnel accède à son calendrier ou son espace de suivi.
+    \item Il clique sur l'option pour programmer un rendez-vous et sélectionne son athlète.
+    \item Il renseigne les informations requises : titre, date, heure de début et de fin, notes.
+    \item Il valide la saisie.
+    \item Le système vérifie la validité des informations et la présence du lien de suivi.
+    \item Le système enregistre le rendez-vous sous le statut « planifié » et confirme le succès de l'opération.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  Si la date ou l'heure est invalide, ou si un champ obligatoire est manquant, le système bloque la validation et signale les erreurs à corriger.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\endgroup
+
+\begingroup
+\setlength{\emergencystretch}{3em}
+\subsubsection*{CU10 : Répondre à une proposition de rendez-vous}
+
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Répondre à une proposition de rendez-vous »}
+\label{tab:cas_repondre_rendez_vous}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Répondre à une proposition de rendez-vous \\
+\hline
+\textbf{Acteur} & Athlète \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est connecté.
+    \item Un rendez-vous proposé par son Coach ou Nutritionniste est en attente avec le statut « planifié ».
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Le rendez-vous passe au statut « confirmé » en cas d'acceptation ou « annulé » en cas de refus.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète accède à son tableau de bord et repère l'invitation de rendez-vous.
+    \item Il clique sur le bouton Accepter.
+    \item Le système vérifie que le rendez-vous est toujours disponible et n'a pas été modifié.
+    \item Le système change le statut du rendez-vous en « confirmé ».
+    \item Le système actualise le calendrier et affiche un message de validation.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  Si l'athlète clique sur Refuser. Le système enregistre l'annulation, passe le statut du rendez-vous à « annulé » et le retire des rendez-vous en attente.
+    \item  Si le rendez-vous a déjà été complété ou annulé par le professionnel, le système empêche l'action et affiche un message d'erreur.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\endgroup
+\begingroup
+
+\subsubsection*{CU12 : Consulter des notifications en temps réel}
+
+\begin{table}[H]
+\centering
+\caption{Description du cas d'utilisation « Recevoir des notifications en temps réel »}
+\label{tab:cas_recevoir_notifications_temps_reel}
+\begin{tabular}{|p{4cm}|p{10cm}|}
+\hline
+\textbf{Cas d'utilisation} & Recevoir des notifications en temps réel \\
+\hline
+\textbf{Acteur} & Acteur connecté (Coach, Athlète, Nutritionniste) \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'acteur est authentifié et connecté à l'application.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} & L'acteur est informé en temps réel des événements qui le concernent et peut consulter l'ensemble de ses notifications. \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Un événement est déclenché dans le système (réponse à une invitation, nouveau message).
+    \item Le système génère une notification et l'envoie en temps réel à l'acteur concerné.
+    \item Le compteur de notifications s'incrémente dans la barre de navigation.
+    \item L'acteur clique sur l'icône de notification.
+    \item Le système affiche la liste des notifications avec leur contenu et leur date.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Si l'acteur n'est pas connecté au moment de l'événement, la notification est conservée et affichée lors de sa prochaine connexion.
+    \item Si aucune notification n'est disponible, le système affiche un message indiquant qu'il n'y a aucune nouvelle notification.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabular}
+\end{table}
+\endgroup
+\section{Conception}
+
+Cette partie est consacrée à la modélisation et à la conception du système. Nous y exposons les diagrammes de séquence détaillant la dynamique des scénarios ainsi que le diagramme de classes global illustrant l'architecture des fonctionnalités clés développées au cours de ce sprint.
+
+\subsection{Diagrammes de séquence}
+
+Les diagrammes de séquence décrivent la dynamique du système en représentant les interactions temporelles entre ses composants. La collaboration entre les différents objets s'effectue via des échanges de messages ordonnés. Lorsque ces objets sont associés à des classes logicielles, chaque message correspond à l'appel d'une opération ou d'une méthode spécifique.
+
+
+\subsubsection*{Diagramme de séquence << S’inscrire >>}
+La Figure~\ref{fig:sequence_inscription} modélise le processus d'inscription. Le visiteur peut s'enregistrer via un formulaire classique, avec validation des mots de passe et vérification de l'unicité de l'e-mail, ou via Google OAuth. Après création sécurisée du compte en base de données, le système connecte automatiquement l'utilisateur et le redirige vers le tableau de bord correspondant à son rôle.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/pfekhouloud_digramme_de_sequence d'inscription1.png}{%
+        \includegraphics[width=0.9\textwidth]{images/pfekhouloud_digramme_de_sequence d'inscription1.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/diagramme\_sequence\_inscription.png}}}%
+    }
+    \caption{Diagramme de séquence de l'inscription}
+    \label{fig:sequence_inscription}
+\end{figure}
+
+\subsubsection*{Diagramme de séquence  << S’authentifier>>}
+La Figure~\ref{fig:sequence_connexion} présente le scénario d'authentification. L'utilisateur peut se connecter à l'aide de ses identifiants classiques ou via Google OAuth. Le système valide les informations de connexion auprès de la base de données : une authentification réussie redirige l'utilisateur vers son espace personnel, tandis qu'un échec d'authentification génère un message d'erreur.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/digramme_de_sequance_login.png}{%
+        \includegraphics[width=0.9\textwidth]{images/digramme_de_sequance_login.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/diagramme\_sequence\_connexion.png}}}%
+    }
+    \caption{Diagramme de séquence de la connexion}
+    \label{fig:sequence_connexion}
+\end{figure}
+
+\subsubsection*{Diagramme de séquence   modification de l'onboarding}
+La Figure~\ref{fig:sequence_onboarding} décrit la configuration de l'onboarding de l'athlète. Le système charge les données existantes de l'utilisateur pour pré-remplir le formulaire. Après validation des données physiques saisies, le système calcule l'Indice de Masse Corporelle  en arrière-plan, met à jour le profil dans la base de données et valide l'onboarding. L'annulation reste possible à tout moment pour préserver les anciennes données.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/digramme_de_sequance_modifier_onborading.png}{%
+        \includegraphics[width=0.9\textwidth]{images/digramme_de_sequance_modifier_onborading.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/digramme\_de\_sequance\_modifier\_onborading.png}}}%
+    }
+    \caption{Diagramme de séquence de la modification de l'onboarding}
+    \label{fig:sequence_onboarding}
+\end{figure}
+
+\subsubsection*{Diagramme de séquence  << Invitation d'un client>>}
+La Figure~\ref{fig:sequence_invitation_client} illustre le flux d'invitation d'un athlète par un professionnel, Coach ou Nutritionniste. Le système identifie l'athlète cible par son adresse e-mail, vérifie qu'aucune invitation active ou en attente n'est déjà en cours, puis enregistre l'invitation avec le statut « invité » avant de rafraîchir l'interface utilisateur.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/pfekhouloud digramme de classe-envoyer invitition2.png}{%
+        \includegraphics[width=0.9\textwidth]{images/pfekhouloud digramme de classe-envoyer invitition2.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/pfekhouloud digramme de classe-envoyer invitition2.png}}}%
+    }
+    \caption{Diagramme de séquence de l'invitation d'un client}
+    \label{fig:sequence_invitation_client}
+\end{figure}
+
+\subsection{Diagramme de classes du Sprint 1}
+Le diagramme de classes présenté sur la Figure~\ref{fig:diagramme_classes_sprint1} montre la structure statique des données développées durant ce premier sprint.
+
+Elle repose sur la classe centrale \texttt{Utilisateur}, dont les droits et accès sont définis par l'énumération \texttt{UserRole}. Pour l'Athlète, le profil est complété par ses \text{Mesures\_physiques} ainsi que ses \text{Objectifs\_utilisateur}
+La classe \texttt{Suivi\_client} modélise la relation d'accompagnement : elle associe un athlète à son professionnel et sert de support à l'enregistrement des \texttt{Note\_session} et à la planification des \texttt{Rendez\_vous}. Enfin, la classe \texttt{Message} permet d'assurer les communications bidirectionnelles sécurisées entre les différents acteurs de la plateforme.
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/classe01.jpg}{%
+        \includegraphics[width=0.95\textwidth]{images/classe01.jpg}%
+    }{%
+        \fbox{\parbox[c][7cm][c]{0.95\textwidth}{\centering Ajouter l'image : \texttt{images/classe01.jpg}}}%
+    }
+    \caption{Diagramme de classes du Sprint 1}
+    \label{fig:diagramme_classes_sprint1}
+\end{figure}
+
+\section{Réalisation}
+
+\subsection{Authentification (Sign in)}
+ La Figure~\ref{fig:interface_connexion} présente l'interface de connexion :
+L'utilisateur saisit son email et son mot de passe puis, en appuyant sur le bouton « Se connecter », il est redirigé vers l'espace personnel correspondant à son rôle.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/sigin.png}{%
+        \includegraphics[width=0.85\textwidth]{images/sigin.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{\centering Ajouter l'image : \texttt{images/interface\_connexion.png}}}%
+    }
+    \caption{Interface  S’authentifier}
+    \label{fig:interface_connexion}
+\end{figure}
+
+\subsection{Inscription (Sign up)}
+La figure~\ref{fig:interface_inscription} présente l'interface d'inscription :
+L'utilisateur remplit le formulaire d'inscription en saisissant ses informations personnelles, son adresse email, son mot de passe et en choisissant son rôle au sein de la plateforme. Après validation via le bouton \textit{Create account}, le système crée le compte et redirige l'utilisateur vers l'espace adapté à son profil.
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/sigup.png}{%
+        \includegraphics[width=0.85\textwidth]{images/sigup.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{\centering Ajouter l'image : \texttt{images/interface\_inscription.png}}}%
+    }
+    \caption{Interface d’inscrire}
+    \label{fig:interface_inscription}
+\end{figure}
+
+\subsection{Réinitialisation du mot de passe}
+La fonctionnalité de réinitialisation du mot de passe se déroule en plusieurs étapes. L'utilisateur saisit son adresse email afin de recevoir un code de vérification à 6 chiffres. Une fois le code reçu par email, il l'introduit dans le formulaire et définit un nouveau mot de passe avec confirmation. Après validation via le bouton \textit{Update password}, le mot de passe est mis à jour avec succès. Les Figures~\ref{fig:forgot_password1}, \ref{fig:forgot_password2} et~\ref{fig:forgot_password3} illustrent respectivement la saisie de l'email, la réception du code et la mise à jour du mot de passe :
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/forgetpassword1.png}{%
+        \includegraphics[width=0.85\textwidth]{images/forgetpassword1.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{\centering Ajouter l'image : \texttt{images/forget\_password1.png}}}%
+    }
+    \caption{Saisie de l'adresse email}
+    \label{fig:forgot_password1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/forgetpassword2.png}{%
+        \includegraphics[width=0.85\textwidth]{images/forgetpassword2.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{\centering Ajouter l'image : \texttt{images/forget\_password2.png}}}%
+    }
+    \caption{ Interface de Saisie du code de vérification}
+    \label{fig:forgot_password2}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/forgetpassword3.png}{%
+        \includegraphics[width=0.85\textwidth]{images/forgetpassword3.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{\centering Ajouter l'image : \texttt{images/forget\_password3.png}}}%
+    }
+    \caption{Mise à jour du mot de passe}
+    \label{fig:forgot_password3}
+\end{figure}
+\subsection{Gestion des invitations}
+Le coach peut inviter un client en recherchant son adresse email via la boîte de dialogue \textit{Invite Client}, puis en lui envoyant une invitation. Une fois l'invitation envoyée, le client apparaît dans la liste \textit{My Clients} avec un statut \textit{Pending} dans l'attente de sa réponse. Le coach reçoit ensuite une notification en temps réel l'informant de l'acceptation ou du refus de l'invitation. Les Figures~\ref{fig:invite_client}, \ref{fig:liste_clients} et~\ref{fig:notifications} illustrent respectivement l'envoi de l'invitation, la liste des clients et les notifications reçues :
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/inviteclient.png}{%
+        \includegraphics[width=0.85\textwidth]{images/inviteclient.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{\centering Ajouter l'image : \texttt{images/invite\_client.png}}}%
+    }
+    \caption{Envoi d'une invitation à un client}
+    \label{fig:invite_client}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/consulterlistedeclient.png}{%
+        \includegraphics[width=0.85\textwidth]{images/consulterlistedeclient.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{\centering Ajouter l'image : \texttt{images/consulterliste\_de\_client.png}}}%
+    }
+    \caption{Liste des clients du coach}
+    \label{fig:liste_clients}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/notification.png}{%
+        \includegraphics[width=0.85\textwidth]{images/notification.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{\centering Ajouter l'image : \texttt{images/notification.png}}}%
+    }
+    \caption{Notifications reçues par le coach}
+    \label{fig:notifications}
+\end{figure}
+
+\section{Conclusion}
+Ce premier sprint a été dédié à la mise en place du socle technique et relationnel d'UFitPal. Les fonctionnalités clés telles que l'authentification (classique et Google), la gestion de profil, et la messagerie collaborative entre les acteurs ont été développées avec succès. Fort de ces bases solides, le chapitre suivant présentera le second sprint de développement. Ce dernier se concentrera sur le suivi sportif et nutritionnel, la planification de repas personnalisés, et l'intégration de fonctionnalités d'IA prédictive et d'un chatbot d'accompagnement.
+\chaptertitlepage{Chapitre 4 : Release 2 : Sprint 2 — Suivi sportif, nutrition et intelligence artificielle}{Chapitre 4 : Release 2 : Sprint 2 — Suivi sportif, nutrition et intelligence artificielle}
+
+\setcounter{section}{0}
+
+\FloatBarrier
+\section{Introduction}
+\vspace{-1em}
+Ce chapitre est consacré au deuxième sprint de développement de l'application UFitPal. Il porte principalement sur les fonctionnalités liées au suivi sportif et nutritionnel de l'athlète, à la gestion des plans repas par le nutritionniste, ainsi qu'à l'intégration des premiers modules d'intelligence artificielle permettant d'améliorer la personnalisation de l'expérience utilisateur.
+
+Ce chapitre suit la même organisation que le chapitre précédent. Nous présentons d'abord le backlog du Sprint 2, puis les spécifications fonctionnelles à travers les diagrammes et descriptions textuelles des cas d'utilisation. Ensuite, nous abordons la conception à l'aide des diagrammes de séquence et du diagramme de classes, avant de terminer par la réalisation des fonctionnalités développées.
+
+\section{Sprint 2 backlog}
+
+Le tableau suivant présente les \textit{user stories} retenues pour le Sprint~2, regroupées par thème fonctionnel et accompagnées de leur priorité.
+
+{\small
+\begin{longtable}{|
+  >{\RaggedRight\arraybackslash}p{1.3cm}|
+  >{\RaggedRight\arraybackslash}p{2.5cm}|
+  >{\centering\arraybackslash}p{0.9cm}|
+  >{\RaggedRight\arraybackslash}p{6.7cm}|
+  >{\RaggedRight\arraybackslash}p{1.3cm}|
+}
+
+\caption{Backlog du Sprint 2}\label{tab:sprint2_backlog}\\
+\hline
+\textbf{Sprint} & \textbf{Thème} & \textbf{ID} & \textbf{User Story} & \textbf{Priorité} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Sprint} & \textbf{Thème} & \textbf{ID} & \textbf{User Story} & \textbf{Priorité} \\
+\hline
+\endhead
+
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+Sprint 2 & Suivi Athlète & 2.1 &
+En tant qu'Athlète, je veux saisir mes séances sportives afin d'alimenter mon suivi. &
+Élevée \\
+\cline{2-5}
+
+ & Suivi Athlète & 2.2 &
+En tant qu'Athlète, je veux enregistrer mon poids et mes performances afin de suivre mon évolution. &
+Élevée \\
+\cline{2-5}
+
+ & Suivi Athlète & 2.3 &
+En tant qu'Athlète, je veux tenir mon journal alimentaire quotidien afin de suivre mes apports nutritionnels. &
+Élevée \\
+\cline{2-5}
+
+ & Nutrition & 2.4 &
+En tant que Nutritionniste, je veux créer un plan repas et l'assigner à mon Athlète client afin de l'accompagner dans sa nutrition. &
+Élevée \\
+\cline{2-5}
+
+ & Nutrition & 2.5 &
+En tant qu'Athlète, je veux consulter le plan repas créé par mon Nutritionniste afin de suivre ses recommandations. &
+Élevée \\
+\cline{2-5}
+
+  & Risque d'abandon & 2.6 &
+En tant qu'athlète, je veux voir mon score de risque d'abandon (churn) afin de prendre des mesures préventives et recevoir des alertes par e-mail . &
+Moyenne \\
+\cline{2-5}
+
+ & Prédiction de
+poid &2.7 &
+En tant qu'Athlète, je veux voir la prédiction d'évolution de mon poids afin de suivre ma trajectoire. &
+Moyenne \\
+\cline{2-5}
+
+ & Consulter mon
+niveau de fitness& 2.8 &
+ En tant qu'athlète, je veux visualiser mon niveau de fitness en fonction de mes activités réalisées et de ma progression afin de mesurer l'amélioration de ma condition physique. &
+Moyenne \\
+\cline{2-5}
+
+ 
+
+ &Recommandations
+Rules-based  &  2.9 &
+En tant qu'athlète, je veux consulter des recommandations issues d'un système rules-based fondé sur des formules scientifiques. &
+Élève \\
+\cline{2-5}
+ & Suivi Coach & 1.10 &
+En tant qu'athlète, je veux consulter les notes laissées par mon coach afin de suivre ses observations. &
+Faible \\
+\cline{2-5}
+ & Chatbot IA  &  2.11 &
+En tant qu'athlète, je veux poser des questions à un chatbot IA afin d'obtenir des conseils personnalisés sur ma nutrition et mon entraînement. &
+Moyenne \\
+\hline
+
+\end{longtable}
+}
+
+\section{Spécifications fonctionnelles}
+
+\subsection{Diagramme de cas d'utilisation du Sprint 2}
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/usecasesprint02f.jpg}{%
+        \includegraphics[width=0.9\textwidth]{images/usecasesprint02f.jpg}%
+    }{%
+        \fbox{\parbox[c][7cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/diagramme\_cas\_utilisation\_sprint2.png}}}%
+    }
+    \caption{Diagramme de cas d'utilisation du Sprint 2}
+    \label{fig:cas_utilisation_sprint2}
+\end{figure}
+
+\subsection{Description textuelle des cas d'utilisation du Sprint 2}
+
+Cette partie présente les descriptions détaillées des cas d'utilisation du Sprint 2, notamment la gestion des activités sportives, le suivi de la progression, le journal alimentaire, les plans repas, les recommandations intelligentes et l'interaction avec le chatbot IA.
+\subsubsection*{CU1 : Enregistrer son activité}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Enregistrer son activité »}
+\label{tab:cas_enregistrer_activite}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Enregistrer son activité \\
+\hline
+\textbf{Acteur} & Athlète \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est connecté à l'application.
+    
+    \item L'athlète accède à son tableau de bord personnel.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'activité physique de l'athlète est enregistrée et sauvegardée dans le système.
+    \item L'historique des activités de l'athlète est mis à jour et consultable.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète accède à la rubrique d'enregistrement d'activité depuis son tableau de bord.
+    \item Le système affiche le formulaire de saisie et l'athlète remplit ses informations .
+    \item L'athlète clique sur le bouton « Enregistrer ».
+    \item Le système valide les données saisies et les enregistre dans la base de données.
+    \item Le système affiche un message de confirmation validant la réussite de l'enregistrement et met à jour l'historique des activités.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  Si certaines informations obligatoires sont manquantes ou si les données saisies ne respectent pas les règles de validation, le système rejette la soumission et informe l'athlète des corrections à effectuer.
+    \item  Si l'athlète annule l'opération ou quitte la page avant la validation, le système abandonne l'enregistrement et aucune donnée n'est sauvegardée.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\subsubsection*{CU2 : Enregistrer sa nutrition}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Enregistrer sa nutrition »}
+\label{tab:cas_enregistrer_nutrition}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Enregistrer sa nutrition \\
+\hline
+\textbf{Acteur} & Athlète \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est connecté à l'application.
+    \item L'athlète accède à la section « Nutrition » de son tableau de bord.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Les données nutritionnelles de l'athlète sont enregistrées et sauvegardées dans le système.
+    \item L'historique des repas et de l'apport nutritionnel de l'athlète est mis à jour et consultable.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète accède à la rubrique d'enregistrement de nutrition depuis son tableau de bord.
+    \item Le système affiche le formulaire de saisie et l'athlète remplit ses informations nutritionnelles 
+    \item L'athlète clique sur le bouton « Enregistrer ».
+    \item Le système valide les données saisies et les enregistre dans la base de données.
+    \item Le système affiche un message de confirmation et met à jour l'historique nutritionnel de l'athlète.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+   \item  L'utilisateur peut remplir seulement les informations qu'il connaît. Le système enregistre les données saisies même si certains champs ne sont pas remplis.
+    \item  Si l'athlète quitte la page avant validation, le système annule l'opération et aucune donnée n'est sauvegardée.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+
+\subsubsection*{CU3 : Enregistrer sa progression}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Enregistrer sa progression »}
+\label{tab:cas_enregistrer_progression}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Enregistrer sa progression \\
+\hline
+\textbf{Acteur principal} & Athlète \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est authentifié et connecté à l'application.
+    \item L'athlète navigue vers la section dédiée au suivi de sa progression physique.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Une nouvelle entrée de progression est sauvegardée en base de données, liée au profil de l'athlète.
+    \item Les métriques corporelles sont historisées pour la date d'enregistrement.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L’athlète accède à la rubrique d’enregistrement de sa progression depuis son tableau de bord.
+    \item Le système affiche le formulaire de saisie et l’athlète renseigne ses informations de suivi corporel.
+    \item L’athlète clique sur le bouton « Enregistrer ».
+    \item Le système valide les données saisies et les enregistre dans la base de données.
+    \item Le système affiche un message de confirmation et met à jour l’historique de progression de l’athlète.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénarios alternatifs} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  L'athlète peut choisir de ne renseigner qu'une partie des métriques disponibles. Le système accepte cette saisie partielle et sauvegarde les informations fournies, les champs non renseignés restant vides.
+    \item Si l'athlète quitte la page sans confirmer l'enregistrement, l'action est annulée et aucune entrée n'est ajoutée en base de données.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+
+\subsubsection*{CU4 : Consulter sa recommandation personnalisée}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Consulter sa recommandation personnalisée »}
+\label{tab:cas_consulter_recommandation}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Consulter sa recommandation personnalisée \\
+\hline
+\textbf{Acteur principal} & Athlète \\
+\hline
+\textbf{Description} &
+L'athlète génère et consulte son programme complet (nutrition, entraînement, mode de vie) conçu sur mesure par le moteur intelligent de l'application. \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+\item L'athlète est connecté à son compte.
+\item Les informations physiologiques de base (poids, taille, âge, sexe, objectif) ont été saisies dans le profil.
+        \end{itemize}
+        \vspace{2pt}
+        \end{minipage} \\
+        \hline
+        \textbf{Postconditions} &
+        \begin{minipage}[t]{\linewidth}
+        \vspace{2pt}
+        \begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+            \item Le plan complet est généré et présenté visuellement à l'athlète.
+                \item L'historique de la recommandation est sauvegardé par le système.
+                \end{itemize}
+                \vspace{2pt}
+                \end{minipage} \\
+                \hline
+                \textbf{Scénario nominal} &
+                \begin{minipage}[t]{\linewidth}
+                \vspace{2pt}
+                \begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+                    \item L'athlète accède à la rubrique dédiée à son plan depuis le tableau de bord et lance la génération de son programme.
+                        \item Le système récupère les données biométriques et les objectifs actuels de l'athlète.
+                            \item Le système effectue une série d'analyses et de calculs automatiques :
+                                \begin{itemize}[leftmargin=*, topsep=1pt, itemsep=1pt]
+                                        \item Il évalue le métabolisme de base et les besoins énergétiques quotidiens.
+                                                \item Il répartit les cibles caloriques et les macronutriments.
+                                                        \item Il structure un plan de repas et recommande des compléments alimentaires adaptés.
+\item Il planifie les séances d'entraînement de la semaine.
+\item Il formule des conseils de vie et identifie les éventuels risques pour la santé (blessures).
+\end{itemize}
+\item Le système compile toutes ces analyses en un dossier de recommandation unique.
+\item L'athlète visualise son plan détaillé, réparti par sections (Nutrition, Entraînement, Conseils) sur son interface.
+ \end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+ \textbf{Scénarios alternatifs} &
+ \begin{minipage}[t]{\linewidth}
+ \vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+\item  Si l'athlète n'a pas fourni toutes les mesures nécessaires, le système bloque la génération du plan et le redirige vers un formulaire pour compléter ses informations de santé.
+\item Si l’analyse des données révèle une anomalie, le système indique à l’athlète qu’il est temporairement impossible de générer le plan et l’invite à réessayer plus tard.
+                                                                                        \end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+
+\subsubsection*{CU5 : Consulter son historique}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Consulter son historique »}
+\label{tab:cas_consulter_historique}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Consulter son historique (activités, nutrition, progression) \\
+\hline
+\textbf{Acteur principal} & Athlète \\
+\hline
+\textbf{Description} &
+L'athlète consulte l'historique de ses séances de sport, de ses repas quotidiens et de ses mesures physiques afin de suivre ses progrès au fil du temps. \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est connecté à son espace personnel.
+    \item Des entraînements, des repas ou des poids ont déjà été enregistrés précédemment.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postconditions} &
+Les informations demandées sont affichées de manière claire et visuelle à l'athlète. \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète se rend dans la rubrique de suivi historique depuis son tableau de bord.
+    \item Le système récupère tous ses anciens enregistrements.
+    \item Le système rassemble et organise ces informations :
+    \begin{itemize}[leftmargin=*, topsep=1pt, itemsep=1pt]
+        \item Le détail des séances de sport (durées, calories dépensées, types d'exercices).
+        \item Le journal des repas (total des calories mangées, protéines, glucides, lipides et quantité d'eau bue).
+        \item L'évolution des mesures du corps (poids et mensurations).
+    \end{itemize}
+    \item Le système met en forme ces données sous forme de listes et de courbes d'évolution pour faciliter la lecture.
+    \item L'athlète consulte ses courbes de progrès et ses anciens repas par date.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénarios alternatifs} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  Si l'athlète n'a encore jamais rien enregistré, le système affiche un message lui expliquant qu'il n'y a pas encore d'historique.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\subsubsection*{CU6 : Créer et assigner un plan repas}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Créer et assigner un plan repas »}
+\label{tab:cas_creer_assigner_plan_repas}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Créer et assigner un plan repas \\
+\hline
+\textbf{Acteur principal} & Nutritionniste \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Le nutritionniste est connecté.
+    \item Au moins un athlète client est enregistré dans le système.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+Le plan repas est créé, assigné à l'athlète et consultable par ce dernier depuis son tableau de bord. \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Le nutritionniste accède à la rubrique « Plans repas » depuis son tableau de bord.
+    \item Le système affiche l'interface \textit{Meal Plan Builder} avec le formulaire de création.
+    \item Le nutritionniste sélectionne l'athlète destinataire dans la liste déroulante \textit{Client}.
+    \item Le nutritionniste renseigne les informations nutritionnelles du plan, notamment l'objectif calorique et le contenu de chaque repas.
+    \item Le nutritionniste clique sur le bouton « Enregistrer et assigner ».
+    \item Le système valide les données saisies et enregistre le plan dans la base de données.
+    \item Le système assigne le plan repas à l'athlète sélectionné et lui envoie une notification.
+    \item Le système affiche un message de confirmation validant la création et l'assignation du plan repas.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénarios alternatifs} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  Le système rejette la soumission, met en évidence les champs erronés ou vides  et invite le nutritionniste à corriger avant de soumettre à nouveau.
+    \item  Si le nutritionniste clique sur le bouton « Annuler », le système ferme le formulaire sans enregistrer les données saisies et redirige l’utilisateur vers le tableau de bord.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\subsubsection*{CU7 : Consulter le plan repas}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Consulter le plan repas »}
+\label{tab:cas_consulter_plan_repas}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Consulter le plan repas créé par le nutritionniste \\
+\hline
+\textbf{Acteur principal} & Athlète \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est connecté à son tableau de bord.
+    \item Un nutritionniste a créé et assigné un plan repas à l'athlète.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+Le plan repas assigné est affiché à l'athlète afin qu'il puisse suivre les recommandations de son nutritionniste. \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète accède à la rubrique « Plan repas » depuis son tableau de bord.
+    \item Le système vérifie l'existence d'un plan repas assigné à l'athlète connecté.
+    \item Le système récupère les informations du plan repas depuis la base de données.
+    \item Le système affiche le plan avec l'objectif calorique et le détail des repas recommandés.
+    \item L'athlète consulte les recommandations nutritionnelles proposées par son nutritionniste.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénarios alternatifs} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  si aucun plan repas n'a encore été assigné, le système affiche un message indiquant qu'aucun plan n'est disponible pour le moment.
+    
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\subsubsection*{CU8 : Évaluer le risque d'abandon et automatiser la remotivation}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Évaluation du risque d'abandon et remotivation automatique »}
+\label{tab:cas_score_risque_abandon}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{ cas d'utilisation} & Évaluation du risque d'abandon et remotivation automatique \\
+\hline
+\textbf{Acteurs} & Athlète (déclencheur), Système (analyse automatique en arrière-plan) \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète possède un compte actif sur la plateforme.
+    \item L'athlète a renseigné ses informations de profil. 
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postconditions} &
+Le niveau de risque d'abandon de l'athlète est évalué. Si le risque est jugé élevé et que l'historique d'activité est suffisant, un message d'encouragement et un e-mail de motivation sont envoyés automatiquement. \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète accède à son tableau de bord personnel.
+    \item Le système évalue son niveau de risque de désengagement en analysant son activité récente (séances réalisées, régularité).
+    \item Le système affiche le niveau de risque sous forme d'un indicateur visuel coloré et un indice de motivation.
+    \item Le système présente des conseils personnalisés pour aider l'athlète à rester motivé.
+    \item Si le risque est jugé élevé, le système envoie automatiquement une notification d'encouragement et un e-mail personnalisé pour remotiver l'athlète.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif } &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=2pt, itemsep=1pt]
+    \item Le système estime le risque uniquement à partir des informations de son profil d'inscription.
+    \item Le système indique que l'historique est encore insuffisant pour un calcul précis.
+    \item Le système désactive l'envoi automatique d'e-mails et de notifications de relance.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\subsubsection*{CU9 : Prédire l'évolution du poids}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Prédiction d'évolution du poids »}
+\label{tab:cas_prediction_evolution_poids}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Prédiction d'évolution du poids \\
+\hline
+\textbf{Acteur principal} & Athlète \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est connecté à son espace personnel.
+    \item L'athlète a indiqué son poids actuel, son poids cible et le délai pour y parvenir.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postconditions} &
+L'évolution théorique du poids de l'athlète est estimée et affichée avec un indicateur de faisabilité. \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète consulte le widget de prévision du poids sur son tableau de bord.
+    \item Le système récupère le profil corporel et les moyennes alimentaires/physiques quotidiennes.
+    \item Le système estime le poids futur en combinant ses dépenses énergétiques et ses repas récents, tout en respectant des limites de santé recommandées.
+    \item Le système évalue si l'objectif cible respecte ces limites saines.
+    \item Le système enregistre l'analyse en base.
+    \item Le système affiche le poids final estimé et signale si l'objectif est réaliste.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénarios alternatifs} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Si la différence de poids demandée est impossible à réaliser de façon saine dans le délai donné, le système indique que l'objectif est trop ambitieux et suggère d'allonger la période, par exemple : « Prévoyez 30 jours de plus ».
+    \item Si l'athlète n'a pas encore enregistré de repas, le système estime ses besoins de base théoriques à partir de ses données physiques pour afficher immédiatement une prédiction.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+
+\subsubsection*{CU10 : Consulter son niveau de fitness}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Niveau de fitness »}
+\label{tab:cas_niveau_fitness}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Niveau de fitness \\
+\hline
+\textbf{Acteur principal} & Athlète \\
+\hline
+\textbf{Conditions de départ} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est connecté à son espace personnel.
+    \item L'athlète a rempli son profil  et a indiqué ses habitudes sportives au moment de son inscription.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Résultats attendus} &
+Le niveau de fitness (débutant, intermédiaire ou avancé), le score global (0-10) et le pourcentage de progression vers le niveau suivant sont calculés, enregistrés et affichés avec des conseils personnalisés pour s'améliorer. \\
+\hline
+\textbf{Déroulement principal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète consulte la section « Mon niveau de fitness » ou le bloc correspondant sur son tableau de bord.
+    \item Le système récupère le profil de l'athlète, ses données physiques (taille, poids, indice de masse corporelle), ses indicateurs de bien-être (stress, sommeil, hydratation, nombre de pas par jour) et son historique d'activités récentes (durée, intensité, calories dépensées).
+    \item Le système calcule le niveau de fitness, le score global et le taux de progression.
+    \item Le résultat est sauvegardé par le système pour garder un historique de progression.
+    \item Le système affiche à l'athlète son niveau de fitness, son score, sa progression en pourcentage et des recommandations de séances adaptées pour passer au niveau supérieur.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Cas particulier} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Si l'athlète n'a pas encore enregistré de séances régulières, le système effectue le calcul uniquement à partir des informations fournies lors de l'inscription. Il avertit l'athlète que l'évaluation est peu fiable à ce stade et l'invite à enregistrer régulièrement ses séances pour obtenir un résultat plus précis.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\setlength{\emergencystretch}{3em}
+\subsubsection*{CU11 : Consulter les notes de suivi}
+\begingroup
+\setlength{\emergencystretch}{3em}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Consulter les notes de suivi »}
+\label{tab:cas_consulter_notes_suivi}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Consulter les notes de suivi \\
+\hline
+\textbf{Acteur} & Athlète \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est connecté.
+    \item L'athlète possède un lien de suivi actif avec un Coach.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postcondition} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item Les remarques et consignes du Coach sont affichées à l'écran par ordre chronologique.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète accède à son tableau de bord principal.
+    \item Le système récupère automatiquement l'ensemble des notes rédigées par son coach.
+    \item Le système trie ces notes de la plus récente à la plus ancienne.
+    \item Le système affiche la liste des notes contenant la date, le nom du coach et le contenu des observations.
+    \item L'athlète consulte les informations.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénario alternatif} &
+\begin{minipage}[t]{\linewidth}\sloppy
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  Si le coach n'a rédigé aucune note, le système affiche un encadré vide avec la mention « Aucune note pour le moment ».
+    \item  Si aucun lien de suivi n'est établi avec un coach, la section dédiée aux notes ne s'affiche pas sur l'écran de l'athlète.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\endgroup
+\subsubsection*{CU12 : Utiliser l'assistant intelligent d'accompagnement}
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Description du cas d'utilisation « Assistant intelligent d'accompagnement »}
+\label{tab:cas_assistant_intelligent_accompagnement}
+\small
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{3.4cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Cas d'utilisation} & Assistant intelligent d'accompagnement (Chatbot) \\
+\hline
+\textbf{Acteur principal} & Athlète \\
+\hline
+\textbf{Préconditions} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète est connecté à son espace personnel.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Postconditions} &
+L'athlète reçoit des conseils instantanés et des réponses personnalisées à ses questions sur la nutrition, l'entraînement et son programme. \\
+\hline
+\textbf{Scénario nominal} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{enumerate}[label=\arabic*., leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item L'athlète ouvre la fenêtre de discussion de l'assistant intelligent depuis son tableau de bord.
+    \item L'athlète saisit un message ou pose une question concernant son alimentation, son sport ou son suivi, par exemple : « Que manger après ma séance ? ».
+    \item Le système transmet le message et l'historique de la discussion à l'assistant intelligent.
+    \item L'assistant intelligent formule une réponse en français de manière bienveillante et adaptée.
+    \item Le système affiche la réponse en temps réel, mot par mot, dans l'interface de discussion.
+\end{enumerate}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\textbf{Scénarios alternatifs} &
+\begin{minipage}[t]{\linewidth}
+\vspace{2pt}
+\begin{itemize}[leftmargin=*, topsep=0pt, itemsep=1pt]
+    \item  Si la connexion avec l'assistant intelligent échoue, le système affiche un message indiquant que l'assistant rencontre des difficultés techniques et invite l'athlète à réessayer ultérieurement.
+\end{itemize}
+\vspace{2pt}
+\end{minipage} \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+
+\section{Conception}
+
+Cette partie est consacrée à la modélisation des fonctionnalités du Sprint 2. Elle présente les diagrammes de séquence décrivant les interactions entre les acteurs et le système, ainsi que le diagramme de classes associé aux fonctionnalités de suivi, nutrition et intelligence artificielle.
+
+\subsection{Diagrammes de séquence}
+
+
+
+\subsubsection*{Diagramme de séquence de l'enregistrement nutritionnel}
+La Figure~\ref{fig:sequence_nutrition_sprint2}  présente le scénario d’enregistrement des données nutritionnelles. L'athlète demande au système d'ouvrir la section nutrition, puis remplit le formulaire avec ses informations. Le système vérifie ensuite les données et les envoie vers la base de données. Une fois que l’athlète est correctement enregistré, 
+il reçoit un message de confirmation. Sinon un message d’erreur s’affiche.
+    \begin{figure}[H]
+    \centering
+    \IfFileExists{images/digramme_de_sequence_de_nutrition.png}{%
+        \includegraphics[width=0.9\textwidth]{images/digramme_de_sequence_de_nutrition.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/digramme\_de\_sequence\_de\_nutritions.png}}}%
+    }
+    \caption{Diagramme de séquence de l'enregistrement nutritionnel}
+    \label{fig:sequence_nutrition_sprint2}
+\end{figure}
+
+\subsubsection*{Diagramme de séquence de la consultation du plan repas créé par le nutritionniste}
+La Figure~\ref{fig:sequence_suivi_coaching_sprint2}illustre le scénario de consultation du suivi et du coaching par l’athlète. Après avoir accédé à l’onglet « Suivi / Coaching », le système vérifie l’existence d’un nutritionniste assigné à l’athlète. Si aucun professionnel n’est associé, un message informatif est affiché. Dans le cas contraire, le système récupère les plans repas correspondants et vérifie les droits d’accès de l’athlète. Si aucun plan repas n’est disponible, un message approprié est affiché ; sinon, les repas ainsi que les objectifs caloriques définis par le nutritionniste sont présentés à l’athlète
+
+
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/consulter repas6.png}{%
+        \includegraphics[width=0.9\textwidth]{images/consulter repas6.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/diagramme\_sequence\_suivi\_coaching.png}}}%
+    }
+    \caption{Diagramme de séquence de la consultation du plan repas créé par le nutritionniste}
+    \label{fig:sequence_suivi_coaching_sprint2}
+\end{figure}
+
+\subsubsection*{Diagramme de séquence de la consultation des recommandations}
+La Figure~\ref{fig:sequence_recommandation_sprint2} illustre le scénario de consultation et de génération des recommandations personnalisées. L’athlète initie la demande depuis la page dédiée à son programme. Le système vérifie alors les informations de son profil en interrogeant la base de données. Si certaines données sont manquantes ou si un programme valide existe déjà, un message approprié est affiché. Dans le cas où une nouvelle génération est nécessaire, le système effectue les calculs métaboliques, génère les plans d’entraînement et de nutrition, puis enregistre les recommandations produites. Enfin, le programme personnalisé mis à jour est présenté à l’athlète.\begin{figure}[H]
+    \centering
+    \IfFileExists{images/digrammedesequencerecomandation.png}{%
+        \includegraphics[width=0.9\textwidth]{images/digrammedesequencerecomandation.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/diagramme\_de\_sequence\_recommandation.png}}}%
+    }
+    \caption{Diagramme de séquence de la consultation des recommandations}
+    \label{fig:sequence_recommandation_sprint2}
+\end{figure}
+
+\subsubsection*{Diagramme de séquence de la détection automatique du risque d'abandon}
+La Figure~\ref{fig:sequence_detection_risque_abandon_auto} présente le scénario de détection automatique du risque d’abandon. Ce processus est lancé automatiquement tous les soirs par une tâche planifiée. Le système récupère alors la liste de tous les athlètes enregistrés,et pour chaque athlète, il collecte ses séances, ses métriques et ses objectifs afin d’évaluer son niveau de risque d’abandon. Le résultat de cette évaluation est alors enregistré dans la base de données. Si le niveau de risque est élevé et que l’historique d’activités est suffisant, le système envoie automatiquement à l’athlète un message d’encouragement interne ainsi qu’un e-mail de motivation personnalisé.
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/automatique.jpg}{%
+        \includegraphics[width=0.9\textwidth]{images/automatique.jpg}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/Sd\_Detection\_Risque\_Abandon\_Automatique.png}}}%
+    }
+    \caption{Diagramme de séquence de la détection automatique du risque d'abandon}
+    \label{fig:sequence_detection_risque_abandon_auto}
+\end{figure}
+
+
+\subsubsection*{Diagramme de séquence de la consultation du risque d'abandon}
+La figure~\ref{fig:sequence_consultation_risque_abandon}  présente le scénario de consultation du risque d’abandon par l’athlète. L’athlète se rend sur son tableau de bord, et le système, à partir de la base de données, lit son profil et son historique d’activités et évalue automatiquement son risque d’abandon.
+
+Le scénario prévoit plusieurs cas de figure : si l’athlète dispose d’un historique d’activités suffisant, son niveau de risque est calculé à partir de son analyse de régularité et des activités récentes. Si le niveau est élevé, on lui envoie un message d’encouragement et un courriel de motivation. S’il s’agit d’un niveau faible ou moyen, le résultat est simplement mémorisé. Dans ce cas, le risque est calculé sur la base des seules indications de profil de l'athlète, car il ne dispose pas encore d'un historique d'activités. Dans tous les cas, l'athlète dispose sur son tableau de bord d'un indicateur coloré accompagné de conseils de motivation.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/sequenceabondon.jpg}{%
+        \includegraphics[width=0.9\textwidth]{images/sequenceabondon.jpg}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/Sd\_Consultation\_Risque\_Abandon.png}}}%
+    }
+    \caption{Diagramme de séquence de la consultation du risque d'abandon}
+    \label{fig:sequence_consultation_risque_abandon}
+\end{figure}
+
+
+
+\subsection{Diagrammes de classes}
+Le diagramme de classes ci-dessous modélise les entités principales du système de gestion fitness et nutrition ainsi que leurs relations. Le système s'articule autour d'une entité centrale User pouvant jouer trois rôles définis par l'énumération UserRole : ATHLETE, COACH ou NUTRITIONIST. Cette classe est reliée aux modules fonctionnels Progression, Nutrition, Activités, Plan\_repas, Notification et Recommendation, assurant ainsi un suivi complet de l'utilisateur. La classe ML\_prédiction exploite les données issues de Nutrition et Activités pour générer des prédictions personnalisées telles que la prédiction du poids corporel et le risque d'abandon.
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/digrammeclassesprinte2.jpg}{%
+        \includegraphics[width=0.95\textwidth]{images/digrammeclassesprinte2.jpg}%
+    }{%
+        \fbox{\parbox[c][7cm][c]{0.95\textwidth}{\centering Ajouter l'image : \texttt{images/diagramme\_classes\_sprint2.png}}}%
+    }
+    \caption{Diagramme de classes du Sprint 2}
+    \label{fig:diagramme_classes_sprint2}
+\end{figure}
+
+\section{Réalisation}
+
+\subsection{Réalisation du suivi de l’athlète et de la gestion des plans de repas}
+
+Cette partie présente les principales interfaces réalisées pour assurer le suivi sportif de l'athlète et la gestion des plans de repas par le nutritionniste. Les captures illustrent les écrans utilisés pour créer les plans nutritionnels, consulter leur historique, enregistrer les activités sportives et suivre l'évolution récente des séances.
+\subsubsection*{Dashboard de athlète}
+La figure~\ref{fig:dashboard_athlete} présente le tableau de bord de l'athlète, qui lui permet
+ d'accéder à différentes sections de suivi et de coaching, notamment la consultation de son plan , l'enregistrement de ses activités sportives, et le suivi de son évolution récente. 
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/dashboradathlete.png}{%
+        \includegraphics[width=0.95\textwidth]{images/dashboradathlete.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/dashboradathlete.png}}}%
+    }
+    \caption{Interface du tableau de bord de l'athlète}
+    \label{fig:dashboard_athlete}
+\end{figure}
+
+\subsubsection*{Création d'un repas}
+Le nutritionniste accède à cette vue pour créer un plan nutritionnel personnalisé pour un athlète, en définissant l'objectif calorique et en composant les repas de la journée (petit-déjeuner, déjeuner, dîner, collations) avant de sauvegarder le plan.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/mealplans.jpg}{%
+        \includegraphics[width=0.95\textwidth]{images/mealplans.jpg}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/meal\_plans.jpg}}}%
+    }
+    \caption{Interface de création d'un plan nutritionnel}
+    \label{fig:meal_plan_builder}
+\end{figure}
+
+
+\subsubsection*{Log d'activité}
+L'athlète accède à cette vue pour enregistrer les activités sportives qu'il a réalisées, 
+en sélectionnant le type d'activité, la durée, les calories brûlées, 
+l'intensité et la date, puis en indiquant si la séance a été complétée ou manquée.
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/logactivites.png}{%
+        \includegraphics[width=0.95\textwidth]{images/logactivites.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/log\_activites.png}}}%
+    }
+    \caption{Interface d'enregistrement d'une activité sportive}
+    \label{fig:log_activite}
+\end{figure}
+
+\subsubsection*{Activité récente}
+L'athlète consulte cette vue pour suivre l'historique des activités sportives 
+qu'il a enregistrées, avec un graphique illustrant l'évolution de la durée et des 
+calories brûlées sur une période donnée, ainsi qu'un récapitulatif détaillé de chaque séance réalisée.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/recentactivity.png}{%
+        \includegraphics[width=0.95\textwidth]{images/recentactivity.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/recentactivity.png}}}%
+    }
+    \caption{ Interface de l'historique des activités de l'athlète}
+    \label{fig:recentactivity}
+\end{figure}
+
+
+\subsection{Modèles d'intelligence artificielle}
+Dans cette section, nous décrivons les modèles d'intelligence artificielle utilisés pour prédire l'évolution du poids de l'athlète, évaluer le risque d'abandon et estimer son niveau de condition physique. Ces modules permettent d'améliorer le suivi personnalisé en exploitant les données sportives, nutritionnelles et corporelles enregistrées dans la plateforme.
+
+\subsubsection{Prédiction de l'évolution du poids}
+Dans le cadre de ce projet, ce module offre à l'IA la capacité d'anticiper la progression du poids d'un athelete sur une durée spécifique,
+ 
+tout en validant la faisabilité de ses buts du point de vue physiologique. Il accompagne l'utilisateur dans la compréhension de l'évolution 
+possible de son poids.
+
+\paragraph{Analyse du jeu de données}
+Le jeu de données regroupe des informations physiologiques, nutritionnelles et comportementales relatives aux athlètes.
+ Il comprend les caractéristiques personnelles telles que l’âge, 
+ le genre, la taille et le poids actuel, ainsi que des données 
+ liées au mode de vie, notamment les apports journaliers en calories, protéines, glucides et lipides,
+ 
+ le nombre de pas quotidiens et la durée du sommeil. Ces informations sont complétées par l’historique de l’évolution du poids, 
+ permettant d’obtenir une vue globale du profil de l’athlète et de fournir les données nécessaires aux analyses et prédictions personnalisées.
+
+
+L'ensemble des observations a été réparti en deux sous-ensembles afin d'assurer
+l'apprentissage et l'évaluation du modèle. La séparation a été réalisée à l'aide
+de la méthode \textit{"GroupShuffleSplit"}, garantissant qu'un même participant
+n'apparaisse jamais simultanément dans les données d'entraînement et de test.
+La répartition du jeu de données est présentée dans le tableau~\ref{tab:split_weight}.
+\begin{table}[H]
+\centering
+\caption{Répartition du jeu de données pour la prédiction de l'évolution du poids}
+\label{tab:split_weight}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Sous-ensemble} & \textbf{Nombre de lignes} & \textbf{Nombre de participants} \\ \hline
+Entraînement & 538\,053 & 2\,348 \\ \hline
+Test & 134\,826 & 588 \\ \hline
+\end{tabular}
+\end{table}
+\paragraph{Métriques d’évaluation et modèle retenu}
+
+Le modèle retenu pour la prédiction du poids corporel à 30 jours est XGBoost choisi pour sa robustesse et sa capacité à modéliser des relations complexes entre les variables. Les performances obtenues sur l’ensemble de test sont les suivantes :
+
+\begin{itemize}
+\item \textbf{ Erreur absolue moyenne :MAE = 0,921 kg} : les prédictions s’écartent en moyenne de moins d’un kilogramme du poids réel.
+\item \textbf{ Racine de l'erreur quadratique moyenne : RMSE = 1,195 kg} : les erreurs de prédiction restent globalement faibles, même pour les cas les plus difficiles.
+\item \textbf{ Coefficient de détermination : $R^2 = 0,9936$} : le modèle explique 99,36 % de la variance du poids futur.
+\end{itemize}
+
+Ces résultats démontrent que le modèle XGBoost fournit des prédictions précises et fiables, ce qui le rend adapté à l’estimation de l’évolution du poids des utilisateurs.
+
+
+\paragraph{ Validation}
+La figure~\ref{fig:poids} présente l'interface de prédiction de l'évolution du poids.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/poids.png}{%
+        \includegraphics[width=0.9\textwidth]{images/poids.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/poids.png}}}%
+    }
+    \caption{Interface de prédiction de l'évolution du poids}
+    \label{fig:poids}
+\end{figure}
+
+
+\subsubsection{Évaluation du risque d'abandon}
+Ce module vise à évaluer le niveau d'engagement de chaque athlète et à prévenir tout risque de désabonnement.
+ Dès le franchissement d'un seuil critique, le système peut déclencher des notifications de relance adaptées au profil des utilisateurs 
+ les plus exposés à l'abandon.
+
+\paragraph{Analyse du jeu de données}
+La Figure~\ref{fig:datasetchrunfinal}  présente la structure du jeu de données utilisé pour l'évaluation du risque d'abandon. 
+Celui-ci regroupe un ensemble de caractéristiques comportementales, physiologiques et contractuelles. 
+Outre la variable cible (Churn), le jeu de données capture le niveau d'activité récent et la fréquence d'entraînement, 
+l'engagement global, les informations démographiques et physiques (âge, genre, IMC, niveau de condition physique), 
+les paramètres d'abonnement (durée du contrat, ratio restant, ancienneté), 
+ainsi que les habitudes de vie quotidiennes (pas quotidiens, heures de sommeil, hydratation et niveau de stress).
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/datasetchrunfinal.png}{%
+        \includegraphics[width=0.9\textwidth]{images/datasetchrunfinal.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/datasetchrunfinal.png}}}%
+    }
+    \caption{Structure du jeu de données pour l'évaluation du risque d'abandon}
+    \label{fig:datasetchrunfinal}
+\end{figure}
+
+L'ensemble des observations a été réparti en trois sous-ensembles afin d'assurer l'apprentissage, l'ajustement et l'évaluation finale du modèle, comme le montre le tableau~\ref{tab:churn_dataset_split}.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\caption{Répartition du jeu de données pour l'évaluation du risque d'abandon}
+\label{tab:churn_dataset_split}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Sous-ensemble} & \textbf{Nombre d'exemples} \\
+\hline
+Entraînement & 125 947 \\
+\hline
+Validation & 31 487 \\
+\hline
+Test & 39 359 \\
+\hline
+\end{tabular}
+
+
+
+\end{table}
+
+
+
+
+\paragraph{Métriques d’évaluation et modèle retenu}
+La Figure ~\ref{fig:chrunimage12} présente la matrice de confusion obtenue après l'entraînement du modèle XGBoost, un algorithme d'apprentissage supervisé basé sur l'optimisation par gradient d'arbres de décision en ensemble. Ce modèle a été entraîné sur les données clients pour prédire le churn (abandon),
+ une tâche de classification binaire supervisée où chaque observation est étiquetée soit comme Fidèle (0) soit comme Abandon (1).
+ 
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/chrunimage1.png}{%
+        \includegraphics[width=0.8\textwidth]{images/chrunimage1.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{\centering Ajouter l'image : \texttt{images/churn\_confusion\_matrix.png}}}%
+    }
+    \caption{Matrice de confusion du modèle XGBoost pour la prédiction du churn}
+    \label{fig:chrunimage12}
+\end{figure}
+
+Les éléments situés sur la diagonale principale représentent les prédictions correctes du modèle, tandis que les éléments situés en dehors de cette diagonale correspondent aux fausses prédictions. Pour interpréter la performance du modèle sur chaque classe, il convient de lire la colonne correspondante :
+
+\begin{itemize}[leftmargin=*, itemsep=3pt]
+    \item \textbf{Classe 0 -- Fidèle :} le modèle a produit 30 634 prédictions correctes, correspondant aux vrais négatifs, avec seulement 313 faux positifs. Ce résultat reflète une excellente capacité à identifier les clients fidèles.
+    \item \textbf{Classe 1 -- Abandon :} le modèle a correctement prédit 7 458 clients churners, correspondant aux vrais positifs, mais a manqué 954 cas réels de churn. Ces faux négatifs représentent les cas les plus coûteux dans un contexte de rétention client.
+\end{itemize}
+
+
+La Figure~\ref{fig:matrice_confusion} présente le rapport de classification du modèle XGBoost. Le modèle atteint une accuracy globale de 97\% sur l'ensemble de test composé de 39\,359 observations. Il obtient une précision de 97\% et un recall de 99\% pour la classe \textbf{Fidèle}, ainsi qu'une précision de 96\% et un recall de 89\% pour la classe \textbf{Abandon}. La moyenne pondérée des scores F1 atteint 0,97, ce qui confirme la robustesse et la fiabilité du modèle pour cette tâche de classification binaire.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/metrice_de_cofusion.png}{
+        \includegraphics[width=0.85\textwidth]{images/metrice_de_cofusion.png}
+    }{
+        \fbox{\parbox[c][6cm][c]{0.85\textwidth}{
+            \centering Ajouter l'image :
+            \texttt{images/metrice\_de\_cofusion.png}
+        }}
+    }
+    \caption{Rapport de classification du modèle XGBoost pour la prédiction du churn}
+    \label{fig:matrice_confusion}
+\end{figure}
+
+\paragraph{ Validation}
+La figure~\ref{fig:churn} La figure 51 illustre l'interface d'évaluation du risque d'abandon, qui permet à l'utilisateur de visualiser en temps réel son niveau de motivation et son risque de décrochage. 
+En complément de ce tableau de bord, lorsque le modèle détecte une baisse d'activité critique, 
+le système déclenche automatiquement l'envoi d'un e-mail d'encouragement personnalisé (illustré par la Figure~\ref{fig:email_churn}).
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/chrun.png}{%
+        \includegraphics[width=0.9\textwidth]{images/chrun.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/chrun.png}}}%
+    }
+    \caption{Interface d'évaluation du risque d'abandon}
+    \label{fig:churn}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/email_chrun.png}{%
+        \includegraphics[width=0.9\textwidth]{images/email_chrun.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/email\_chrun.png}}}%
+    }
+    \caption{Exemple d'e-mail d'encouragement envoyé automatiquement à l'athlète en cas de risque d'abandon élevé}
+    \label{fig:email_chrun}
+\end{figure}
+\subsubsection{Évaluation du niveau de condition physique}
+Ce module permet d’évaluer la condition physique globale d’un athlète en exploitant ses données biométriques et comportementales. Il vise à estimer son niveau de forme physique actuel et à générer des indicateurs de progression facilitant le suivi de l’évolution de ses performances.
+
+\paragraph{Analyse du jeu de données}
+La Figure~\ref{fig:datasetfitness}  présente un jeu de données regroupant un ensemble de paramètres athlétiques collectés auprès de l’utilisateur. Elle inclut notamment l’âge, le genre, l’indice de masse corporelle, le nombre de pas quotidiens, la durée du sommeil, les types d’activités pratiquées, ainsi que la durée, l’intensité des séances et la dépense énergétique associée.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/datasetfitness.png}{%
+        \includegraphics[width=0.9\textwidth]{images/datasetfitness.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/datasetfitness.png}}}%
+    }
+    \caption{ Structure du jeu de données pour l'évaluation du niveau de condition physique}
+    \label{fig:datasetfitness}
+\end{figure}
+
+Afin d'assurer une évaluation fiable et représentative des performances du modèle, le jeu de données a été réparti en deux sous-ensembles distincts à l'aide de la méthode \texttt{GroupShuffleSplit}. Cette approche garantit qu'un même participant n'apparaît jamais simultanément dans les ensembles d'entraînement et de test, évitant ainsi toute fuite de données susceptible de fausser les résultats. Le modèle est ainsi entraîné sur un groupe d'athlètes et évalué sur des participants totalement inédits, ce qui permet de mesurer sa capacité de généralisation dans des conditions réalistes.
+
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.2}
+\caption{Répartition du jeu de données selon la méthode GroupShuffleSplit}
+\label{tab:dataset_split}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Sous-ensemble} & \textbf{Nombre de lignes} & \textbf{Nombre de participants} \\
+\hline
+Entraînement & 550\,324 & 2\,400 \\
+\hline
+Test & 137\,377 & 600 \\
+\hline
+\end{tabular}
+\end{table}
+\paragraph{Métriques d’évaluation et modèle retenu}
+La Figure~\ref{fig:fitnessmetrique} présente les métriques d'évaluation obtenues par le modèle LightGBM sur l'ensemble de test.
+
+\begin{itemize}
+    \item \textbf{Erreur absolue moyenne : MAE = 1,778} :L'écart moyen avec le score réel est inférieur à 2 unités, ce qui indique une très bonne précision globale.
+    \item \textbf{Racine de l'erreur quadratique moyenne : RMSE = 2,288} : Les erreurs importantes sont rares et d'une faible ampleur, confirmant ainsi la stabilité du modèle.
+
+\item \textbf{Coefficient de détermination : $R^2 = 0{,}826$} : Le modèle explique environ 82{,}6~\% de la variabilité du niveau de condition physique à partir des caractéristiques fournies, ce qui témoigne d'une forte capacité explicative et d'une excellente capacité prédictive.\end{itemize}
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/fitnessmetrique.png}{%
+        \includegraphics[width=0.9\textwidth]{images/fitnessmetrique.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering
+        Ajouter l'image : \texttt{images/fitnessmetrique.png}}}%
+    }
+    \caption{Métriques d'évaluation du modèle LightGBM pour l'estimation du niveau de condition physique}
+    \label{fig:fitnessmetrique}
+\end{figure}
+
+Dans l'ensemble, ces résultats démontrent que le modèle LightGBM fournit des prédictions précises et fiables du niveau de condition physique. Les faibles valeurs de MAE et de RMSE, combinées à un coefficient $R^2$ élevé, confirment sa robustesse pour cette tâche de régression.
+\paragraph{ Validation}
+Comme illustré à la Figure~\ref{fig:interfacedefitness}, le service d'évaluation de la condition physique traduit le score continu produit par le modèle (compris entre 
+0 et 10 ) en trois niveaux distincts : Débutant, Intermédiaire et Avancé. 
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/interfacedefitness.png}{%
+        \includegraphics[width=0.9\textwidth]{images/interfacedefitness.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/interfacedefitness.png}}}%
+    }
+    \caption{Interface d'évaluation du niveau de condition physique}
+    \label{fig:interfacedefitness}
+\end{figure}
+
+\subsection{Système de recommandations basé sur des règles:}
+Cette section décrit le fonctionnement du système de recommandation fondé sur des règles scientifiques établies, ainsi que les interfaces implémentées pour permettre aux athlètes d’accéder facilement aux recommandations générées par le système.
+
+
+
+\begin{table}[H]
+\sloppy
+\centering
+\caption{Règles de recommandations nutritionnelles et sportives}
+\label{tab:regles_calcul_energetique_recommandations}
+\scriptsize
+\renewcommand{\arraystretch}{1.25}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\textwidth}{|>{\RaggedRight\arraybackslash}p{2.8cm}|>{\RaggedRight\arraybackslash}p{4.1cm}|>{\RaggedRight\arraybackslash}p{3.2cm}|>{\RaggedRight\arraybackslash}X|}
+\hline
+\textbf{Règle} & \textbf{Comment c'est calculé} & \textbf{Condition / Quand cela s'applique} & \textbf{Action du système / Résultat} \\
+\hline
+\textbf{Besoins vitaux de base (BMR)} &
+Calcul selon le poids, la taille, l'âge et le sexe. &
+Appliqué à tous les utilisateurs. &
+Détermine l'énergie minimale nécessaire au corps pour fonctionner au repos. \\
+\hline
+\textbf{Dépense quotidienne totale (TDEE)} &
+Besoins vitaux de base $\times$ niveau d'activité :\newline
+\textbullet{} Sédentaire : $\times 1.2$\newline
+\textbullet{} Légèrement actif : $\times 1.375$\newline
+\textbullet{} Modérément actif : $\times 1.55$\newline
+\textbullet{} Très actif : $\times 1.725$ &
+Appliqué à tous les utilisateurs. &
+Estime la quantité totale d'énergie brûlée par jour en fonction du mode de vie. \\
+\hline
+\textbf{Ajustement : Perte de poids} &
+Dépense quotidienne totale $- 500$ kcal &
+Si l'objectif est la perte de poids. &
+Crée un déficit d'énergie modéré et sécurisé pour favoriser la perte de gras. \\
+\hline
+\textbf{Ajustement : Prise de muscle} &
+Dépense quotidienne totale $+ 300$ kcal &
+Si l'objectif est la prise de muscle. &
+Applique un léger surplus d'énergie pour soutenir le développement musculaire. \\
+\hline
+\textbf{Limite de sécurité minimale} &
+Minimum de 1200 kcal pour les femmes.\newline
+Minimum de 1500 kcal pour les hommes. &
+Si le calcul théorique donne un résultat inférieur à ces limites. &
+Bloque la recommandation à ce seuil minimal pour protéger la santé de l'utilisateur. \\
+\hline
+\textbf{Alerte : Manque d'énergie extrême} &
+Déclenchement automatique d'un avertissement de sécurité. &
+Si les calories cibles calculées sont inférieures à 1400 kcal. &
+Signale un risque de carence et invite à la vigilance. \\
+\hline
+\textbf{Protéines (Bâtisseurs)} &
+\textbullet{} Prise de muscle : $2.2\text{ g}$ par kg de poids\newline
+\textbullet{} Perte de poids : $2.0\text{ g}$ par kg de poids\newline
+\textbullet{} Autre objectif : $1.6\text{ g}$ par kg de poids &
+Appliqué à tous selon leur objectif. &
+Calcule la quantité quotidienne idéale de protéines pour préserver ou développer les muscles. \\
+\hline
+\textbf{Lipides (Bons gras)} &
+25\% de l'apport énergétique quotidien total. &
+Appliqué à tous les utilisateurs. &
+Assure une quantité adéquate de graisses saines indispensables à l'équilibre hormonal. \\
+\hline
+\textbf{Glucides (Énergie)} &
+Tout le reste de l'apport énergétique restant. &
+Appliqué à tous les utilisateurs. &
+Complète le besoin quotidien avec des sources d'énergie pour les activités. \\
+\hline
+\textbf{Sécurité : Débutant en musculation} &
+Recommandation d'entraînement avec charges légères. &
+Si l'utilisateur vise la prise de muscle et est débutant. &
+Prévient les risques de blessures musculaires ou articulaires de départ. \\
+\hline
+\end{tabularx}
+\fussy
+\end{table}
+\subsubsection*{Interface des recommandations personnalisées :}
+La Figure~\ref{fig:life_style_advice} illustre l'interface des conseils de mode de vie de UFitPal, qui propose à l'athlète un ensemble de recommandations ciblées et pratiques couvrant des aspects essentiels du bien-être quotidien, tels que la qualité du sommeil, l'hydratation, la nutrition et l'activité physique, afin d'accompagner l'utilisateur vers de meilleures habitudes de vie et d'optimiser ses résultats santé sur le long terme.
+ \begin{figure}[H]
+    \centering
+    \IfFileExists{images/lifestep.png}{%
+        \includegraphics[width=0.9\textwidth]{images/lifestep.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/lifestep.png}}}%
+    }
+    \caption{Interface des conseils de mode de vie}
+    \label{fig:life_style_advice}
+\end{figure}
+
+
+La Figure~\ref{fig:suplements} présente l'interface des suppléments nutritionnels de UFitPal, qui soumet à l'utilisateur une sélection de compléments alimentaires personnalisés en fonction de son profil et de ses objectifs de santé  tels que la poudre de légumes verts, l'huile de poisson oméga-3, le glycinate de magnésium, la vitamine D3 et l'isolat de protéines de lactosérum accompagnés des dosages recommandés et d'une description ciblée des bénéfices attendus pour chaque supplément.
+ \begin{figure}[H]
+    \centering
+    \IfFileExists{images/suplements.png}{%
+        \includegraphics[width=0.9\textwidth]{images/suplements.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/suplements.png}}}%
+    }
+    \caption{Interface des suppléments}
+    \label{fig:suplements}
+\end{figure}
+
+La Figure~\ref{fig:tde} illustre l'interface des cibles énergétiques quotidiennes. Cette vue détaille précisément la répartition des macronutriments ainsi que l'apport calorique personnalisé, calculés selon le profil métabolique et les objectifs sportifs de l'utilisateur.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{images/tde.png}{%
+        \includegraphics[width=0.9\textwidth]{images/tde.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/tde.png}}}%
+    }
+    \caption{Interface des Macronutriments et des cibles énergétiques quotidiennes}
+    \label{fig:tde}
+\end{figure}
+
+\subsection{Chatbot IA}
+Dans cette section, nous avons conçu et intégré un agent conversationnel (Chatbot) doté d'intelligence artificielle afin d'offrir un accompagnement personnalisé et instantané aux athlètes. Ce chatbot spécialisé est configuré pour répondre de manière bienveillante et professionnelle aux questions portant sur la nutrition, la planification d'entraînements et le suivi global de leur programme de remise en forme. Propulsée par le modèle de langage LLaMA 3.1  via l'API ultra-rapide de Groq , l'interface utilisateur offre une interaction fluide, interactive et en temps réel, garantissant ainsi une expérience utilisateur immersive et dynamique.
+La figure~\ref{fig:chatbot} représente l'interface du chatbot d'intelligence artificielle.
+\begin{figure}[H]
+
+    \centering
+    \IfFileExists{images/chatbot.png}{%
+        \includegraphics[width=0.9\textwidth]{images/chatbot.png}%
+    }{%
+        \fbox{\parbox[c][6cm][c]{0.9\textwidth}{\centering Ajouter l'image : \texttt{images/chatbot.png}}}%
+    }
+    \caption{Interface du chatbot IA}
+    \label{fig:chatbot}
+\end{figure}
+
+\section{Conclusion}
+
+Au cours de ce sprint, nous avons enrichi la plateforme UFitPal avec des fonctionnalités orientées vers le suivi personnalisé de l'athlète. Ces fonctionnalités permettent de centraliser les données sportives et nutritionnelles, de consulter les plans proposés par les professionnels et d'exploiter les premiers résultats issus des modèles d'intelligence artificielle. Le chapitre suivant pourra ainsi approfondir les fonctionnalités avancées et les améliorations apportées à l'expérience utilisateur.
+
+\chaptertitlepage{Conclusion générale}{Conclusion générale}
+
+Notre stage au sein de HOLMENA Company for Digital Solutions fut une expérience riche en apprentissages et en réalisations. Malgré les obstacles rencontrés, notamment lors de l'intégration des modules d'intelligence artificielle et de la mise en place de l'architecture technique, nous avons fait preuve de persévérance et mené à bien le projet qui nous était confié. Cette immersion professionnelle nous a permis de développer nos compétences et d'apprécier la valeur du travail en équipe au sein d'un environnement dynamique et stimulant.
+
+Notre projet de conception et de développement de la plateforme intelligente de fitness et de nutrition « UFitPal » représente une étape significative. À travers notre étude, nous avons identifié la nécessité d'une telle plateforme pour offrir aux athlètes un suivi personnalisé et adapté à leurs besoins, tout en facilitant la collaboration avec les coachs sportifs et les nutritionnistes et en intégrant des solutions basées sur l'intelligence artificielle.
+
+Nous avons suivi rigoureusement chacune des étapes de ce projet, de l'étude de l'existant à la conception puis à la réalisation des différents sprints de l'application. En définissant précisément les objectifs, en planifiant avec soin les tâches suivant la méthodologie Scrum et en prenant en compte les besoins des divers acteurs, nous avons jeté les bases solides d'une plateforme potentiellement florissante et porteuse d'effets concrets.
+
+Ce stage nous a également donné l'opportunité d'explorer et de maîtriser de nouvelles technologies modernes, telles que Next.js, NestJS, TypeScript, PostgreSQL et Python, et d'en acquérir une maîtrise précieuse.
+
+Le projet peut être amélioré en intégrant de nouvelles fonctionnalités telles que :
+
+\begin{itemize}[label=\ding{226}]
+    \item Rendre notre application disponible en version mobile native sur iOS et Android.
+    \item Intégrer des dispositifs portables connectés (\textit{Wearable Devices}), tels que des montres intelligentes et des bracelets de fitness, permettant une collecte automatique et continue des données biométriques de l'athlète.
+    \item Mettre en place un système de suivi fitness basé sur l'IoT, permettant une synchronisation en temps réel des données sportives entre les capteurs connectés et la plateforme UFitPal.
+\end{itemize}
+\chapter*{Webographie}
+\thispagestyle{empty}
+\addcontentsline{toc}{chapter}{Webographie}
+
+\begin{itemize}
+    \item[\textcolor{blue}{\textbf{[0]}}] \texttt{}
+    \item[\textcolor{blue}{\textbf{[1]}}] \texttt{}
+    \item[\textcolor{blue}{\textbf{[2]}}] \url{https://fr.wikipedia.org/wiki/Visual_Studio_Code}
+    \item[\textcolor{blue}{\textbf{[3]}}] \url{https://fr.wikipedia.org/wiki/Jupyter}
+    \item[\textcolor{blue}{\textbf{[4]}}] \url{https://openclassrooms.com/fr/courses/4668056-construisez-des-microservices/5123020-testez-votre-api-grace-a-postman}
+    \item[\textcolor{blue}{\textbf{[5]}}] \url{https://fr.wikipedia.org/wiki/Docker_(logiciel)}
+    \item[\textcolor{blue}{\textbf{[6]}}] \url{https://fr.wikipedia.org/wiki/StarUML}
+    \item[\textcolor{blue}{\textbf{[7]}}] \url{https://fr.wikipedia.org/wiki/GitHub}
+    \item[\textcolor{blue}{\textbf{[8]}}] \url{https://fr.wikipedia.org/wiki/Python}
+    \item[\textcolor{blue}{\textbf{[9]}}] \url{https://fr.wikipedia.org/wiki/Next.js}
+    \item[\textcolor{blue}{\textbf{[10]}}] \url{https://fr.wikipedia.org/wiki/NestJS}
+    \item[\textcolor{blue}{\textbf{[11]}}] \url{https://fr.wikipedia.org/wiki/React}
+    \item[\textcolor{blue}{\textbf{[12]}}] \url{https://fr.wikipedia.org/wiki/Node.js}
+    \item[\textcolor{blue}{\textbf{[13]}}] \url{https://fr.wikipedia.org/wiki/Hypertext_Markup_Language}
+    \item[\textcolor{blue}{\textbf{[14]}}] \url{https://fr.wikipedia.org/wiki/Tailwind_CSS}
+    \item[\textcolor{blue}{\textbf{[15]}}] \url{https://fr.wikipedia.org/wiki/TypeScript}
+    \item[\textcolor{blue}{\textbf{[16]}}] \url{https://fr.wikipedia.org/wiki/PostgreSQL}
+\end{itemize}
+\end{document}
+ 

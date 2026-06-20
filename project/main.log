@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.17)  11 JUN 2026 21:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.17)  20 JUN 2026 21:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -175,18 +175,6 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks25
 \@floatcapt=\box56
 )
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
-Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks26
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
 (C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip54
@@ -204,14 +192,14 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LT@rows=\count298
 \c@LT@tables=\count299
 \c@LT@chunks=\count300
-\LT@p@ftn=\toks27
+\LT@p@ftn=\toks26
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen170
 \ar@mcellbox=\box62
 \extrarowheight=\dimen171
-\NC@list=\toks28
+\NC@list=\toks27
 \extratabsurround=\skip58
 \backup@length=\skip59
 \ar@cellbox=\box63
@@ -274,12 +262,9 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
 (C:\Program Files\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
-\everycr=\toks29
+\everycr=\toks28
 \minrowclearance=\skip74
 \rownum=\count305
-)
-(C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
-Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
 (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
@@ -301,12 +286,42 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layoutheight=\dimen190
 \Gm@layouthoffset=\dimen191
 \Gm@layoutvoffset=\dimen192
-\Gm@dimlist=\toks30
+\Gm@dimlist=\toks29
 
 (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip75
+\f@nch@offset@elh=\skip76
+\f@nch@offset@erh=\skip77
+\f@nch@offset@olh=\skip78
+\f@nch@offset@orh=\skip79
+\f@nch@offset@elf=\skip80
+\f@nch@offset@erf=\skip81
+\f@nch@offset@olf=\skip82
+\f@nch@offset@orf=\skip83
+\f@nch@height=\skip84
+\f@nch@footalignment=\skip85
+\f@nch@widthL=\skip86
+\f@nch@widthC=\skip87
+\f@nch@widthR=\skip88
+\@temptokenb=\toks30
+)
+(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count309
+)
+(C:\Program Files\MiKTeX\tex/latex/xurl\xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+))
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
-\@mathmargin=\skip75
+\@mathmargin=\skip89
 
 For additional information on amsmath, use the `?' option.
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -324,14 +339,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count309
+\inf@bad=\count310
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count310
-\leftroot@=\count311
+\uproot@=\count311
+\leftroot@=\count312
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count312
-\DOTSCASE@=\count313
+\classnum@=\count313
+\DOTSCASE@=\count314
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -344,20 +359,20 @@ LaTeX Info: Redefining \Bigg on input line 724.
 \big@size=\dimen195
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count314
+\macc@depth=\count315
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count315
-\dotsspace@=\muskip17
-\c@parentequation=\count316
-\dspbrk@lvl=\count317
+\c@MaxMatrixCols=\count316
+\dotsspace@=\muskip18
+\c@parentequation=\count317
+\dspbrk@lvl=\count318
 \tag@help=\toks32
-\row@=\count318
-\column@=\count319
-\maxfields@=\count320
+\row@=\count319
+\column@=\count320
+\maxfields@=\count321
 \andhelp@=\toks33
 \eqnshift@=\dimen196
 \alignsep@=\dimen197
@@ -366,316 +381,58 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \totwidth@=\dimen256
 \lineht@=\dimen257
 \@envbody=\toks34
-\multlinegap=\skip76
-\multlinetaggap=\skip77
+\multlinegap=\skip90
+\multlinetaggap=\skip91
 \mathdisplay@stack=\toks35
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
-(C:\Program Files\MiKTeX\tex/latex/tikz-cd\tikz-cd.sty
-Package: tikz-cd 2021/05/04 v1.0 Commutative diagrams with TikZ
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty
-(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks36
-\pgfutil@tempdima=\dimen258
-\pgfutil@tempdimb=\dimen259
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
-\pgfutil@abb=\box66
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
-Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty
-(C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
-Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks37
-\pgfkeys@temptoks=\toks38
-
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.
-tex
-\pgfkeys@tmptoks=\toks39
-))
-\pgf@x=\dimen260
-\pgf@y=\dimen261
-\pgf@xa=\dimen262
-\pgf@ya=\dimen263
-\pgf@xb=\dimen264
-\pgf@yb=\dimen265
-\pgf@xc=\dimen266
-\pgf@yc=\dimen267
-\pgf@xd=\dimen268
-\pgf@yd=\dimen269
-\w@pgf@writea=\write3
-\r@pgf@reada=\read3
-\c@pgf@counta=\count321
-\c@pgf@countb=\count322
-\c@pgf@countc=\count323
-\c@pgf@countd=\count324
-\t@pgf@toka=\toks40
-\t@pgf@tokb=\toks41
-\t@pgf@tokc=\toks42
-\pgf@sys@id@count=\count325
- (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
-File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
-)
-Driver file for pgf: pgfsys-pdftex.def
-
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-)))
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count326
-\pgfsyssoftpath@bigbuffer@items=\count327
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
-Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
-\pgfmath@dimen=\dimen270
-\pgfmath@count=\count328
-\pgfmath@box=\box67
-\pgfmath@toks=\toks43
-\pgfmath@stack@operand=\toks44
-\pgfmath@stack@operation=\toks45
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.co
-de.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
-
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.
-tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmeti
-cs.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
-) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count329
-))
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen271
-\pgf@picmaxx=\dimen272
-\pgf@picminy=\dimen273
-\pgf@picmaxy=\dimen274
-\pgf@pathminx=\dimen275
-\pgf@pathmaxx=\dimen276
-\pgf@pathminy=\dimen277
-\pgf@pathmaxy=\dimen278
-\pgf@xx=\dimen279
-\pgf@xy=\dimen280
-\pgf@yx=\dimen281
-\pgf@yy=\dimen282
-\pgf@zx=\dimen283
-\pgf@zy=\dimen284
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.t
-ex
-File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen285
-\pgf@path@lasty=\dimen286
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen287
-\pgf@shorten@start@additional=\dimen288
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfpic=\box68
-\pgf@hbox=\box69
-\pgf@layerbox@main=\box70
-\pgf@picture@serial@count=\count330
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.te
-x
-File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen289
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code
-.tex
-File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen290
-\pgf@pt@y=\dimen291
-\pgf@pt@temp=\dimen292
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.
-tex
-File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen293
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen294
-\pgf@sys@shading@range@num=\count331
-\pgf@shadingcount=\count332
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfexternal@startupbox=\box71
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.te
-x
-File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)))
-(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodeparttextbox=\box72
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen295
-\pgf@nodesepend=\dimen296
-)
-(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
-(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex))
-(C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex))
-(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
-Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen297
-\pgffor@skip=\dimen298
-\pgffor@stack=\toks46
-\pgffor@toks=\toks47
-))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
-Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.
-tex
-File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count333
-\pgfplotmarksize=\dimen299
-)
-\tikz@lastx=\dimen300
-\tikz@lasty=\dimen301
-\tikz@lastxsaved=\dimen302
-\tikz@lastysaved=\dimen303
-\tikz@lastmovetox=\dimen304
-\tikz@lastmovetoy=\dimen305
-\tikzleveldistance=\dimen306
-\tikzsiblingdistance=\dimen307
-\tikz@figbox=\box73
-\tikz@figbox@bg=\box74
-\tikz@tempbox=\box75
-\tikz@tempbox@bg=\box76
-\tikztreelevel=\count334
-\tikznumberofchildren=\count335
-\tikznumberofcurrentchild=\count336
-\tikz@fig@count=\count337
- (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count338
-\pgfmatrixcurrentcolumn=\count339
-\pgf@matrix@numberofcolumns=\count340
-)
-\tikz@expandcount=\count341
-
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)))
-(C:\Program Files\MiKTeX\tex/latex/tikz-cd\tikzlibrarycd.code.tex
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rymatrix.code.tex
-File: tikzlibrarymatrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-ryquotes.code.tex
-File: tikzlibraryquotes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.t
-ex
-File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen308
-\pgfarrowlength=\dimen309
-\pgfarrowwidth=\dimen310
-\pgfarrowlinewidth=\dimen311
-)))
-(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
-rycalc.code.tex
-File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Program Files\MiKTeX\tex/latex/tikzpagenodes\tikzpagenodes.sty
-Package: tikzpagenodes 2012/09/16 v1.1 Special PGF/TikZ nodes for areas of the 
-page
-
-(C:\Program Files\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
-Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count342
-))
-(C:\Program Files\MiKTeX\tex/latex/eso-pic\eso-pic.sty
-Package: eso-pic 2026/05/31 v3.0e eso-pic (RN)
-\ESO@tempdima=\dimen312
-\ESO@tempdimb=\dimen313
-)
 (C:\Program Files\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
-\c@tracingmulticols=\count343
-\mult@box=\box77
-\multicol@leftmargin=\dimen314
-\c@unbalance=\count344
-\c@collectmore=\count345
-\doublecol@number=\count346
-\multicoltolerance=\count347
-\multicolpretolerance=\count348
-\full@width=\dimen315
-\page@free=\dimen316
-\premulticols=\dimen317
-\postmulticols=\dimen318
-\multicolsep=\skip78
-\multicolbaselineskip=\skip79
-\partial@page=\box78
-\last@line=\box79
-\mc@boxedresult=\box80
-\maxbalancingoverflow=\dimen319
-\mult@rightbox=\box81
-\mult@grightbox=\box82
-\mult@firstbox=\box83
-\mult@gfirstbox=\box84
+\c@tracingmulticols=\count322
+\mult@box=\box66
+\multicol@leftmargin=\dimen258
+\c@unbalance=\count323
+\c@collectmore=\count324
+\doublecol@number=\count325
+\multicoltolerance=\count326
+\multicolpretolerance=\count327
+\full@width=\dimen259
+\page@free=\dimen260
+\premulticols=\dimen261
+\postmulticols=\dimen262
+\multicolsep=\skip92
+\multicolbaselineskip=\skip93
+\partial@page=\box67
+\last@line=\box68
+\mc@boxedresult=\box69
+\maxbalancingoverflow=\dimen263
+\mult@rightbox=\box70
+\mult@grightbox=\box71
+\mult@firstbox=\box72
+\mult@gfirstbox=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
 \@tempa=\box85
 \@tempa=\box86
 \@tempa=\box87
@@ -701,83 +458,72 @@ Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
 \@tempa=\box107
 \@tempa=\box108
 \@tempa=\box109
-\@tempa=\box110
-\@tempa=\box111
-\@tempa=\box112
-\@tempa=\box113
-\@tempa=\box114
-\@tempa=\box115
-\@tempa=\box116
-\@tempa=\box117
-\@tempa=\box118
-\@tempa=\box119
-\@tempa=\box120
-\c@minrows=\count349
-\c@columnbadness=\count350
-\c@finalcolumnbadness=\count351
-\last@try=\dimen320
-\multicolovershoot=\dimen321
-\multicolundershoot=\dimen322
-\mult@nat@firstbox=\box121
-\colbreak@box=\box122
-\mc@col@check@num=\count352
-\g__mc_curr_col_int=\count353
+\c@minrows=\count328
+\c@columnbadness=\count329
+\c@finalcolumnbadness=\count330
+\last@try=\dimen264
+\multicolovershoot=\dimen265
+\multicolundershoot=\dimen266
+\mult@nat@firstbox=\box110
+\colbreak@box=\box111
+\mc@col@check@num=\count331
+\g__mc_curr_col_int=\count332
 )
 (C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-\TX@col@width=\dimen323
-\TX@old@table=\dimen324
-\TX@old@col=\dimen325
-\TX@target=\dimen326
-\TX@delta=\dimen327
-\TX@cols=\count354
-\TX@ftn=\toks48
+\TX@col@width=\dimen267
+\TX@old@table=\dimen268
+\TX@old@col=\dimen269
+\TX@target=\dimen270
+\TX@delta=\dimen271
+\TX@cols=\count333
+\TX@ftn=\toks36
 )
 Package french3.ldf Info: Setting StandardItemizeEnv=true for
 (french3.ldf)             compatibility with enumitem package,
-(french3.ldf)             reported on input line 59.
+(french3.ldf)             reported on input line 90.
 Package french3.ldf Info: Setting StandardEnumerateEnv=true for
 (french3.ldf)             compatibility with enumitem package,
-(french3.ldf)             reported on input line 59.
+(french3.ldf)             reported on input line 90.
 
 (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count355
+\l__color_backend_stack_int=\count334
 ) (main.aux
 Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported on input line 11.
+(babel)             Reported on input line 8.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Info: Redefining \degres on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Info: Redefining \degres on input line 90.
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count356
-\scratchdimen=\dimen328
-\scratchbox=\box123
-\nofMPsegments=\count357
-\nofMParguments=\count358
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count359
-\MPscratchDim=\dimen329
-\MPnumerator=\count360
-\makeMPintoPDFobject=\count361
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count335
+\scratchdimen=\dimen272
+\scratchbox=\box112
+\nofMPsegments=\count336
+\nofMParguments=\count337
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count338
+\MPscratchDim=\dimen273
+\MPnumerator=\count339
+\makeMPintoPDFobject=\count340
+\everyMPtoPDFconversion=\toks38
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -803,7 +549,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-37.0pt
-* \headheight=12.0pt
+* \headheight=15.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
@@ -821,11 +567,11 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (main.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -833,1751 +579,1881 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/HP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3])
+\tf@toc=\write3
+\openout3 = `main.toc'.
+
+ (main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [4] (main.lot [5
+ [4] (main.lot
+[5
+
 
 ])
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [6]
-(main.lof [7
+ [6] (main.lof [7
 
-])
+
+] [8])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [8] [1
+ [9] [1
 
-] [2]
-<images/image.jpeg, id=39, 1606.0pt x 1606.0pt>
-File: images/image.jpeg Graphic file (type jpg)
-<use images/image.jpeg>
-Package pdftex.def Info: images/image.jpeg  used on input line 111.
-(pdftex.def)             Requested size: 226.48395pt x 226.48035pt.
- [3
-
- <./images/image.jpeg>] [4]
-<images/arbfit.png, id=49, 1017.8025pt x 446.41782pt>
-File: images/arbfit.png Graphic file (type png)
-<use images/arbfit.png>
-Package pdftex.def Info: images/arbfit.png  used on input line 178.
-(pdftex.def)             Requested size: 452.9679pt x 198.67914pt.
- [5]
-<images/myfitt.png, id=56, 998.22937pt x 453.94594pt>
-File: images/myfitt.png Graphic file (type png)
-<use images/myfitt.png>
-Package pdftex.def Info: images/myfitt.png  used on input line 192.
-(pdftex.def)             Requested size: 452.9679pt x 205.98466pt.
- [6 <./images/arbfit.png> <./images/myfitt.png>] [7] [8] [9] [10
-
-] [11] [12] [13]
-Overfull \hbox (7.77061pt too wide) in alignment at lines 495--500
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (7.77061pt too wide) in alignment at lines 500--506
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (7.77061pt too wide) in alignment at lines 506--509
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (7.77061pt too wide) in alignment at lines 509--512
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (7.77061pt too wide) in alignment at lines 512--632
- [] [] [] [] [] 
- []
-
-
-ignored: Infinite glue shrinkage found in box being split [14] [15]
-<images/photo_vscode.png, id=94, 501.875pt x 501.875pt>
-File: images/photo_vscode.png Graphic file (type png)
-<use images/photo_vscode.png>
-Package pdftex.def Info: images/photo_vscode.png  used on input line 643.
-(pdftex.def)             Requested size: 45.29955pt x 45.29698pt.
-<images/jupyter.png, id=95, 602.25pt x 602.25pt>
-File: images/jupyter.png Graphic file (type png)
-<use images/jupyter.png>
-Package pdftex.def Info: images/jupyter.png  used on input line 651.
-(pdftex.def)             Requested size: 90.5922pt x 90.5909pt.
-<images/photo_postman.png, id=96, 240.9pt x 73.2336pt>
-File: images/photo_postman.png Graphic file (type png)
-<use images/photo_postman.png>
-Package pdftex.def Info: images/photo_postman.png  used on input line 659.
-(pdftex.def)             Requested size: 90.5922pt x 27.53963pt.
-<images/docker.png, id=97, 250.9375pt x 143.53625pt>
-File: images/docker.png Graphic file (type png)
-<use images/docker.png>
-Package pdftex.def Info: images/docker.png  used on input line 666.
-(pdftex.def)             Requested size: 90.5922pt x 51.81975pt.
- [16 <./images/photo_vscode.png> <./images/jupyter.png> <./images/photo_postman
-.png>]
-<images/photo_drawio.png, id=104, 501.875pt x 501.875pt>
-File: images/photo_drawio.png Graphic file (type png)
-<use images/photo_drawio.png>
-Package pdftex.def Info: images/photo_drawio.png  used on input line 675.
-(pdftex.def)             Requested size: 90.5922pt x 90.5863pt.
-<images/github.png, id=105, 963.6pt x 963.6pt>
-File: images/github.png Graphic file (type png)
-<use images/github.png>
-Package pdftex.def Info: images/github.png  used on input line 684.
-(pdftex.def)             Requested size: 90.5922pt x 90.58723pt.
-<images/python.png, id=106, 1876.00874pt x 2055.68pt>
-File: images/python.png Graphic file (type png)
-<use images/python.png>
-Package pdftex.def Info: images/python.png  used on input line 693.
-(pdftex.def)             Requested size: 90.5922pt x 99.24553pt.
-<images/photo_nextjs.png, id=107, 501.875pt x 101.37875pt>
-File: images/photo_nextjs.png Graphic file (type png)
-<use images/photo_nextjs.png>
-Package pdftex.def Info: images/photo_nextjs.png  used on input line 701.
-(pdftex.def)             Requested size: 90.5922pt x 18.29843pt.
- [17 <./images/docker.png> <./images/photo_drawio.png> <./images/github.png> <.
-/images/python.png>]
-<images/photo_nestjs.png, id=116, 501.875pt x 178.6675pt>
-File: images/photo_nestjs.png Graphic file (type png)
-<use images/photo_nestjs.png>
-Package pdftex.def Info: images/photo_nestjs.png  used on input line 709.
-(pdftex.def)             Requested size: 90.5922pt x 32.24872pt.
-<images/photo_nodejs.png, id=117, 501.875pt x 308.15125pt>
-File: images/photo_nodejs.png Graphic file (type png)
-<use images/photo_nodejs.png>
-Package pdftex.def Info: images/photo_nodejs.png  used on input line 716.
-(pdftex.def)             Requested size: 90.5922pt x 55.62pt.
-<images/photo_html.png, id=118, 501.875pt x 501.875pt>
-File: images/photo_html.png Graphic file (type png)
-<use images/photo_html.png>
-Package pdftex.def Info: images/photo_html.png  used on input line 723.
-(pdftex.def)             Requested size: 90.5922pt x 90.5863pt.
-<images/photo_tailwind.png, id=119, 501.875pt x 62.2325pt>
-File: images/photo_tailwind.png Graphic file (type png)
-<use images/photo_tailwind.png>
-Package pdftex.def Info: images/photo_tailwind.png  used on input line 731.
-(pdftex.def)             Requested size: 90.5922pt x 11.2327pt.
-<images/photo_typescript.png, id=120, 5018.75pt x 5018.75pt>
-File: images/photo_typescript.png Graphic file (type png)
-<use images/photo_typescript.png>
-Package pdftex.def Info: images/photo_typescript.png  used on input line 739.
-(pdftex.def)             Requested size: 90.5922pt x 90.5174pt.
- [18 <./images/photo_nextjs.png> <./images/photo_nestjs.png> <./images/photo_no
-dejs.png> <./images/photo_html.png> <./images/photo_tailwind.png>]
-<images/photo_postgresql.png, id=129, 501.875pt x 517.935pt>
-File: images/photo_postgresql.png Graphic file (type png)
-<use images/photo_postgresql.png>
-Package pdftex.def Info: images/photo_postgresql.png  used on input line 748.
-(pdftex.def)             Requested size: 90.5922pt x 93.48506pt.
- [19 <./images/photo_typescript.png> <./images/photo_postgresql.png>]
-Overfull \hbox (7.77061pt too wide) in alignment at lines 782--787
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (7.77061pt too wide) in alignment at lines 787--793
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (7.77061pt too wide) in alignment at lines 793--796
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (7.77061pt too wide) in alignment at lines 796--799
- [] [] [] [] [] 
- []
-
-
-Overfull \hbox (7.77061pt too wide) in alignment at lines 799--865
- [] [] [] [] [] 
- []
-
-
-ignored: Infinite glue shrinkage found in box being split [20
 
 ]
-<images/usecasesprint1e.png, id=139, 1193.9004pt x 969.1407pt>
-File: images/usecasesprint1e.png Graphic file (type png)
-<use images/usecasesprint1e.png>
-Package pdftex.def Info: images/usecasesprint1e.png  used on input line 877.
-(pdftex.def)             Requested size: 407.66833pt x 330.92311pt.
- [21]
-Underfull \hbox (badness 10000) in paragraph at lines 954--954
-[]\T1/cmr/m/n/10.95 Le vi-si-teur ac-cède à la page de connexion de l'ap-pli-ca
--tion UFit-
+Package babel Info: 'french' activates 'french' shorthands.
+(babel)             Reported on input line 150.
+ [2
+
+] [3
+
+]
+<images/image.jpeg, id=43, 1606.0pt x 1606.0pt>
+File: images/image.jpeg Graphic file (type jpg)
+<use images/image.jpeg>
+Package pdftex.def Info: images/image.jpeg  used on input line 163.
+(pdftex.def)             Requested size: 226.48395pt x 226.48035pt.
+ [4
+
+ <./images/image.jpeg>] [5]
+<images/arbfit.png, id=54, 1017.8025pt x 446.41782pt>
+File: images/arbfit.png Graphic file (type png)
+<use images/arbfit.png>
+Package pdftex.def Info: images/arbfit.png  used on input line 224.
+(pdftex.def)             Requested size: 452.9679pt x 198.67914pt.
+
+[6 <./images/arbfit.png>]
+<images/myfitt.png, id=60, 998.22937pt x 453.94594pt>
+File: images/myfitt.png Graphic file (type png)
+<use images/myfitt.png>
+Package pdftex.def Info: images/myfitt.png  used on input line 238.
+(pdftex.def)             Requested size: 452.9679pt x 205.98466pt.
+ [7 <./images/myfitt.png>] [8] [9]
+<images/imageuml1.png, id=71, 285.31593pt x 121.20282pt>
+File: images/imageuml1.png Graphic file (type png)
+<use images/imageuml1.png>
+Package pdftex.def Info: images/imageuml1.png  used on input line 352.
+(pdftex.def)             Requested size: 249.13371pt x 105.8321pt.
+ [10 <./images/imageuml1.png>] [11
+
+] [12
+
+] [13] [14]
+<images/usecasefinal.jpg, id=89, 1169.36874pt x 1379.1525pt>
+File: images/usecasefinal.jpg Graphic file (type jpg)
+<use images/usecasefinal.jpg>
+Package pdftex.def Info: images/usecasefinal.jpg  used on input line 546.
+(pdftex.def)             Requested size: 407.66833pt x 480.7956pt.
+ [15]
+Overfull \hbox (5.59212pt too wide) in paragraph at lines 569--570
+[]|\T1/cmr/bx/n/10.95 Priorité|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 954--954
-[]\T1/cmr/m/n/10.95 Le vi-si-teur est au-then-ti-fié et re-di-rigé vers son ta-
-bleau de bord
+Overfull \hbox (5.59212pt too wide) in paragraph at lines 575--576
+[]|\T1/cmr/bx/n/10.95 Priorité|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 954--954
-[]\T1/cmr/m/n/10.95 Après va-li-da-tion par Google, le sys-tème crée ou ré-cu-p
-ère le
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 609--610
+[]|\T1/cmr/m/n/10.95 Moyenne|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 954--954
-[]\T1/cmr/m/n/10.95 si l'email n'existe pas ou si le mot de passe est er-roné, 
-le sys-
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 613--614
+[]|\T1/cmr/m/n/10.95 Moyenne|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 954--954
-\T1/cmr/m/n/10.95 tème af-fiche ^^S Email ou mot de passe in-cor-rect ^^T et la
- connexion
- []
-
-[22 <./images/usecasesprint1e.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]\T1/cmr/m/n/10.95 Athlète : le vi-si-teur est re-di-rigé vers la page d'on-bo
-ar-ding pour
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 621--622
+[]|\T1/cmr/m/n/10.95 Moyenne|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]\T1/cmr/m/n/10.95 Coach ou Nu-tri-tion-niste : le vi-si-teur est re-di-rigé d
-i-rec-te-ment vers
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 631--632
+[]|\T1/cmr/m/n/10.95 Moyenne|  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]\T1/cmr/m/n/10.95 Le vi-si-teur sai-sit ses in-for-ma-tions per-son-nelles : 
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 637--638
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 663--664
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 667--668
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 672--673
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 677--678
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+Overfull \hbox (1.95099pt too wide) in paragraph at lines 682--682
+[]|\T1/cmr/m/n/10.95 Recommandations  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 692--693
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+[16 <./images/usecasefinal.jpg>]
+ignored: Infinite glue shrinkage found in box being spli
+t [17] [18]
+<images/architecturedeprojet.png, id=105, 1275.26437pt x 600.74437pt>
+File: images/architecturedeprojet.png Graphic file (type png)
+<use images/architecturedeprojet.png>
+Package pdftex.def Info: images/architecturedeprojet.png  used on input line 72
+2.
+(pdftex.def)             Requested size: 385.02547pt x 181.37053pt.
+ [19]
+<images/photo_vscode.png, id=109, 501.875pt x 501.875pt>
+File: images/photo_vscode.png Graphic file (type png)
+<use images/photo_vscode.png>
+Package pdftex.def Info: images/photo_vscode.png  used on input line 734.
+(pdftex.def)             Requested size: 45.29955pt x 45.29698pt.
+<images/jupyter.png, id=110, 602.25pt x 602.25pt>
+File: images/jupyter.png Graphic file (type png)
+<use images/jupyter.png>
+Package pdftex.def Info: images/jupyter.png  used on input line 742.
+(pdftex.def)             Requested size: 90.5922pt x 90.5909pt.
+ [20 <./images/architecturedeprojet.png> <./images/photo_vscode.png>]
+<images/photo_postman.png, id=116, 240.9pt x 73.2336pt>
+File: images/photo_postman.png Graphic file (type png)
+<use images/photo_postman.png>
+Package pdftex.def Info: images/photo_postman.png  used on input line 750.
+(pdftex.def)             Requested size: 90.5922pt x 27.53963pt.
+<images/docker.png, id=117, 250.9375pt x 143.53625pt>
+File: images/docker.png Graphic file (type png)
+<use images/docker.png>
+Package pdftex.def Info: images/docker.png  used on input line 758.
+(pdftex.def)             Requested size: 90.5922pt x 51.81975pt.
+<images/photo_drawio.png, id=118, 501.875pt x 501.875pt>
+File: images/photo_drawio.png Graphic file (type png)
+<use images/photo_drawio.png>
+Package pdftex.def Info: images/photo_drawio.png  used on input line 768.
+(pdftex.def)             Requested size: 90.5922pt x 90.5863pt.
+<images/github.png, id=119, 963.6pt x 963.6pt>
+File: images/github.png Graphic file (type png)
+<use images/github.png>
+Package pdftex.def Info: images/github.png  used on input line 777.
+(pdftex.def)             Requested size: 90.5922pt x 90.58723pt.
+ [21 <./images/jupyter.png> <./images/photo_postman.png> <./images/docker.png> 
+<./images/photo_drawio.png>]
+<images/python.png, id=127, 1876.00874pt x 2055.68pt>
+File: images/python.png Graphic file (type png)
+<use images/python.png>
+Package pdftex.def Info: images/python.png  used on input line 786.
+(pdftex.def)             Requested size: 90.5922pt x 99.24553pt.
+<images/photo_nextjs.png, id=128, 501.875pt x 101.37875pt>
+File: images/photo_nextjs.png Graphic file (type png)
+<use images/photo_nextjs.png>
+Package pdftex.def Info: images/photo_nextjs.png  used on input line 796.
+(pdftex.def)             Requested size: 90.5922pt x 18.29843pt.
+<images/photo_nestjs.png, id=129, 501.875pt x 178.6675pt>
+File: images/photo_nestjs.png Graphic file (type png)
+<use images/photo_nestjs.png>
+Package pdftex.def Info: images/photo_nestjs.png  used on input line 805.
+(pdftex.def)             Requested size: 90.5922pt x 32.24872pt.
+<images/reactlogo.png, id=130, 501.875pt x 462.72874pt>
+File: images/reactlogo.png Graphic file (type png)
+<use images/reactlogo.png>
+Package pdftex.def Info: images/reactlogo.png  used on input line 817.
+(pdftex.def)             Requested size: 90.5922pt x 83.52057pt.
+ [22 <./images/github.png> <./images/python.png> <./images/photo_nextjs.png> <.
+/images/photo_nestjs.png>]
+<images/photo_nodejs.png, id=139, 501.875pt x 308.15125pt>
+File: images/photo_nodejs.png Graphic file (type png)
+<use images/photo_nodejs.png>
+Package pdftex.def Info: images/photo_nodejs.png  used on input line 824.
+(pdftex.def)             Requested size: 90.5922pt x 55.62pt.
+<images/photo_html.png, id=140, 501.875pt x 501.875pt>
+File: images/photo_html.png Graphic file (type png)
+<use images/photo_html.png>
+Package pdftex.def Info: images/photo_html.png  used on input line 831.
+(pdftex.def)             Requested size: 90.5922pt x 90.5863pt.
+<images/photo_tailwind.png, id=141, 501.875pt x 62.2325pt>
+File: images/photo_tailwind.png Graphic file (type png)
+<use images/photo_tailwind.png>
+Package pdftex.def Info: images/photo_tailwind.png  used on input line 839.
+(pdftex.def)             Requested size: 90.5922pt x 11.2327pt.
+<images/photo_typescript.png, id=142, 5018.75pt x 5018.75pt>
+File: images/photo_typescript.png Graphic file (type png)
+<use images/photo_typescript.png>
+Package pdftex.def Info: images/photo_typescript.png  used on input line 847.
+(pdftex.def)             Requested size: 90.5922pt x 90.5174pt.
+ [23 <./images/reactlogo.png> <./images/photo_nodejs.png> <./images/photo_html.
+png> <./images/photo_tailwind.png>]
+<images/photo_postgresql.png, id=150, 501.875pt x 517.935pt>
+File: images/photo_postgresql.png Graphic file (type png)
+<use images/photo_postgresql.png>
+Package pdftex.def Info: images/photo_postgresql.png  used on input line 856.
+(pdftex.def)             Requested size: 90.5922pt x 93.48506pt.
+ [24 <./images/photo_typescript.png> <./images/photo_postgresql.png>] [25
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 876--878
+
+ []
+
+
+Overfull \hbox (5.59212pt too wide) in paragraph at lines 895--896
+[]|\T1/cmr/bx/n/10.95 Priorité|  
+ []
+
+
+Overfull \hbox (5.59212pt too wide) in paragraph at lines 901--902
+[]|\T1/cmr/bx/n/10.95 Priorité|  
+ []
+
+
+Overfull \hbox (6.2967pt too wide) in paragraph at lines 916--916
+[]|\T1/cmr/m/n/10.95 Authentification|  
+ []
+
+
+Overfull \hbox (6.2967pt too wide) in paragraph at lines 920--920
+[]|\T1/cmr/m/n/10.95 Authentification|  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 935--936
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 939--940
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 948--949
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 957--958
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 961--962
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [26
+
+]
+<images/sprintcopie01.jpg, id=163, 1658.195pt x 1346.02875pt>
+File: images/sprintcopie01.jpg Graphic file (type jpg)
+<use images/sprintcopie01.jpg>
+Package pdftex.def Info: images/sprintcopie01.jpg  used on input line 978.
+(pdftex.def)             Requested size: 407.66833pt x 330.91983pt.
+ [27]
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]\T1/cmr/m/n/10.95 L'utilisateur ac-cède à la page d'ins-crip-tion de l'ap-pli
+-ca-tion UFit-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]\T1/cmr/m/n/10.95 Athlète : l'uti-li-sa-teur est re-di-rigé vers la page d'on
+-boar-ding pour
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]\T1/cmr/m/n/10.95 Coach ou Nu-tri-tion-niste : l'uti-li-sa-teur est re-di-rig
+é di-rec-te-ment vers
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]\T1/cmr/m/n/10.95 L'utilisateur sai-sit ses in-for-ma-tions per-son-nelles : 
 pré-nom, nom,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
 []\T1/cmr/m/n/10.95 Le sys-tème crée le compte et connecte au-to-ma-ti-que-ment
  le vi-si-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
 []\T1/cmr/bx/n/10.95 Coach ou Nu-tri-tion-niste \T1/cmr/m/n/10.95 : le sys-tème
  re-di-rige vers le ta-bleau
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]\T1/cmr/m/n/10.95 Le vi-si-teur choi-sit son rôle (Ath-lète / Coach / Nu-tri-
-tion-niste),
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]\T1/cmr/m/n/10.95 L'utilisateur choi-sit son rôle puis clique sur ^^S Conti-n
+uer avec
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]\T1/cmr/m/n/10.95 Après va-li-da-tion, le sys-tème re-di-rige se-lon le rôle 
-: Coach
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]\T1/cmr/m/n/10.95 Si le mot de passe et sa confir-ma-tion ne cor-res-pondent 
+pas, le sys-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-\T1/cmr/m/n/10.95 vers \T1/cmtt/m/n/10.95 /coach\T1/cmr/m/n/10.95 , Nu-tri-tion
--niste vers \T1/cmtt/m/n/10.95 /nutritionist\T1/cmr/m/n/10.95 , Ath-lète vers
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]\T1/cmr/m/n/10.95 si mot de passe et sa confir-ma-tion ne cor-res-pondent pas
-, le sys-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
 \T1/cmr/m/n/10.95 tème af-fiche ^^S Les mots de passe ne cor-res-pondent pas ^^
 T et bloque
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]\T1/cmr/m/n/10.95 si le mot de passe contient moins de 8 ca-rac-tères, le sys
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]\T1/cmr/m/n/10.95 Si le mot de passe contient moins de 8 ca-rac-tères, le sys
 -tème af-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1033
-[]\T1/cmr/m/n/10.95 si l'email est déjà uti-lisé, le sys-tème af-fiche un mes-s
-age d'er-reur et
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1061
+[]\T1/cmr/m/n/10.95 Si l'e-mail est déjà uti-lisé, le sys-tème af-fiche un mes-
+sage d'er-reur
  []
 
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
-[]\T1/cmr/m/n/10.95 Le vi-si-teur clique sur le lien ^^S Mot de passe ou-blié ?
+[28 <./images/sprintcopie01.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1131
+[]\T1/cmr/m/n/10.95 L'utilisateur ac-cède à la page de connexion de l'ap-pli-ca
+-tion UFit-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1131
+[]\T1/cmr/m/n/10.95 L'utilisateur est au-then-ti-fié et re-di-rigé vers son ta-
+bleau de bord
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1131
+[]\T1/cmr/m/n/10.95 Après va-li-da-tion par Google, le sys-tème crée ou ré-cu-p
+ère le
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1131
+[]\T1/cmr/m/n/10.95 Si l'email n'existe pas ou si le mot de passe est er-roné, 
+le sys-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1131--1131
+\T1/cmr/m/n/10.95 tème af-fiche ^^S Email ou mot de passe in-cor-rect ^^T et la
+ connexion
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
+[]\T1/cmr/m/n/10.95 L'utilisateur clique sur le lien ^^S Mot de passe ou-blié ?
  ^^T sur la page
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
 []\T1/cmr/m/n/10.95 Le sys-tème vé-ri-fie que l'email existe, gé-nère un code d
 e vé-ri-fi-ca-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche un mes-sage de confir-ma-tion d'en-voi
  in-di-quant
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
-[]\T1/cmr/m/n/10.95 Le vi-si-teur ouvre l'email, ré-cu-père le code de 6 chiffr
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
+[]\T1/cmr/m/n/10.95 L'utilisateur ouvre l'email, ré-cu-père le code de 6 chiffr
 es et le sai-sit
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
 []\T1/cmr/m/n/10.95 Si le code est va-lide, le sys-tème af-fiche la page de dé-
 fi-ni-tion du
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
-[]\T1/cmr/m/n/10.95 Le vi-si-teur sai-sit son nou-veau mot de passe, le confirm
-e , puis
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
+[]\T1/cmr/m/n/10.95 L'utilisateur sai-sit son nou-veau mot de passe, le confirm
+e, puis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
 []\T1/cmr/m/n/10.95 Le sys-tème met à jour le mot de passe et af-fiche un mes-s
 age de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
 []\T1/cmr/m/n/10.95 si l'email n'est pas re-connu, le sys-tème af-fiche un mes-
 sage d'er-reur
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
 []\T1/cmr/m/n/10.95 si le lien n'est plus va-lide, le sys-tème in-dique que le 
 lien n'est plus
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
 []\T1/cmr/m/n/10.95 si le mot de passe est faible ou que les champs ne cor-res-
 pondent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1096--1096
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1198
 \T1/cmr/m/n/10.95 pas, le sys-tème af-fiche un mes-sage d'er-reur et de-mande u
 ne nou-
  []
 
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 []\T1/cmr/m/n/10.95 L'athlète a créé un compte et est ac-tuel-le-ment connecté 
 à l'ap-pli-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 []\T1/cmr/m/n/10.95 Les in-for-ma-tions phy-siques, les ob-jec-tifs spor-tifs e
 t les don-nées
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 []\T1/cmr/m/n/10.95 L'athlète ac-cède à la ru-brique dé-diée à son pro-fil ou y
  est re-di-rigé
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 []\T1/cmr/m/n/10.95 Le sys-tème ré-cu-père les don-nées exis-tantes de l'ath-lè
 te et vé-ri-fie si
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 []\T1/cmr/bx/n/10.95 Première confi-gu-ra-tion \T1/cmr/m/n/10.95 : le sys-tème 
 af-fiche un ques-tion-naire
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 \T1/cmr/m/n/10.95 vide. L'ath-lète rem-plit ses in-for-ma-tions obli-ga-toires 
 (âge, taille,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 []\T1/cmr/bx/n/10.95 Mise à jour \T1/cmr/m/n/10.95 : le sys-tème af-fiche le fo
 r-mu-laire pré-rempli avec
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 \T1/cmr/m/n/10.95 les an-ciennes don-nées. L'ath-lète mo-di-fie uni-que-ment le
 s in-for-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 []\T1/cmr/m/n/10.95 L'athlète clique sur le bou-ton de va-li-da-tion pour sou-m
 ettre ses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 []\T1/cmr/m/n/10.95 Le sys-tème cal-cule au-to-ma-ti-que-ment l'In-dice de Mass
 e Cor-po-relle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 []\T1/cmr/m/n/10.95 Le sys-tème met à jour la base de don-nées et marque of-fi-
 ciel-le-ment
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche un mes-sage de confir-ma-tion va-li-da
 nt la réus-site
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
-[]\T1/cmr/m/n/10.95 si un champ obli-ga-toire (comme le poids, la taille ou l'o
-b-jec-tif) est
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
+[]\T1/cmr/m/n/10.95 Si un champ obli-ga-toire (comme le poids, la taille ou l'o
+b-jec-tif)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
-\T1/cmr/m/n/10.95 laissé vide, le sys-tème ne va-lide pas les mo-di-fi-ca-tions
- et sou-ligne
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
+\T1/cmr/m/n/10.95 est laissé vide, le sys-tème ne va-lide pas les mo-di-fi-ca-t
+ions et sou-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
-[]\T1/cmr/m/n/10.95 si l'ath-lète quitte la page ou an-nule avant va-li-da-tion
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
+[]\T1/cmr/m/n/10.95 Si l'ath-lète quitte la page ou an-nule avant va-li-da-tion
 , le sys-tème
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1164--1164
+Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
 \T1/cmr/m/n/10.95 an-nule l'opé-ra-tion et conserve les an-ciennes in-for-ma-ti
 ons ou le
  []
 
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 []\T1/cmr/m/n/10.95 Le pro-fes-sion-nel (Coach ou Nu-tri-tion-niste) est au-the
 n-ti-fié et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 []\T1/cmr/m/n/10.95 Le pro-fes-sion-nel ac-cède à son in-ter-face de ges-tion d
 es clients /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 []\T1/cmr/m/n/10.95 L'état des in-vi-ta-tions est mis à jour dans le sys-tème :
  une nou-velle
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 \T1/cmr/m/n/10.95 in-vi-ta-tion est créée et mise en at-tente, ou une in-vi-ta-
 tion exis-tante
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche la liste des clients ac-tuels ainsi qu
 e la liste des
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 []\T1/cmr/bx/n/10.95 Ajouter un nou-vel ath-lète \T1/cmr/m/n/10.95 : cli-quer s
 ur le bou-ton per-met-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 []\T1/cmr/bx/n/10.95 Annuler une de-mande \T1/cmr/m/n/10.95 : sé-lec-tion-ner u
 ne in-vi-ta-tion en at-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 []\T1/cmr/bx/n/10.95 Envoyer \T1/cmr/m/n/10.95 : le pro-fes-sion-nel rem-plit l
 e for-mu-laire (ex. : adresse
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 []\T1/cmr/bx/n/10.95 Supprimer \T1/cmr/m/n/10.95 : le pro-fes-sion-nel confirme
  la sup-pres-sion via une
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 []\T1/cmr/m/n/10.95 Le sys-tème traite la de-mande et met à jour la base de don
 -nées en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche un mes-sage de confir-ma-tion (suc-cès
  de l'en-voi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
-[]\T1/cmr/m/n/10.95 si le pro-fes-sion-nel tente d'en-voyer une in-vi-ta-tion à
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
+[]\T1/cmr/m/n/10.95 Si le pro-fes-sion-nel tente d'en-voyer une in-vi-ta-tion à
  une adresse
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 \T1/cmr/m/n/10.95 email in-va-lide ou à un uti-li-sa-teur qui n'existe pas, le 
 sys-tème af-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
-[]\T1/cmr/m/n/10.95 si le pro-fes-sion-nel an-nule la confir-ma-tion de sup-pre
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
+[]\T1/cmr/m/n/10.95 Si le pro-fes-sion-nel an-nule la confir-ma-tion de sup-pre
 s-sion dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1238--1238
+Underfull \hbox (badness 10000) in paragraph at lines 1340--1340
 \T1/cmr/m/n/10.95 boîte de dia-logue, le sys-tème ignore l'ac-tion et la liste 
 reste in-
  []
 
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 []\T1/cmr/m/n/10.95 L'athlète a créé un compte et est ac-tuel-le-ment connecté 
 à l'ap-pli-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
-[]\T1/cmr/m/n/10.95 Un Coach ou un Nu-tri-tion-niste a préa-la-ble-ment en-voyé
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
+[]\T1/cmr/m/n/10.95 Un coach ou un nu-tri-tion-niste a préa-la-ble-ment en-voyé
  une in-vi-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 []\T1/cmr/m/n/10.95 Le sta-tut de l'in-vi-ta-tion est mis à jour dans le sys-tè
 me : il passe à
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 []\T1/cmr/m/n/10.95 Une no-ti-fi-ca-tion est au-to-ma-ti-que-ment en-voyée au
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 []\T1/cmr/m/n/10.95 Le sys-tème ré-cu-père au-to-ma-ti-que-ment la liste des in
 -vi-ta-tions en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche la sec-tion ^^S In-vi-ta-tions en at-t
 ente ^^T conte-nant,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 \T1/cmr/m/n/10.95 pour chaque in-vi-ta-tion : le nom et le pré-nom de l'ex-pé-d
 i-teur, le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 \T1/cmr/m/n/10.95 type de suivi pro-posé (Coach ou Nu-tri-tion-niste) ainsi que
  deux
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 []\T1/cmr/m/n/10.95 L'athlète clique sur le bou-ton ^^S Ac-cep-ter ^^T pour une
  in-vi-ta-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 []\T1/cmr/m/n/10.95 Le sys-tème vé-ri-fie que l'in-vi-ta-tion existe, qu'elle a
 p-par-tient bien à
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 []\T1/cmr/m/n/10.95 Le sys-tème en-re-gistre l'ac-cep-ta-tion et ac-tive le lie
 n de suivi entre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
-[]\T1/cmr/m/n/10.95 Le sys-tème en-voie une no-ti-fi-ca-tion au Coach/Nutrition
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
+[]\T1/cmr/m/n/10.95 Le sys-tème en-voie une no-ti-fi-ca-tion au coach/nutrition
 niste avec le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 \T1/cmr/m/n/10.95 mes-sage : ^^S {Nom de l'ath-lète} a ac-cepté votre in-vi-ta-
 tion de suivi.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 []\T1/cmr/m/n/10.95 Le sys-tème ac-tua-lise l'af-fi-chage et pré-sente un mes-s
 age de confir-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 []\T1/cmr/m/n/10.95 L'invitation dis-pa-raît de la sec-tion ^^S In-vi-ta-tions 
 en at-tente ^^T et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
-\T1/cmr/m/n/10.95 le Coach/Nutritionniste ap-pa-raît dé-sor-mais dans la carte 
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
+\T1/cmr/m/n/10.95 le coach/nutritionniste ap-pa-raît dé-sor-mais dans la carte 
 ^^S Mon
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
-[]\T1/cmr/m/n/10.95 si l'ath-lète clique sur le bou-ton ^^S Re-fu-ser ^^T, le s
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
+[]\T1/cmr/m/n/10.95 Si l'ath-lète clique sur le bou-ton ^^S Re-fu-ser ^^T, le s
 ys-tème en-re-gistre
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
-\T1/cmr/m/n/10.95 le re-fus et en-voie une no-ti-fi-ca-tion au Coach/Nutritionn
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
+\T1/cmr/m/n/10.95 le re-fus et en-voie une no-ti-fi-ca-tion au coach/nutritionn
 iste : ^^S
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
 \T1/cmr/m/n/10.95 {Nom de l'ath-lète} a re-fusé votre in-vi-ta-tion de suivi. ^
 ^T L'in-vi-ta-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
-[]\T1/cmr/m/n/10.95 si l'ath-lète tente de ré-pondre à une in-vi-ta-tion à la-q
-uelle il a déjà
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
-\T1/cmr/m/n/10.95 ré-pondu, le sys-tème ne va-lide pas l'opé-ra-tion et af-fich
-e le mes-sage
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1310--1310
-[]\T1/cmr/m/n/10.95 si l'ath-lète n'a reçu au-cune in-vi-ta-tion, la sec-tion ^
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
+[]\T1/cmr/m/n/10.95 Si l'ath-lète n'a reçu au-cune in-vi-ta-tion, la sec-tion ^
 ^S In-vi-ta-tions en
  []
 
-[27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1423
+[33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1525
 []\T1/cmr/m/n/10.95 Le mes-sage est trans-mis et le des-ti-na-taire re-çoit une
  no-ti-fi-ca-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1423
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1525
 []\T1/cmr/m/n/10.95 L'utilisateur ac-cède à la mes-sa-ge-rie et sé-lec-tionne s
 on cor-res-pon-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1423
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1525
 []\T1/cmr/m/n/10.95 Le sys-tème va-lide l'en-voi, af-fiche le mes-sage et no-ti
 -fie le des-ti-na-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1423
-[]\T1/cmr/m/n/10.95 si au-cun lien de suivi n'existe entre les deux uti-li-sa-t
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1525
+[]\T1/cmr/m/n/10.95 Si au-cun lien de suivi n'existe entre les deux uti-li-sa-t
 eurs, l'en-voi
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1423--1423
-[]\T1/cmr/m/n/10.95 les mes-sages re-çus passent au-to-ma-ti-que-ment au sta-tu
+Underfull \hbox (badness 10000) in paragraph at lines 1525--1525
+[]\T1/cmr/m/n/10.95 Les mes-sages re-çus passent au-to-ma-ti-que-ment au sta-tu
 t ^^S lu ^^T
  []
 
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1489
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1591
 []\T1/cmr/m/n/10.95 La pro-po-si-tion de rendez-vous est créée avec le sta-tut 
 ^^S pla-ni-fié ^^T
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1489
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1591
 []\T1/cmr/m/n/10.95 Il clique sur l'op-tion pour pro-gram-mer un rendez-vous et
  sé-lec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1489
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1591
 []\T1/cmr/m/n/10.95 Il ren-seigne les in-for-ma-tions re-quises : titre, date, 
 heure de dé-but
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1489
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1591
 []\T1/cmr/m/n/10.95 Le sys-tème vé-ri-fie la va-li-dité des in-for-ma-tions et 
 la pré-sence du
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1489
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1591
 []\T1/cmr/m/n/10.95 Le sys-tème en-re-gistre le rendez-vous sous le sta-tut ^^S
  pla-ni-fié ^^T et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1489
-[]\T1/cmr/m/n/10.95 si la date ou l'heure est in-va-lide, ou si un champ obli-g
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1591
+[]\T1/cmr/m/n/10.95 Si la date ou l'heure est in-va-lide, ou si un champ obli-g
 a-toire est
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1489
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1591
 \T1/cmr/m/n/10.95 man-quant, le sys-tème bloque la va-li-da-tion et si-gnale le
 s er-reurs à
  []
 
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1554
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 1656--1656
 []\T1/cmr/m/n/10.95 Un rendez-vous pro-posé par son Coach ou Nu-tri-tion-niste 
 est en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1554
+Underfull \hbox (badness 10000) in paragraph at lines 1656--1656
 []\T1/cmr/m/n/10.95 Le rendez-vous passe au sta-tut ^^S confirmé ^^T en cas d'a
 c-cep-ta-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1554
+Underfull \hbox (badness 10000) in paragraph at lines 1656--1656
 []\T1/cmr/m/n/10.95 L'athlète ac-cède à son ta-bleau de bord et re-père l'in-vi
 -ta-tion de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1554
+Underfull \hbox (badness 10000) in paragraph at lines 1656--1656
 []\T1/cmr/m/n/10.95 Le sys-tème vé-ri-fie que le rendez-vous est tou-jours dis-
 po-nible et n'a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1554
+Underfull \hbox (badness 10000) in paragraph at lines 1656--1656
 []\T1/cmr/m/n/10.95 Le sys-tème ac-tua-lise le ca-len-drier et af-fiche un mes-
 sage de va-li-da-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1554
-[]\T1/cmr/m/n/10.95 si l'ath-lète clique sur Re-fu-ser. Le sys-tème en-re-gistr
+Underfull \hbox (badness 10000) in paragraph at lines 1656--1656
+[]\T1/cmr/m/n/10.95 Si l'ath-lète clique sur Re-fu-ser. Le sys-tème en-re-gistr
 e l'an-nu-la-tion,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1554
+Underfull \hbox (badness 10000) in paragraph at lines 1656--1656
 \T1/cmr/m/n/10.95 passe le sta-tut du rendez-vous à ^^S an-nulé ^^T et le re-ti
 re des rendez-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1554
-[]\T1/cmr/m/n/10.95 si le rendez-vous a déjà été com-plété ou an-nulé par le pr
+Underfull \hbox (badness 10000) in paragraph at lines 1656--1656
+[]\T1/cmr/m/n/10.95 Si le rendez-vous a déjà été com-plété ou an-nulé par le pr
 o-fes-sion-
  []
 
-[31]
-Underfull \hbox (badness 10000) in paragraph at lines 1619--1619
-[]\T1/cmr/m/n/10.95 Les re-marques et consignes du Coach sont af-fi-chées à l'é
-cran par
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1619--1619
-[]\T1/cmr/m/n/10.95 Le sys-tème ré-cu-père au-to-ma-ti-que-ment l'en-semble des
- notes ré-di-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1619--1619
-[]\T1/cmr/m/n/10.95 Le sys-tème af-fiche la liste des notes conte-nant la date,
- le nom du
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1619--1619
-[]\T1/cmr/m/n/10.95 si le Coach n'a ré-digé au-cune note, le sys-tème af-fiche 
-un en-ca-dré
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1619--1619
-[]\T1/cmr/m/n/10.95 si au-cun lien de suivi n'est éta-bli avec un Coach, la sec
--tion dé-diée
- []
-
-[32] [33] [34]
-<images/pfekhouloud_digramme_de_sequence d'inscription1.png, id=187, 992.2671pt
+[37] [38] [39]
+<images/pfekhouloud_digramme_de_sequence d'inscription1.png, id=206, 992.2671pt
  x 1186.6734pt>
 File: images/pfekhouloud_digramme_de_sequence d'inscription1.png Graphic file (
 type png)
 <use images/pfekhouloud_digramme_de_sequence d'inscription1.png>
 Package pdftex.def Info: images/pfekhouloud_digramme_de_sequence d'inscription1
-.png  used on input line 1690.
+.png  used on input line 1729.
 (pdftex.def)             Requested size: 407.66833pt x 487.53514pt.
- [35 <./images/pfekhouloud_digramme_de_sequence d'inscription1.png>]
-<images/digramme_de_sequance_login.png, id=193, 847.0044pt x 750.1626pt>
+ [40 <./images/pfekhouloud_digramme_de_sequence d'inscription1.png>]
+<images/digramme_de_sequance_login.png, id=212, 847.0044pt x 750.1626pt>
 File: images/digramme_de_sequance_login.png Graphic file (type png)
 <use images/digramme_de_sequance_login.png>
 Package pdftex.def Info: images/digramme_de_sequance_login.png  used on input l
-ine 1704.
+ine 1743.
 (pdftex.def)             Requested size: 407.66833pt x 361.05836pt.
-<images/digramme_de_sequance_modifier_onborading.png, id=194, 759.5577pt x 602.
+<images/digramme_de_sequance_modifier_onborading.png, id=213, 759.5577pt x 602.
 0091pt>
 File: images/digramme_de_sequance_modifier_onborading.png Graphic file (type pn
 g)
 <use images/digramme_de_sequance_modifier_onborading.png>
 Package pdftex.def Info: images/digramme_de_sequance_modifier_onborading.png  u
-sed on input line 1718.
+sed on input line 1757.
 (pdftex.def)             Requested size: 407.66833pt x 323.11427pt.
- [36 <./images/digramme_de_sequance_login.png>]
-<images/pfekhouloud digramme de classe-envoyer invitition2.png, id=199, 781.238
+ [41 <./images/digramme_de_sequance_login.png>]
+<images/pfekhouloud digramme de classe-envoyer invitition2.png, id=218, 781.238
 7pt x 558.6471pt>
 File: images/pfekhouloud digramme de classe-envoyer invitition2.png Graphic fil
 e (type png)
 <use images/pfekhouloud digramme de classe-envoyer invitition2.png>
 Package pdftex.def Info: images/pfekhouloud digramme de classe-envoyer invititi
-on2.png  used on input line 1732.
+on2.png  used on input line 1771.
 (pdftex.def)             Requested size: 407.66833pt x 291.52107pt.
- [37 <./images/digramme_de_sequance_modifier_onborading.png>]
-<images/de_classe-digramme-de-classe de sprint1.png, id=204, 774.7344pt x 758.8
-35pt>
-File: images/de_classe-digramme-de-classe de sprint1.png Graphic file (type png
-)
-<use images/de_classe-digramme-de-classe de sprint1.png>
-Package pdftex.def Info: images/de_classe-digramme-de-classe de sprint1.png  us
-ed on input line 1748.
-(pdftex.def)             Requested size: 430.31812pt x 421.4942pt.
- [38 <./images/pfekhouloud digramme de classe-envoyer invitition2.png>]
-<images/sigin.png, id=209, 963.6pt x 416.30531pt>
+ [42 <./images/digramme_de_sequance_modifier_onborading.png>]
+<images/digrammedeclasse1.png, id=223, 1136.245pt x 907.39pt>
+File: images/digrammedeclasse1.png Graphic file (type png)
+<use images/digrammedeclasse1.png>
+Package pdftex.def Info: images/digrammedeclasse1.png  used on input line 1787.
+
+(pdftex.def)             Requested size: 430.31812pt x 343.64874pt.
+ [43 <./images/pfekhouloud digramme de classe-envoyer invitition2.png>]
+<images/sigin.png, id=229, 963.6pt x 416.30531pt>
 File: images/sigin.png Graphic file (type png)
 <use images/sigin.png>
-Package pdftex.def Info: images/sigin.png  used on input line 1764.
+Package pdftex.def Info: images/sigin.png  used on input line 1804.
 (pdftex.def)             Requested size: 385.02547pt x 166.34131pt.
- [39 <./images/de_classe-digramme-de-classe de sprint1.png>]
-<images/sigup.png, id=214, 930.47626pt x 423.83344pt>
+ [44 <./images/digrammedeclasse1.png>]
+<images/sigup.png, id=234, 930.47626pt x 423.83344pt>
 File: images/sigup.png Graphic file (type png)
 <use images/sigup.png>
-Package pdftex.def Info: images/sigup.png  used on input line 1777.
+Package pdftex.def Info: images/sigup.png  used on input line 1818.
 (pdftex.def)             Requested size: 385.02547pt x 175.37668pt.
-<images/forgetpassword1.png, id=215, 331.99031pt x 235.63031pt>
+<images/forgetpassword1.png, id=235, 331.99031pt x 235.63031pt>
 File: images/forgetpassword1.png Graphic file (type png)
 <use images/forgetpassword1.png>
-Package pdftex.def Info: images/forgetpassword1.png  used on input line 1791.
+Package pdftex.def Info: images/forgetpassword1.png  used on input line 1832.
 (pdftex.def)             Requested size: 385.02547pt x 273.2882pt.
- [40 <./images/sigin.png> <./images/sigup.png>]
-<images/forgetpassword2.png, id=221, 773.89125pt x 280.04625pt>
+ [45 <./images/sigin.png> <./images/sigup.png>]
+<images/forgetpassword2.png, id=241, 773.89125pt x 280.04625pt>
 File: images/forgetpassword2.png Graphic file (type png)
 <use images/forgetpassword2.png>
-Package pdftex.def Info: images/forgetpassword2.png  used on input line 1802.
+Package pdftex.def Info: images/forgetpassword2.png  used on input line 1843.
 (pdftex.def)             Requested size: 385.02547pt x 139.33052pt.
-<images/forgetpassword3.png, id=222, 328.97906pt x 470.50781pt>
+<images/forgetpassword3.png, id=242, 328.97906pt x 470.50781pt>
 File: images/forgetpassword3.png Graphic file (type png)
 <use images/forgetpassword3.png>
-Package pdftex.def Info: images/forgetpassword3.png  used on input line 1813.
+Package pdftex.def Info: images/forgetpassword3.png  used on input line 1854.
 (pdftex.def)             Requested size: 385.02547pt x 550.67857pt.
- [41 <./images/forgetpassword1.png> <./images/forgetpassword2.png>] [42 <./imag
+ [46 <./images/forgetpassword1.png> <./images/forgetpassword2.png>] [47 <./imag
 es/forgetpassword3.png>]
-<images/inviteclient.png, id=233, 747.54282pt x 272.51813pt>
+<images/inviteclient.png, id=253, 747.54282pt x 272.51813pt>
 File: images/inviteclient.png Graphic file (type png)
 <use images/inviteclient.png>
-Package pdftex.def Info: images/inviteclient.png  used on input line 1826.
+Package pdftex.def Info: images/inviteclient.png  used on input line 1867.
 (pdftex.def)             Requested size: 385.02547pt x 140.36295pt.
-<images/consulterlistedeclient.png, id=234, 770.88pt x 266.49562pt>
-File: images/consulterlistedeclient.png Graphic file (type png)
-<use images/consulterlistedeclient.png>
-Package pdftex.def Info: images/consulterlistedeclient.png  used on input line 
-1837.
-(pdftex.def)             Requested size: 385.02547pt x 133.10109pt.
-<images/notification.png, id=235, 1337.99875pt x 1184.425pt>
-File: images/notification.png Graphic file (type png)
-<use images/notification.png>
-Package pdftex.def Info: images/notification.png  used on input line 1848.
-(pdftex.def)             Requested size: 385.02547pt x 340.83582pt.
+ [48 <./images/inviteclient.png>] [49] [50
 
-[43 <./images/inviteclient.png> <./images/consulterlistedeclient.png>] [44 <./i
-mages/notification.png (PNG copy)>]
-Overfull \hbox (7.77063pt too wide) in alignment at lines 1882--1887
- [] [] [] [] [] 
+]
+Overfull \hbox (5.59212pt too wide) in paragraph at lines 1922--1923
+[]|\T1/cmr/bx/n/10.95 Priorité|  
  []
 
 
-Overfull \hbox (7.77063pt too wide) in alignment at lines 1887--1892
- [] [] [] [] [] 
+Overfull \hbox (5.59212pt too wide) in paragraph at lines 1927--1928
+[]|\T1/cmr/bx/n/10.95 Priorité|  
  []
 
 
-Overfull \hbox (7.77063pt too wide) in alignment at lines 1892--1895
- [] [] [] [] [] 
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 1959--1960
+[]|\T1/cmr/m/n/10.95 Moyenne|  
  []
 
 
-Overfull \hbox (7.77063pt too wide) in alignment at lines 1895--1898
- [] [] [] [] [] 
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 1964--1965
+[]|\T1/cmr/m/n/10.95 Moyenne|  
  []
 
 
-Overfull \hbox (7.77063pt too wide) in alignment at lines 1898--1955
- [] [] [] [] [] 
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 1970--1971
+[]|\T1/cmr/m/n/10.95 Moyenne|  
  []
 
 
-ignored: Infinite glue shrinkage found in box being split [45
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 1976--1977
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
 
-] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2035
+
+Overfull \hbox (1.95099pt too wide) in paragraph at lines 1981--1981
+[]|\T1/cmr/m/n/10.95 Recommandations  
+ []
+
+
+Overfull \hbox (5.34712pt too wide) in paragraph at lines 1992--1993
+[]|\T1/cmr/m/n/10.95 Moyenne|  
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [51
+
+]
+<images/usecasesprint02f.jpg, id=267, 1130.2225pt x 874.26625pt>
+File: images/usecasesprint02f.jpg Graphic file (type jpg)
+<use images/usecasesprint02f.jpg>
+Package pdftex.def Info: images/usecasesprint02f.jpg  used on input line 2008.
+(pdftex.def)             Requested size: 407.66833pt x 315.33592pt.
+ [52]
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
 []\T1/cmr/m/n/10.95 L'activité phy-sique de l'ath-lète est en-re-gis-trée et sa
 u-ve-gar-dée dans
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2035
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
 []\T1/cmr/m/n/10.95 L'athlète ac-cède à la ru-brique d'en-re-gis-tre-ment d'ac-
 ti-vité de-puis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2035
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche le for-mu-laire de sai-sie et l'ath-lè
 te rem-plit ses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2035
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
 []\T1/cmr/m/n/10.95 Le sys-tème va-lide les don-nées sai-sies et les en-re-gist
 re dans la base
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2035
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche un mes-sage de confir-ma-tion va-li-da
 nt la réus-site
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2035
-[]\T1/cmr/m/n/10.95 si cer-taines in-for-ma-tions obli-ga-toires sont man-quant
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
+[]\T1/cmr/m/n/10.95 Si cer-taines in-for-ma-tions obli-ga-toires sont man-quant
 es ou si les
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2035
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
 \T1/cmr/m/n/10.95 don-nées sai-sies ne res-pectent pas les règles de va-li-da-t
 ion, le sys-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2035
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
 \T1/cmr/m/n/10.95 tème re-jette la sou-mis-sion et in-forme l'ath-lète des cor-
 rec-tions à
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2035
-[]\T1/cmr/m/n/10.95 si l'ath-lète an-nule l'opé-ra-tion ou quitte la page avant
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
+[]\T1/cmr/m/n/10.95 Si l'ath-lète an-nule l'opé-ra-tion ou quitte la page avant
  la va-li-da-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2035--2035
+Underfull \hbox (badness 10000) in paragraph at lines 2075--2075
 \T1/cmr/m/n/10.95 tion, le sys-tème aban-donne l'en-re-gis-tre-ment et au-cune 
 don-née
  []
 
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2096
+[53 <./images/usecasesprint02f.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 2136--2136
 []\T1/cmr/m/n/10.95 Les don-nées nu-tri-tion-nelles de l'ath-lète sont en-re-gi
 s-trées et sau-ve-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2096
+Underfull \hbox (badness 10000) in paragraph at lines 2136--2136
 []\T1/cmr/m/n/10.95 L'historique des re-pas et de l'ap-port nu-tri-tion-nel de 
 l'ath-lète est
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2096
+Underfull \hbox (badness 10000) in paragraph at lines 2136--2136
 []\T1/cmr/m/n/10.95 L'athlète ac-cède à la ru-brique d'en-re-gis-tre-ment de nu
 -tri-tion de-puis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2096
+Underfull \hbox (badness 10000) in paragraph at lines 2136--2136
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche le for-mu-laire de sai-sie et l'ath-lè
 te rem-plit ses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2096
+Underfull \hbox (badness 10000) in paragraph at lines 2136--2136
 []\T1/cmr/m/n/10.95 Le sys-tème va-lide les don-nées sai-sies et les en-re-gist
 re dans la base
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2096
+Underfull \hbox (badness 10000) in paragraph at lines 2136--2136
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche un mes-sage de confir-ma-tion et met à
  jour l'his-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2096
-[]\T1/cmr/m/n/10.95 l'utilisateur peut rem-plir seule-ment les in-for-ma-tions 
+Underfull \hbox (badness 10000) in paragraph at lines 2136--2136
+[]\T1/cmr/m/n/10.95 L'utilisateur peut rem-plir seule-ment les in-for-ma-tions 
 qu'il connaît.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2096
+Underfull \hbox (badness 10000) in paragraph at lines 2136--2136
 \T1/cmr/m/n/10.95 Le sys-tème en-re-gistre les don-nées sai-sies même si cer-ta
 ins champs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2096--2096
-[]\T1/cmr/m/n/10.95 si l'ath-lète quitte la page avant va-li-da-tion, le sys-tè
+Underfull \hbox (badness 10000) in paragraph at lines 2136--2136
+[]\T1/cmr/m/n/10.95 Si l'ath-lète quitte la page avant va-li-da-tion, le sys-tè
 me an-nule
  []
 
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2158
+[54]
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2198
 []\T1/cmr/m/n/10.95 L'athlète na-vigue vers la sec-tion dé-diée au suivi de sa 
 pro-gres-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2198
 []\T1/cmr/m/n/10.95 Une nou-velle en-trée de pro-gres-sion est sau-ve-gar-dée e
 n base de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2198
 []\T1/cmr/m/n/10.95 Les mé-triques cor-po-relles sont his-to-ri-sées pour la da
 te d'en-re-gis-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2198
 []\T1/cmr/m/n/10.95 L'athlète ac-cède à la ru-brique d'en-re-gis-tre-ment de sa
  pro-gres-sion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2198
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche le for-mu-laire de sai-sie et l'ath-lè
 te ren-seigne ses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2198
 []\T1/cmr/m/n/10.95 Le sys-tème va-lide les don-nées sai-sies et les en-re-gist
 re dans la base
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2198
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche un mes-sage de confir-ma-tion et met à
  jour l'his-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2158
-[]\T1/cmr/m/n/10.95 l'athlète peut choi-sir de ne ren-sei-gner qu'une par-tie d
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2198
+[]\T1/cmr/m/n/10.95 L'athlète peut choi-sir de ne ren-sei-gner qu'une par-tie d
 es mé-triques
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2198
 \T1/cmr/m/n/10.95 dis-po-nibles. Le sys-tème ac-cepte cette sai-sie par-tielle 
 et sau-ve-garde
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2158
-[]\T1/cmr/m/n/10.95 si l'ath-lète quitte la page sans confir-mer l'en-re-gis-tr
+Underfull \hbox (badness 10000) in paragraph at lines 2198--2198
+[]\T1/cmr/m/n/10.95 Si l'ath-lète quitte la page sans confir-mer l'en-re-gis-tr
 e-ment, l'ac-tion
  []
 
-[49]
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 []\T1/cmr/m/n/10.95 Les in-for-ma-tions phy-sio-lo-giques de base (poids, taill
 e, âge, sexe,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 []\T1/cmr/m/n/10.95 L'athlète ac-cède à la ru-brique dé-diée à son plan de-puis
  le ta-bleau
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 []\T1/cmr/m/n/10.95 Le sys-tème ré-cu-père les don-nées bio-mé-triques et les o
 b-jec-tifs ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 []\T1/cmr/m/n/10.95 Le sys-tème ef-fec-tue une sé-rie d'ana-lyses et de cal-cul
 s au-to-ma-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 []\T1/cmr/m/n/10.95 Il éva-lue le mé-ta-bo-lisme de base et les be-soins éner-g
 é-tiques
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 []\T1/cmr/m/n/10.95 Il struc-ture un plan de re-pas et re-com-mande des com-plé
 -ments
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 []\T1/cmr/m/n/10.95 Il for-mule des conseils de vie et iden-ti-fie les éven-tue
 ls risques
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 []\T1/cmr/m/n/10.95 Le sys-tème com-pile toutes ces ana-lyses en un dos-sier de
  re-com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 []\T1/cmr/m/n/10.95 L'athlète vi-sua-lise son plan dé-taillé, ré-parti par sec-
 tions (Nu-tri-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
-[]\T1/cmr/m/n/10.95 si l'ath-lète n'a pas fourni toutes les me-sures né-ces-sai
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
+[]\T1/cmr/m/n/10.95 Si l'ath-lète n'a pas fourni toutes les me-sures né-ces-sai
 res, le sys-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 \T1/cmr/m/n/10.95 tème bloque la gé-né-ra-tion du plan et le re-di-rige vers un
  for-mu-laire
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
-[]\T1/cmr/m/n/10.95 si l'ana-lyse des don-nées ré-vèle une ano-ma-lie, le sys-t
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
+[]\T1/cmr/m/n/10.95 Si l'ana-lyse des don-nées ré-vèle une ano-ma-lie, le sys-t
 ème in-dique à
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2230--2230
+Underfull \hbox (badness 10000) in paragraph at lines 2270--2270
 \T1/cmr/m/n/10.95 l'ath-lète qu'il est tem-po-rai-re-ment im-pos-sible de gé-né
 -rer le plan et
  []
 
-[50]
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2292
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 2332--2332
 []\T1/cmr/m/n/10.95 Des en-traî-ne-ments, des re-pas ou des poids ont déjà été 
 en-re-gis-trés
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2292
+Underfull \hbox (badness 10000) in paragraph at lines 2332--2332
 []\T1/cmr/m/n/10.95 L'athlète se rend dans la ru-brique de suivi his-to-rique d
 e-puis son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2292
+Underfull \hbox (badness 10000) in paragraph at lines 2332--2332
 []\T1/cmr/m/n/10.95 Le dé-tail des séances de sport (du-rées, ca-lo-ries dé-pen
 -sées, types
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2292
+Underfull \hbox (badness 10000) in paragraph at lines 2332--2332
 []\T1/cmr/m/n/10.95 Le jour-nal des re-pas (to-tal des ca-lo-ries man-gées, pro
 -téines,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2292
+Underfull \hbox (badness 10000) in paragraph at lines 2332--2332
 []\T1/cmr/m/n/10.95 Le sys-tème met en forme ces don-nées sous forme de listes 
 et de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2292
+Underfull \hbox (badness 10000) in paragraph at lines 2332--2332
 []\T1/cmr/m/n/10.95 L'athlète consulte ses courbes de pro-grès et ses an-ciens 
 re-pas par
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2292--2292
-[]\T1/cmr/m/n/10.95 si l'ath-lète n'a en-core ja-mais rien en-re-gis-tré, le sy
+Underfull \hbox (badness 10000) in paragraph at lines 2332--2332
+[]\T1/cmr/m/n/10.95 Si l'ath-lète n'a en-core ja-mais rien en-re-gis-tré, le sy
 s-tème af-fiche un
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
 []\T1/cmr/m/n/10.95 Le nu-tri-tion-niste ac-cède à la ru-brique ^^S Plans re-pa
 s ^^T de-puis son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche l'in-ter-face \T1/cmr/m/it/10.95 Meal 
 Plan Buil-der \T1/cmr/m/n/10.95 avec le for-mu-laire
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
 []\T1/cmr/m/n/10.95 Le nu-tri-tion-niste sé-lec-tionne l'ath-lète des-ti-na-tai
 re dans la liste
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
 []\T1/cmr/m/n/10.95 Le nu-tri-tion-niste ren-seigne les in-for-ma-tions nu-tri-
 tion-nelles du
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
 []\T1/cmr/m/n/10.95 Le sys-tème va-lide les don-nées sai-sies et en-re-gistre l
 e plan dans la
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
 []\T1/cmr/m/n/10.95 Le sys-tème as-signe le plan re-pas à l'ath-lète sé-lec-tio
 nné et lui en-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche un mes-sage de confir-ma-tion va-li-da
 nt la créa-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
-[]\T1/cmr/m/n/10.95 le sys-tème re-jette la sou-mis-sion, met en évi-dence les 
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
+[]\T1/cmr/m/n/10.95 Le sys-tème re-jette la sou-mis-sion, met en évi-dence les 
 champs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
 \T1/cmr/m/n/10.95 er-ro-nés ou vides et in-vite le nu-tri-tion-niste à cor-ri-g
 er avant de sou-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
 []\T1/cmr/m/n/10.95 Si le nu-tri-tion-niste clique sur le bou-ton ^^S An-nu-ler
  ^^T, le sys-tème
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2348--2348
+Underfull \hbox (badness 10000) in paragraph at lines 2389--2389
 \T1/cmr/m/n/10.95 ferme le for-mu-laire sans en-re-gis-trer les don-nées sai-si
 es et re-di-rige
  []
 
-[51]
-Underfull \hbox (badness 10000) in paragraph at lines 2401--2401
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 2443--2443
 []\T1/cmr/m/n/10.95 L'athlète ac-cède à la ru-brique ^^S Plan re-pas ^^T de-pui
 s son ta-bleau
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2401--2401
+Underfull \hbox (badness 10000) in paragraph at lines 2443--2443
 []\T1/cmr/m/n/10.95 Le sys-tème vé-ri-fie l'exis-tence d'un plan re-pas as-si-g
 né à l'ath-lète
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2401--2401
+Underfull \hbox (badness 10000) in paragraph at lines 2443--2443
 []\T1/cmr/m/n/10.95 Le sys-tème ré-cu-père les in-for-ma-tions du plan re-pas d
 e-puis la base
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2401--2401
+Underfull \hbox (badness 10000) in paragraph at lines 2443--2443
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche le plan avec l'ob-jec-tif ca-lo-rique 
 et le dé-tail des
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2401--2401
+Underfull \hbox (badness 10000) in paragraph at lines 2443--2443
 []\T1/cmr/m/n/10.95 L'athlète consulte les re-com-man-da-tions nu-tri-tion-nell
 es pro-po-sées
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2401--2401
+Underfull \hbox (badness 10000) in paragraph at lines 2443--2443
 []\T1/cmr/m/n/10.95 si au-cun plan re-pas n'a en-core été as-si-gné, le sys-tèm
 e af-fiche un
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2401--2401
+Underfull \hbox (badness 10000) in paragraph at lines 2443--2443
 \T1/cmr/m/n/10.95 mes-sage in-di-quant qu'au-cun plan n'est dis-po-nible pour l
 e mo-
  []
 
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-[]\T1/cmr/m/n/10.95 Des don-nées de séances d'en-traî-ne-ment sont en-re-gis-tr
-ées dans le
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-[]\T1/cmr/m/n/10.95 L'athlète consulte l'ana-lyse de sa pro-gres-sion sur son t
-a-bleau de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-[]\T1/cmr/m/n/10.95 Le sys-tème ras-semble l'his-to-rique des der-nières séance
-s de l'ath-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-[]\T1/cmr/m/n/10.95 Le sys-tème cal-cule la pro-ba-bi-lité de stag-na-tion et d
-é-ter-mine la
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-[]\T1/cmr/m/n/10.95 Le sys-tème af-fiche le ni-veau de stag-na-tion ainsi qu'un
-e re-com-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-\T1/cmr/m/n/10.95 man-da-tion d'adap-ta-tion per-son-na-li-sée, par exemple une
- va-ria-tion
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-[]\T1/cmr/m/n/10.95 si 0 ou 1 séance est en-re-gis-trée, le sys-tème in-dique q
-u'il ne dis-pose
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-\T1/cmr/m/n/10.95 pas d'as-sez d'his-to-rique pour éva-luer la stag-na-tion et 
-in-vite l'uti-li-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-[]\T1/cmr/m/n/10.95 si 2 à 4 séances sont en-re-gis-trées, le sys-tème af-fiche
- une es-ti-ma-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-\T1/cmr/m/n/10.95 tion de la stag-na-tion, mais ajoute un aver-tis-se-ment in-d
-i-quant que
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-\T1/cmr/m/n/10.95 le ré-sul-tat est par-tiel et de-vien-dra op-ti-mal à par-tir
- de la 5ème
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-[]\T1/cmr/m/n/10.95 si une stag-na-tion mo-dé-rée ou forte est dé-tec-tée, le s
-ys-tème en-voie
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-\T1/cmr/m/n/10.95 une alerte dans l'es-pace per-son-nel de l'ath-lète et re-cal
--cule au-to-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2459--2459
-\T1/cmr/m/n/10.95 ma-ti-que-ment de nou-velles re-com-man-da-tions d'en-traî-ne
--ment pour
- []
-
-[53]
-Underfull \hbox (badness 10000) in paragraph at lines 2514--2514
-[]\T1/cmr/m/n/10.95 L'athlète a ren-sei-gné ses in-for-ma-tions de pro-fil (âge
-, genre, type de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2514--2514
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 2499--2499
 []\T1/cmr/m/n/10.95 Le sys-tème éva-lue son ni-veau de risque de désen-ga-ge-me
 nt en ana-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2514--2514
+Underfull \hbox (badness 10000) in paragraph at lines 2499--2499
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche le ni-veau de risque sous forme d'un i
 n-di-ca-teur
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2514--2514
-\T1/cmr/m/n/10.95 vi-suel co-loré (Vert pour faible, Orange pour moyen, Rouge p
-our
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2514--2514
+Underfull \hbox (badness 10000) in paragraph at lines 2499--2499
 []\T1/cmr/m/n/10.95 Le sys-tème pré-sente des conseils per-son-na-li-sés pour a
 i-der l'ath-lète
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2514--2514
+Underfull \hbox (badness 10000) in paragraph at lines 2499--2499
 []\T1/cmr/m/n/10.95 Si le risque est jugé élevé, le sys-tème en-voie au-to-ma-t
 i-que-ment une
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2514--2514
+Underfull \hbox (badness 10000) in paragraph at lines 2499--2499
 \T1/cmr/m/n/10.95 no-ti-fi-ca-tion d'en-cou-ra-ge-ment et un e-mail per-son-na-
 lisé pour re-mo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2514--2514
+Underfull \hbox (badness 10000) in paragraph at lines 2499--2499
 []\T1/cmr/m/n/10.95 Le sys-tème es-time le risque uni-que-ment à par-tir des in
 -for-ma-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2514--2514
+Underfull \hbox (badness 10000) in paragraph at lines 2499--2499
 []\T1/cmr/m/n/10.95 Le sys-tème in-dique que l'his-to-rique est en-core in-suf-
 fi-sant pour un
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2514--2514
+Underfull \hbox (badness 10000) in paragraph at lines 2499--2499
 []\T1/cmr/m/n/10.95 Le sys-tème désac-tive l'en-voi au-to-ma-tique d'e-mails et
  de no-ti-fi-ca-
  []
 
-[54]
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
+[60]
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
 []\T1/cmr/m/n/10.95 L'athlète a in-di-qué son poids ac-tuel, son poids cible et
  le dé-lai
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
 []\T1/cmr/m/n/10.95 L'athlète consulte le wid-get de pré-vi-sion du poids sur s
 on ta-bleau
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
 []\T1/cmr/m/n/10.95 Le sys-tème ré-cu-père le pro-fil cor-po-rel et les moyenne
 s ali-men-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
 []\T1/cmr/m/n/10.95 Le sys-tème es-time le poids fu-tur en com-bi-nant ses dé-p
 enses éner-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
 \T1/cmr/m/n/10.95 gé-tiques et ses re-pas ré-cents, tout en res-pec-tant des li
 -mites de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche le poids fi-nal es-timé et si-gnale si
  l'ob-jec-tif est
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
-[]\T1/cmr/m/n/10.95 si la dif-fé-rence de poids de-man-dée est im-pos-sible à r
-éa-li-ser de fa-
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
+[]\T1/cmr/m/n/10.95 Si la dif-fé-rence de poids de-man-dée est im-pos-sible à r
+éa-li-ser de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
-\T1/cmr/m/n/10.95 çon saine dans le dé-lai donné, le sys-tème in-dique que l'ob
--jec-tif est
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
+\T1/cmr/m/n/10.95 fa-çon saine dans le dé-lai donné, le sys-tème in-dique que l
+'ob-jec-tif
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
-\T1/cmr/m/n/10.95 trop am-bi-tieux et sug-gère d'al-lon-ger la pé-riode, par ex
-emple : ^^S
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
+\T1/cmr/m/n/10.95 est trop am-bi-tieux et sug-gère d'al-lon-ger la pé-riode, pa
+r exemple :
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
-[]\T1/cmr/m/n/10.95 si l'ath-lète n'a pas en-core en-re-gis-tré de re-pas, le s
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
+[]\T1/cmr/m/n/10.95 Si l'ath-lète n'a pas en-core en-re-gis-tré de re-pas, le s
 ys-tème es-time
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2568--2568
+Underfull \hbox (badness 10000) in paragraph at lines 2554--2554
 \T1/cmr/m/n/10.95 ses be-soins de base théo-riques à par-tir de ses don-nées ph
 y-siques
  []
 
-[55]
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-[]\T1/cmr/m/n/10.95 L'athlète a dé-fini son ob-jec-tif prin-ci-pal (perte de po
-ids, prise de
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+[]\T1/cmr/m/n/10.95 L'athlète a rem-pli son pro-fil et a in-di-qué ses ha-bi-tu
+des spor-tives
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-[]\T1/cmr/m/n/10.95 L'athlète consulte la sec-tion ^^S Mon ob-jec-tif ^^T sur s
-on ta-bleau de
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+[]\T1/cmr/m/n/10.95 L'athlète consulte la sec-tion ^^S Mon ni-veau de fit-ness 
+^^T ou le bloc
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-[]\T1/cmr/m/n/10.95 Le sys-tème ré-cu-père le pro-fil de l'ath-lète et ses ha-b
-i-tudes de vie
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+[]\T1/cmr/m/n/10.95 Le sys-tème ré-cu-père le pro-fil de l'ath-lète, ses don-né
+es phy-siques
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-[]\T1/cmr/bx/n/10.95 Vérification de co-hé-rence : \T1/cmr/m/n/10.95 le sys-tèm
-e croise cette es-ti-ma-tion
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+\T1/cmr/m/n/10.95 (taille, poids, in-dice de masse cor-po-relle), ses in-di-ca-
+teurs de bien-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-\T1/cmr/m/n/10.95 avec la ten-dance de poids pré-vue. Si l'évo-lu-tion de poids
- cal-cu-lée
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+\T1/cmr/m/n/10.95 être (stress, som-meil, hy-dra-ta-tion, nombre de pas par jou
+r) et son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-\T1/cmr/m/n/10.95 contre-dit l'ob-jec-tif, par exemple une prise de poids pré-v
-ue alors
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+\T1/cmr/m/n/10.95 his-to-rique d'ac-ti-vi-tés ré-centes (du-rée, in-ten-sité, c
+a-lo-ries dé-pen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-\T1/cmr/m/n/10.95 que l'ob-jec-tif est de perdre du poids, la pro-ba-bi-lité gl
-o-bale est
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+[]\T1/cmr/m/n/10.95 Le sys-tème cal-cule le ni-veau de fit-ness, le score glo-b
+al et le taux de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-[]\T1/cmr/m/n/10.95 Le sys-tème af-fiche à l'ath-lète son score de chance, l'in
--dice de fia-
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+[]\T1/cmr/m/n/10.95 Le ré-sul-tat est sau-ve-gardé par le sys-tème pour gar-der
+ un his-to-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-\T1/cmr/m/n/10.95 bi-lité du score (faible, moyen ou élevé), et les re-com-man-
-da-tions
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+[]\T1/cmr/m/n/10.95 Le sys-tème af-fiche à l'ath-lète son ni-veau de fit-ness, 
+son score, sa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-[]\T1/cmr/m/n/10.95 si l'ath-lète n'a pas en-core saisi d'ac-ti-vi-tés ré-gu-li
-ères, le sys-tème
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+\T1/cmr/m/n/10.95 pro-gres-sion en pour-cen-tage et des re-com-man-da-tions de 
+séances
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-\T1/cmr/m/n/10.95 ef-fec-tue le cal-cul sur la base des don-nées four-nies lors
- de l'ins-
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+[]\T1/cmr/m/n/10.95 Si l'ath-lète n'a pas en-core en-re-gis-tré de séances ré-g
+u-lières, le
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2621
-\T1/cmr/m/n/10.95 crip-tion. Il si-gnale que la fia-bi-lité est faible et in-vi
-te l'ath-lète à
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+\T1/cmr/m/n/10.95 sys-tème ef-fec-tue le cal-cul uni-que-ment à par-tir des in-
+for-ma-tions
  []
 
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 2672--2672
+
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+\T1/cmr/m/n/10.95 four-nies lors de l'ins-crip-tion. Il aver-tit l'ath-lète que
+ l'éva-lua-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2608--2608
+\T1/cmr/m/n/10.95 est peu fiable à ce stade et l'in-vite à en-re-gis-trer ré-gu
+-liè-re-ment ses
+ []
+
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 2671--2671
+[]\T1/cmr/m/n/10.95 Les re-marques et consignes du Coach sont af-fi-chées à l'é
+cran par
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2671--2671
+[]\T1/cmr/m/n/10.95 Le sys-tème ré-cu-père au-to-ma-ti-que-ment l'en-semble des
+ notes ré-di-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2671--2671
+[]\T1/cmr/m/n/10.95 Le sys-tème af-fiche la liste des notes conte-nant la date,
+ le nom du
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2671--2671
+[]\T1/cmr/m/n/10.95 Si le coach n'a ré-digé au-cune note, le sys-tème af-fiche 
+un en-ca-dré
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2671--2671
+[]\T1/cmr/m/n/10.95 Si au-cun lien de suivi n'est éta-bli avec un coach, la sec
+-tion dé-diée
+ []
+
+[63]
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2724
 []\T1/cmr/m/n/10.95 L'athlète ouvre la fe-nêtre de dis-cus-sion de l'as-sis-tan
 t in-tel-li-gent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2672--2672
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2724
 []\T1/cmr/m/n/10.95 L'athlète sai-sit un mes-sage ou pose une ques-tion concer-
 nant son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2672--2672
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2724
 \T1/cmr/m/n/10.95 ali-men-ta-tion, son sport ou son suivi, par exemple : ^^S Qu
 e man-ger
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2672--2672
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2724
 []\T1/cmr/m/n/10.95 Le sys-tème trans-met le mes-sage et l'his-to-rique de la d
 is-cus-sion à
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2672--2672
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2724
 []\T1/cmr/m/n/10.95 L'assistant in-tel-li-gent for-mule une ré-ponse en fran-ça
 is de ma-nière
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2672--2672
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2724
 []\T1/cmr/m/n/10.95 Le sys-tème af-fiche la ré-ponse en temps réel, mot par mot
 , dans
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2672--2672
-[]\T1/cmr/bx/n/10.95 Service tem-po-rai-re-ment in-dis-po-nible : \T1/cmr/m/n/1
-0.95 si la connexion avec
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2724
+[]\T1/cmr/m/n/10.95 Si la connexion avec l'as-sis-tant in-tel-li-gent échoue, l
+e sys-tème af-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2672--2672
-\T1/cmr/m/n/10.95 l'as-sis-tant in-tel-li-gent échoue, le sys-tème af-fiche un 
-mes-sage in-di-
+Underfull \hbox (badness 10000) in paragraph at lines 2724--2724
+\T1/cmr/m/n/10.95 fiche un mes-sage in-di-quant que l'as-sis-tant ren-contre de
+s dif-fi-cul-tés
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2672--2672
-\T1/cmr/m/n/10.95 quant que l'as-sis-tant ren-contre des dif-fi-cul-tés tech-ni
-ques et in-vite
- []
-
-[57] [58]
-<images/digramme_de_sequence_de_nutrition.png, id=288, 737.8767pt x 521.0667pt>
+[64]
+<images/digramme_de_sequence_de_nutrition.png, id=310, 737.8767pt x 521.0667pt>
 
 File: images/digramme_de_sequence_de_nutrition.png Graphic file (type png)
 <use images/digramme_de_sequence_de_nutrition.png>
 Package pdftex.def Info: images/digramme_de_sequence_de_nutrition.png  used on 
-input line 2693.
+input line 2745.
 (pdftex.def)             Requested size: 407.66833pt x 287.8915pt.
- [59]
-<images/digramme_de_sequence_recomandation.png, id=293, 825.3234pt x 788.4657pt
->
-File: images/digramme_de_sequence_recomandation.png Graphic file (type png)
-<use images/digramme_de_sequence_recomandation.png>
-Package pdftex.def Info: images/digramme_de_sequence_recomandation.png  used on
- input line 2708.
+ [65]
+<images/consulter repas6.png, id=314, 716.9184pt x 378.6948pt>
+File: images/consulter repas6.png Graphic file (type png)
+<use images/consulter repas6.png>
+Package pdftex.def Info: images/consulter repas6.png  used on input line 2761.
+(pdftex.def)             Requested size: 407.66833pt x 215.344pt.
+ [66 <./images/digramme_de_sequence_de_nutrition.png>]
+<images/digrammedesequencerecomandation.png, id=319, 825.3234pt x 788.4657pt>
+File: images/digrammedesequencerecomandation.png Graphic file (type png)
+<use images/digrammedesequencerecomandation.png>
+Package pdftex.def Info: images/digrammedesequencerecomandation.png  used on in
+put line 2773.
 (pdftex.def)             Requested size: 407.66833pt x 389.45557pt.
- [60 <./images/digramme_de_sequence_de_nutrition.png>] [61 <./images/digramme_d
-e_sequence_recomandation.png>]
-<images/mealplans.png, id=302, 335.75438pt x 432.11438pt>
-File: images/mealplans.png Graphic file (type png)
-<use images/mealplans.png>
-Package pdftex.def Info: images/mealplans.png  used on input line 2742.
-(pdftex.def)             Requested size: 430.31812pt x 553.8232pt.
- [62]
-<images/historiquedemealplan.png, id=306, 487.8225pt x 211.54031pt>
-File: images/historiquedemealplan.png Graphic file (type png)
-<use images/historiquedemealplan.png>
-Package pdftex.def Info: images/historiquedemealplan.png  used on input line 27
-56.
-(pdftex.def)             Requested size: 430.31812pt x 186.6047pt.
- [63 <./images/mealplans.png>]
-<images/logactivites.png, id=311, 403.5075pt x 363.60844pt>
+ [67 <./images/consulter repas6.png>]
+<images/automatique.png, id=324, 874.01532pt x 380.17032pt>
+File: images/automatique.png Graphic file (type png)
+<use images/automatique.png>
+Package pdftex.def Info: images/automatique.png  used on input line 2786.
+(pdftex.def)             Requested size: 407.66833pt x 177.32265pt.
+ [68 <./images/digrammedesequencerecomandation.png>]
+<images/sequenceabondon.jpg, id=329, 795.72281pt x 705.38531pt>
+File: images/sequenceabondon.jpg Graphic file (type jpg)
+<use images/sequenceabondon.jpg>
+Package pdftex.def Info: images/sequenceabondon.jpg  used on input line 2803.
+(pdftex.def)             Requested size: 407.66833pt x 361.37778pt.
+
+[69 <./images/automatique.png>] [70 <./images/sequenceabondon.jpg>]
+<images/classesprint2.png, id=338, 753.81625pt x 1471.4975pt>
+File: images/classesprint2.png Graphic file (type png)
+<use images/classesprint2.png>
+Package pdftex.def Info: images/classesprint2.png  used on input line 2815.
+(pdftex.def)             Requested size: 294.26321pt x 574.42061pt.
+ [71 <./images/classesprint2.png>]
+<images/dashboradathlete.png, id=343, 1012.5328pt x 440.39531pt>
+File: images/dashboradathlete.png Graphic file (type png)
+<use images/dashboradathlete.png>
+Package pdftex.def Info: images/dashboradathlete.png  used on input line 2835.
+(pdftex.def)             Requested size: 430.31812pt x 187.16888pt.
+<images/mealplans.jpg, id=344, 952.55875pt x 855.195pt>
+File: images/mealplans.jpg Graphic file (type jpg)
+<use images/mealplans.jpg>
+Package pdftex.def Info: images/mealplans.jpg  used on input line 2849.
+(pdftex.def)             Requested size: 430.31812pt x 386.33485pt.
+ [72
+
+
+ <./images/dashboradathlete.png>]
+<images/logactivites.png, id=349, 403.5075pt x 363.60844pt>
 File: images/logactivites.png Graphic file (type png)
 <use images/logactivites.png>
-Package pdftex.def Info: images/logactivites.png  used on input line 2771.
+Package pdftex.def Info: images/logactivites.png  used on input line 2865.
 (pdftex.def)             Requested size: 430.31812pt x 387.76999pt.
-[64 <./images/historiquedemealplan.png>]
-<images/recentactivity.png, id=316, 395.22656pt x 332.74312pt>
+ [73 <./images/mealplans.jpg>]
+<images/recentactivity.png, id=353, 395.22656pt x 332.74312pt>
 File: images/recentactivity.png Graphic file (type png)
 <use images/recentactivity.png>
-Package pdftex.def Info: images/recentactivity.png  used on input line 2787.
+Package pdftex.def Info: images/recentactivity.png  used on input line 2881.
 (pdftex.def)             Requested size: 430.31812pt x 362.29185pt.
- [65 <./images/logactivites.png>]
-[66 <./images/recentactivity.png>] [67
+ [74 <./images/logactivites.png>] [75 <./images/recentactivity.png>]
+[76]
+<images/datasetchrunfinal.png, id=369, 821.31844pt x 206.27063pt>
+File: images/datasetchrunfinal.png Graphic file (type png)
+<use images/datasetchrunfinal.png>
+Package pdftex.def Info: images/datasetchrunfinal.png  used on input line 2969.
+
+(pdftex.def)             Requested size: 407.66833pt x 102.38281pt.
+ [77 <./images/datasetchrunfinal.png>]
+<images/chrunimage1.png, id=374, 405.01312pt x 319.1925pt>
+File: images/chrunimage1.png Graphic file (type png)
+<use images/chrunimage1.png>
+Package pdftex.def Info: images/chrunimage1.png  used on input line 3011.
+(pdftex.def)             Requested size: 362.37569pt x 285.59514pt.
+ [78 <./images/chrunimage1.png>]
+<images/metrice_de_cofusion.png, id=379, 308.65312pt x 110.66344pt>
+File: images/metrice_de_cofusion.png Graphic file (type png)
+<use images/metrice_de_cofusion.png>
+Package pdftex.def Info: images/metrice_de_cofusion.png  used on input line 303
+5.
+(pdftex.def)             Requested size: 385.02547pt x 138.05707pt.
+
+
+LaTeX Warning: Reference `fig:email_churn' on page 79 undefined on input line 3
+043.
+
+<images/email_chrun.png, id=380, 779.91376pt x 310.15875pt>
+File: images/email_chrun.png Graphic file (type png)
+<use images/email_chrun.png>
+Package pdftex.def Info: images/email_chrun.png  used on input line 3063.
+(pdftex.def)             Requested size: 407.66833pt x 162.12115pt.
+[79 <./images/metrice_de_cofusion.png>]
+<images/datasetfitness.png, id=385, 995.21812pt x 148.30406pt>
+File: images/datasetfitness.png Graphic file (type png)
+<use images/datasetfitness.png>
+Package pdftex.def Info: images/datasetfitness.png  used on input line 3079.
+(pdftex.def)             Requested size: 407.66833pt x 60.75073pt.
+ [80 <./images/email_chrun.png> <./images/datasetfitness.png>]
+<images/fitnessmetrique.png, id=391, 682.80093pt x 353.06906pt>
+File: images/fitnessmetrique.png Graphic file (type png)
+<use images/fitnessmetrique.png>
+Package pdftex.def Info: images/fitnessmetrique.png  used on input line 3116.
+(pdftex.def)             Requested size: 407.66833pt x 210.8033pt.
+ [81 <./images/fitnessmetrique.png>]
+<images/interfacedefitness.png, id=396, 813.0375pt x 201.75375pt>
+File: images/interfacedefitness.png Graphic file (type png)
+<use images/interfacedefitness.png>
+Package pdftex.def Info: images/interfacedefitness.png  used on input line 3132
+.
+(pdftex.def)             Requested size: 407.66833pt x 101.15984pt.
+ [82 <./images/interfacedefitness.png>]
+<images/lifestep.png, id=402, 393.72093pt x 298.86656pt>
+File: images/lifestep.png Graphic file (type png)
+<use images/lifestep.png>
+Package pdftex.def Info: images/lifestep.png  used on input line 3222.
+(pdftex.def)             Requested size: 407.66833pt x 309.45033pt.
+ [83]
+<images/suplements.png, id=411, 791.95876pt x 359.09157pt>
+File: images/suplements.png Graphic file (type png)
+<use images/suplements.png>
+Package pdftex.def Info: images/suplements.png  used on input line 3235.
+(pdftex.def)             Requested size: 407.66833pt x 184.84929pt.
+ [84 <./images/lifestep.png> <./images/suplements.png>]
+<images/tde.png, id=417, 816.04875pt x 186.6975pt>
+File: images/tde.png Graphic file (type png)
+<use images/tde.png>
+Package pdftex.def Info: images/tde.png  used on input line 3248.
+(pdftex.def)             Requested size: 407.66833pt x 93.26874pt.
+<images/chatbot.png, id=418, 265.74281pt x 371.88937pt>
+File: images/chatbot.png Graphic file (type png)
+<use images/chatbot.png>
+Package pdftex.def Info: images/chatbot.png  used on input line 3263.
+(pdftex.def)             Requested size: 407.66833pt x 570.5494pt.
+
+[85 <./images/tde.png>] [86 <./images/chatbot.png>] [87] [88
+
+] [89
+
+]
+Overfull \hbox (292.53192pt too wide) in paragraph at lines 3298--3299
+[]\T1/cmtt/m/n/12 https://openclassrooms.com/fr/courses/4668056-construisez-des
+-microservices/5123020-testez-votre-api-grace-a-postman 
+ []
+
+[90
 
 ] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-03-20>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 18772 strings out of 467691
- 378342 string characters out of 5425063
- 804328 words of memory out of 5000000
- 47464 multiletter control sequences out of 15000+600000
- 645005 words of font info for 81 fonts, out of 8000000 for 9000
+ 8598 strings out of 467691
+ 142528 string characters out of 5425063
+ 604306 words of memory out of 5000000
+ 37502 multiletter control sequences out of 15000+600000
+ 649421 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,14n,108p,791b,717s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti109
-5.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
-1095.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-cti1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm1095.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
-i600\ecbx1095.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ectt1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecbx1440.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\eccc1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
-nappen/ec/dpi600\ecbx1728.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Program Files/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/zapfding/uzd
-r.pfb>
-Output written on main.pdf (75 pages, 4584771 bytes).
+ 57i,15n,83p,830b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm080
+0.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
+0800.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
+cbx0800.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ectt1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
+i600\ecti1095.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecti1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecbx1095.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\eccc1095.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour/jk
+nappen/ec/dpi600\ecbx1440.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/ljf
+our/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\HP\AppData\Local\MiKTeX\fonts/
+pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\HP\AppData\Local\MiKTeX\
+fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Program Files/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/P
+rogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/
+MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (99 pages, 5713714 bytes).
 PDF statistics:
- 915 PDF objects out of 1000 (max. 8388607)
+ 1179 PDF objects out of 1200 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 198 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 276 words of extra memory for PDF output out of 10000 (max. 10000000)
 
